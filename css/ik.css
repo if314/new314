@@ -1,0 +1,40 @@
+
+body {
+    color: #726f6a;
+    background-color: #D9CEC5;
+}
+.fit{
+	width:100%;
+}
+
+.bg-primary {
+    background-color: #40372C!important;
+}
+.text-primary {
+    color: #40372C!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #80796d ;
+}
+
+a {
+    color: #1b877c;
+}
+a:hover {
+    color: #16685e;
+}
+
+.social-icons a {
+    background-color: #40372C;
+}
+
+.social-icons a:hover {
+    background-color: #16685e;
+}
+
+
+
+.title{
+	color:#40372C;
+}
