@@ -26,9 +26,12 @@ a:hover {
 }
 
 .social-icons a {
-    background-color: #40372C;
+    background-color: #1b877c;
 }
-
+.back{
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
 .social-icons a:hover {
     background-color: #16685e;
 }
