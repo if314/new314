@@ -1,6 +1,6 @@
 
 body {
-    color: #726f6a;
+    color: #40372C;
     background-color: #D9CEC5;
 }
 .fit{
@@ -32,7 +32,9 @@ a:hover {
 .social-icons a:hover {
     background-color: #16685e;
 }
-
+p.lead {
+    color: #40372C
+}
 
 
 .title{
