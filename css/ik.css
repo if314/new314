@@ -1,39 +1,40 @@
 
 body {
-    color: #40372C;
-    background-color: #D9CEC5;
+    color: #060606;
+    background-color: #FCFCFC	;
 }
 .fit{
 	width:100%;
 }
 
 .bg-primary {
-    background-color: #40372C!important;
+    background-color: #007bff!important;
 }
+
 .text-primary {
-    color: #40372C!important;
+    color: #060606!important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #80796d ;
+    color: #4da3ff	 ;
 }
 
 a {
-    color: #1b877c;
+    color: #007bff;
 }
 a:hover {
-    color: #16685e;
+    color: #0056b3;
 }
 
 .social-icons a {
-    background-color: #1b877c;
+    background-color: #007bff;
 }
 .back{
     font-weight: 900;
     letter-spacing: 0.1rem;
 }
 .social-icons a:hover {
-    background-color: #16685e;
+    background-color: #0056b3;
 }
 p.lead {
     color: #40372C
@@ -54,3 +55,9 @@ p.lead {
     border-radius: 25px;
     box-shadow: 2px 2px 15px #999;
 }
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
