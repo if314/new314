@@ -29,9 +29,10 @@ a:hover {
 .social-icons a {
     background-color: #007bff;
 }
-.back{
+.back {
     font-weight: 900;
     letter-spacing: 0.1rem;
+    color: #000;
 }
 .social-icons a:hover {
     background-color: #0056b3;
