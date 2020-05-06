@@ -62,3 +62,14 @@ p.lead {
     letter-spacing: 0.1rem;
 }
 
+ul.oneoff li:first-child {
+    list-style-type: none;
+}
+.fit-45{
+    width: 40%;
+}
+.value {
+    text-rendering: optimizeLegibility;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+}
