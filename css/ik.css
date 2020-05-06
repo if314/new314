@@ -72,4 +72,10 @@ ul.oneoff li:first-child {
     text-rendering: optimizeLegibility;
     font-style: italic;
     letter-spacing: 0.5rem;
+    color: orange;
+}
+section.value-section {
+    min-height: 10vh;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
 }
