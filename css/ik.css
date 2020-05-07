@@ -83,3 +83,22 @@ section.value-section {
 ul.ennav {
     list-style-type: none;
 }
+blockquote{
+    font-style: italic;
+    font-size: 12px;
+    color: #999;
+}
+.grey{
+    background-color: rgb(231, 232, 233);
+    border:2px solid rgb(231, 232, 233);
+    padding: 10px;
+}
+.outline{
+    border:2px solid rgb(231, 232, 233);
+    padding: 10px;
+    border-radius: 15px;
+}
+.space{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
