@@ -102,3 +102,13 @@ blockquote{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+ol {
+    font-weight:bolder;
+ 
+  }
+
+  ol li p {
+    font-weight: normal;
+
+  }
