@@ -213,7 +213,9 @@ figure {
     position: relative;
     transition: width 1s linear;
   }
-  
+  .readmore{
+    color:#999;
+  }
   
   
   
