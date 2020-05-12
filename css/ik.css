@@ -49,12 +49,12 @@ p.lead {
     margin-left: 30px;
 }
 .prototypeweb {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 8px solid #000;
-    border-radius: 25px;
-    box-shadow: 2px 2px 15px #999;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 8px solid #000; */
+  border-radius: 3px;
+  box-shadow: 2px 2px 15px #999;
 }
 #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
