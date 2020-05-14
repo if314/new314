@@ -69,6 +69,10 @@ ul.oneoff li:first-child {
     width: 40%;
     
 }
+.fit-65{
+  width: 65%;
+  
+}
 .value {
     text-rendering: optimizeLegibility;
     font-style: italic;
@@ -125,6 +129,13 @@ ol {
 
 .txtw{
   color:#fff;
+}
+ul.nodot {
+  list-style-type:none;
+}
+
+.mb-10 {
+  margin-bottom: 6rem!important;
 }
 
 /* video */
