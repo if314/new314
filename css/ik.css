@@ -65,13 +65,16 @@ p.lead {
 ul.oneoff li:first-child {
     list-style-type: none;
 }
+.fit-25{
+  width: 25%;
+}
+
 .fit-45{
     width: 40%;
     
 }
 .fit-65{
   width: 65%;
-  
 }
 .value {
     text-rendering: optimizeLegibility;
