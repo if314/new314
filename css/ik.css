@@ -76,6 +76,12 @@ ul.oneoff li:first-child {
 .fit-65{
   width: 65%;
 }
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .value {
     text-rendering: optimizeLegibility;
     font-style: italic;
