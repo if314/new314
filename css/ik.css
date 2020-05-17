@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #007bff;
+    transition: all 0.4s ease-in-out;
 }
 a:hover {
     color: #0056b3;
@@ -28,6 +29,8 @@ a:hover {
 
 .social-icons a {
     background-color: #007bff;
+    transition: all 0.9 ease-in-out;
+
 }
 .back {
     font-weight: 900;
@@ -147,6 +150,41 @@ ul.nodot {
   margin-bottom: 6rem!important;
 }
 
+
+
+
+.navbar-dark .navbar-nav .nav-link:hover { 
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  
+}
+.navbar-dark .navbar-nav .nav-link:hover { 
+background-color: rgba(0, 86, 179, .5);
+margin: 0 3rem;
+border-radius: 20px;
+}
+
+/* tranzitions menu 
+.navbar-dark .navbar-nav .nav-link.active{
+  background-color: rgba(0, 86, 179, .5);
+margin: 0 3rem;
+padding: 0.5rem;
+border-radius: 20px;
+}
+
+
+  mobile
+ 
+ navbar-dark .navbar-nav .nav-link.active {
+    background-color: rgba(0, 86, 179, .5);
+    margin: 0px 14rem 0px 0px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20px;}
+ */
+
+
 /* video */
 figure {
     box-shadow:
@@ -188,12 +226,13 @@ figure {
     color: white;
     order: 1;
     padding: .5rem;
-    transition: opacity .25s ease-out;
+    transition: all .25s ease-out;
     width: 100%;
   }
   button:hover {
     cursor: pointer;
     opacity: .8;
+    page-break-after: 5px;
   }
   
   label {
