@@ -91,6 +91,14 @@ ul.oneoff li:first-child {
     letter-spacing: 0.5rem;
     color: orange;
 }
+.valueaofl{
+  text-rendering: optimizeLegibility;
+    font-style: italic;
+    text-transform: capitalize;
+    color:#40372C;
+    font
+}
+
 section.value-section {
     min-height: 10vh;
     padding-top: 3rem!important;
