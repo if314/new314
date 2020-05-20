@@ -158,7 +158,12 @@ ul.nodot {
   margin-bottom: 6rem!important;
 }
 
-
+.note{
+  font-style: italic;
+  color:#999;
+margin: 1rem;
+font-size: 90%;
+}
 
 
 .navbar-dark .navbar-nav .nav-link:hover { 
