@@ -218,6 +218,15 @@ border-radius: 20px;
   margin: 0rem 3rem 0rem 0rem;
 }
 
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.5);
+  border-color: rgba(255,255,255,0);
+}
+.navbar-toggler-icon {
+ 
+  float: right;
+}
+
 /* video */
 figure {
     box-shadow:
