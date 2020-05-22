@@ -23,7 +23,7 @@ a {
     color: #007bff;
     transition: all 0.4s ease-in-out;
 }
-a:hover {
+a:hover, a:focus, a:active {
     color: #0056b3;
 }
 
@@ -189,6 +189,10 @@ font-size: 90%;
 .overview{
   background-color: #f0f3f7;
 }
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.5);
+  border-color: rgba(255,255,255,.0);
+}
 
 /* tranzitions menu 
 
@@ -220,13 +224,17 @@ border-radius: 20px;
 .nomobile{
   display: none;
 }
-.navbar-dark .navbar-toggler {
-  color: rgba(255,255,255,.5);
-  border-color: rgba(255,255,255,0);
-}
+
 .navbar-toggler-icon {
  
   float: right;
+}
+@media (min-width: 992px){
+#sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0rem solid rgba(255,255,255,.2);
+}
 }
 
 /* video */
