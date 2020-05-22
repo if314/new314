@@ -112,6 +112,19 @@ blockquote{
     font-size: 12px;
     color: #999;
 }
+.flows{
+  background-color: rgb(231, 232, 233);
+    padding: 1rem;
+    margin: 1rem;
+}
+.flows p{
+  margin: auto;
+  width: 80%;
+  /* border: 3px solid green; */
+  /* padding: 10px; */
+  text-align: center;
+}
+}
 .grey{
     background-color: rgb(231, 232, 233);
     border:2px solid rgb(231, 232, 233);
