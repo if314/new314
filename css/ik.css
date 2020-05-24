@@ -124,6 +124,13 @@ blockquote{
   /* padding: 10px; */
   text-align: center;
 }
+.green{
+ /* background-color: #7cc242;*/
+  background-color: #badf9b;
+  opacity: 0.9;
+  padding: 5px;
+  margin: 0rem 0rem 0.4rem 0rem;
+}
 
 .grey{
     background-color: rgb(231, 232, 233);
@@ -174,8 +181,8 @@ ul.nodot {
 .note{
   font-style: italic;
   color:#999;
-margin: 1rem;
 font-size: 90%;
+opacity: .5;
 }
 
 
