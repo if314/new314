@@ -26,7 +26,10 @@ a {
 a:hover, a:focus, a:active {
     color: #0056b3;
 }
-
+#sideNav .navbar-toggler:focus {
+  outline-style: none;
+  outline-color: invert;
+}
 .social-icons a {
     background-color: #007bff;
     transition: all 0.9 ease-in-out;
