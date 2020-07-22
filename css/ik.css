@@ -143,9 +143,15 @@ blockquote{
     padding: 10px;
 }
 .outline{
-    border:2px solid rgb(231, 232, 233);
-    padding: 10px;
-   /* border-radius: 15px;*/
+  border: 1px solid rgb(231, 232, 233);
+  padding: 8px;
+
+}
+
+.outline-video {
+  border:1px solid #ed5f2d;
+  background-color: #ed5f2d;
+  padding: 8px;
 }
 .space{
     margin-top: 1rem;
