@@ -111,11 +111,18 @@ section.value-section {
 ul.ennav {
     list-style-type: none;
 }
+.problem{
+  font-style: italic;
+  font-size: 20px;
+  color: red;
+}
 blockquote{
     font-style: italic;
     font-size: 12px;
     color: #999;
 }
+
+
 .flows{
   background-color: rgb(231, 232, 233);
     padding: 1rem;
