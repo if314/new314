@@ -116,6 +116,11 @@ font-style: italic;
 font-size: 20px;
 color: #007bff;
 }
+.problem{
+  font-style: italic;
+  font-size: 20px;
+  color: #007bff;
+}
 blockquote{
   font-style: italic;
   font-size: 12px;
