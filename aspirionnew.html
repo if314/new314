@@ -1,111 +1,114 @@
+from pathlib import Path
 
+# Combined slide content including original blurbs and the new detailed presentation content
+combined_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aspirion Case Study Slides</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem auto;
-      max-width: 800px;
-      line-height: 1.6;
-      padding: 0 1rem;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    h2 {
-      margin-top: 2rem;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 2rem 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Aspirion Compass Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: 'Helvetica Neue', sans-serif; background: #fff; color: #333; margin: 0; padding: 0; }
+        .slide { padding: 4rem 2rem; max-width: 800px; margin: auto; border-bottom: 1px solid #eee; }
+        h1, h2 { color: #000; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; margin-top: 0; }
+        p { font-size: 1.125rem; line-height: 1.6; margin-top: 1rem; }
+    </style>
 </head>
 <body>
-  <h1>Aspirion Case Study Presentation</h1>
 
-  <h2>Slide 1: Project Overview</h2>
-  <p><strong>Redesigning Analyst Work Queue Management at Aspirion</strong></p>
-  <ul>
-    <li><strong>Company:</strong> Aspirion – a healthcare revenue cycle company</li>
-    <li><strong>Role:</strong> UX Lead</li>
-    <li><strong>Goal:</strong> Redesign the analyst experience to simplify task management, reduce complexity, and support future AI integration</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h1>Project Overview</h1>
+    <p><strong>Redesigning Analyst Work Queue Management at Aspirion</strong></p>
+    <p><strong>Company:</strong> Aspirion – a healthcare revenue cycle company<br>
+       <strong>Role:</strong> UX Lead<br>
+       <strong>Goal:</strong> Redesign the analyst experience to simplify task management, reduce complexity, and support future AI integration</p>
+    <p>We transformed Compass from a dense, Excel-like grid into a streamlined platform supporting over 700 analysts across seven service lines. The redesign focused on making the system easier to use, reducing complexity, and future-proofing the tool for continued growth.</p>
+</div>
 
-  <h2>Slide 2: The Problem</h2>
-  <p><strong>Manual processes and high complexity</strong></p>
-  <ul>
-    <li>Analysts managed tasks using a complex AG Grid interface</li>
-    <li>Required advanced Excel skills, limiting who could be trained</li>
-    <li>High training costs and slower onboarding</li>
-    <li>System complexity prevented less-experienced users from being productive</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>The Problem</h2>
+    <p><strong>Manual processes and high complexity</strong></p>
+    <ul>
+        <li>Analysts managed tasks using a complex AG Grid interface</li>
+        <li>Required advanced Excel skills, limiting who could be trained</li>
+        <li>High training costs and slower onboarding</li>
+        <li>System complexity prevented less-experienced users from being productive</li>
+    </ul>
+    <p>The old interface forced users to think in formulas, not workflows. Managers intervened constantly just to distribute work. The system wasn't built for clarity, autonomy, or modern prioritization needs.</p>
+</div>
 
-  <h2>Slide 3: Business Goals</h2>
-  <p><strong>Simplify the tool and reduce dependency on high-skill labor</strong></p>
-  <ul>
-    <li>Remove AG Grid to reduce reliance on Excel familiarity</li>
-    <li>Create a simplified, intuitive UI that lowers the barrier to entry</li>
-    <li>Design for a broader, more scalable workforce</li>
-    <li>Lay groundwork for automation and AI support</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>Business Goals</h2>
+    <ul>
+        <li>Remove AG Grid to reduce reliance on Excel familiarity</li>
+        <li>Create a simplified, intuitive UI that lowers the barrier to entry</li>
+        <li>Design for a broader, more scalable workforce</li>
+        <li>Lay groundwork for automation and AI support</li>
+    </ul>
+</div>
 
-  <h2>Slide 4: Research & Discovery</h2>
-  <p><strong>Understanding real workflows</strong></p>
-  <ul>
-    <li>Shadowed analysts across regions and specialties</li>
-    <li>Mapped out how users navigated and prioritized work</li>
-    <li>Identified key pain points:
-      <ul>
-        <li>Task duplication</li>
-        <li>Manual prioritization</li>
-        <li>Overwhelming interface</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>Research & Discovery</h2>
+    <p><strong>Understanding real workflows</strong></p>
+    <ul>
+        <li>Shadowed analysts across regions and specialties</li>
+        <li>Mapped out how users navigated and prioritized work</li>
+        <li>Identified key pain points: task duplication, manual prioritization, overwhelming interface</li>
+    </ul>
+    <p>We uncovered friction from constant context-switching, unreliable filters, and manual tracking. Our mix of interviews, surveys, and data analytics revealed a clear opportunity to reduce cognitive overload and simplify account prioritization.</p>
+</div>
 
-  <h2>Slide 5: Design Objectives</h2>
-  <ul>
-    <li>Simplify interface and reduce cognitive load</li>
-    <li>Support multiple roles and work types</li>
-    <li>Enable automated task assignment in the future</li>
-    <li>Optimize for speed, clarity, and ease of use</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>Design Objectives</h2>
+    <ul>
+        <li>Simplify interface and reduce cognitive load</li>
+        <li>Support multiple roles and work types</li>
+        <li>Enable automated task assignment in the future</li>
+        <li>Optimize for speed, clarity, and ease of use</li>
+    </ul>
+</div>
 
-  <h2>Slide 6: Key Design Decisions</h2>
-  <ul>
-    <li><strong>Removed AG Grid</strong> to eliminate Excel-style complexity</li>
-    <li>Introduced a card-based queue view with clear task hierarchy</li>
-    <li>Designed dynamic filters and role-based views</li>
-    <li>Integrated feedback from analysts into every iteration</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>Key Design Decisions</h2>
+    <ul>
+        <li>Removed AG Grid to eliminate Excel-style complexity</li>
+        <li>Introduced a card-based queue view with clear task hierarchy</li>
+        <li>Designed dynamic filters and role-based views</li>
+        <li>Integrated feedback from analysts into every iteration</li>
+    </ul>
+    <p>We replaced filters with a query builder, grid views with cards, and added visual progress feedback. These updates gave analysts instant clarity on what to do and empowered managers with shareable, flexible oversight.</p>
+</div>
 
-  <h2>Slide 7: Impact & Outcomes</h2>
-  <ul>
-    <li>Reduced time-to-proficiency by <strong>22%</strong></li>
-    <li>Cut manual sorting and assignment by introducing smarter defaults</li>
-    <li>Made the tool usable by less-specialized staff, reducing future labor costs</li>
-    <li>Provided a scalable foundation for AI queue management</li>
-  </ul>
-  <hr>
+<div class="slide">
+    <h2>Impact & Outcomes</h2>
+    <ul>
+        <li>Reduced time-to-proficiency by 22%</li>
+        <li>Cut manual sorting and assignment by introducing smarter defaults</li>
+        <li>Made the tool usable by less-specialized staff, reducing future labor costs</li>
+        <li>Provided a scalable foundation for AI queue management</li>
+    </ul>
+    <p>Prototypes were validated live with users. Feedback led to improved terminology and even clearer interface elements. Overall response was enthusiastic, and rollout adoption exceeded expectations.</p>
+</div>
 
-  <h2>Slide 8: Takeaways</h2>
-  <ul>
-    <li>Simplifying doesn’t mean dumbing down—it means removing friction</li>
-    <li>Designing for accessibility helps scalability</li>
-    <li>Deep user research + iterative design = impactful transformation</li>
-  </ul>
+<div class="slide">
+    <h2>Takeaways</h2>
+    <ul>
+        <li>Simplifying doesn’t mean dumbing down—it means removing friction</li>
+        <li>Designing for accessibility helps scalability</li>
+        <li>Deep user research + iterative design = impactful transformation</li>
+    </ul>
+    <p>I led the entire UX process: from interviewing analysts to mapping user journeys, creating modular design systems, and building interactive prototypes. I worked closely with engineering and leadership to align design with business strategy.</p>
+</div>
 
 </body>
 </html>
+"""
+
+# Save the combined HTML file
+combined_path = Path("/mnt/data/aspirion_case_study_combined.html")
+combined_path.write_text(combined_html, encoding="utf-8")
+
+combined_path.name
