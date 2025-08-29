@@ -3,42 +3,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Iva Keranova – UX Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Iva Keranova — Senior UX Designer. Enterprise UX, systems thinking, and measurable impact.">
+  <meta property="og:title" content="Iva Keranova — UX Portfolio">
+  <meta property="og:description" content="Enterprise UX, systems thinking, measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/cover.jpg">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Modern font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg: #f5f7fa;
+      --fg: #333;
+      --muted: #555;
+      --accent: #64ffda;
+      --accent-hover: #00bcd4;
+      --accent-visited: #a78bfa;
+      --accent-active: #ff9800;
+      --card: #fff;
+      --radius: 12px;
+      --shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
     * { box-sizing: border-box; }
-    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; }
-    header, footer { background-color: #1e1e2f; color: white; padding: 2em; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin-top: 0.5em; font-size: 1.1em; }
-    main { max-width: 1000px; margin: 2em auto; padding: 0 2em; }
-    section { background: white; padding: 2em; margin-bottom: 2em; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-    h2 { color: #2a4d69; font-size: 1.8em; margin-top: 0; }
-    p, li { font-size: 1.05em; line-height: 1.6; }
-    img { max-width: 100%; border-radius: 8px; margin-top: 1em; }
-    footer a { color: #ccc; text-decoration: none; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1em; }
-    .full { grid-column: span 2; }
-        a {
-      color: #64ffda;              /* default link color (aqua) */
-      text-decoration: none;       /* remove underline */
-      transition: color 0.3s ease; /* smooth color change */
+
+    body {
+      font-family: 'Inter', 'Helvetica Neue', sans-serif;
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
     }
 
+    header, footer {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.015em;
+    }
+
+    header p {
+      margin-top: 0.5em;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 2em;
+    }
+
+    section {
+      background: var(--card);
+      padding: 2em;
+      margin-bottom: 2em;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+    section:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      color: #2a4d69;
+      font-size: clamp(1.5rem, 2.6vw, 1.8rem);
+      margin-top: 0;
+    }
+
+    p, li {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1em;
+      display: block;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin-top: 1em;
+    }
+    .full {
+      grid-column: span 2;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
     a:hover {
-      color: #00bcd4;              /* hover (cyan) */
-      text-decoration: underline;  /* underline on hover */
+      color: var(--accent-hover);
+      text-decoration: underline;
     }
-
     a:visited {
-      color: #a78bfa;              /* visited (lavender) */
+      color: var(--accent-visited);
+    }
+    a:active {
+      color: var(--accent-active);
+    }
+    a:focus-visible {
+      outline: 2px solid var(--accent-hover);
+      outline-offset: 2px;
     }
 
-    a:active {
-      color: #ff9800;              /* active (orange) */
+    /* Chips for quick metrics */
+    .chips {
+      display: flex; gap: 8px; flex-wrap: wrap; margin: .6rem 0 0;
+    }
+    .chip {
+      background: rgba(100,255,218,.12);
+      color: #0b4640;
+      border: 1px solid rgba(100,255,218,.35);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: .9em;
+      font-weight: 600;
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Iva Keranova</h1>
