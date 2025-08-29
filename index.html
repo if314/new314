@@ -19,6 +19,24 @@
     footer a { color: #ccc; text-decoration: none; }
     .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1em; }
     .full { grid-column: span 2; }
+        a {
+      color: #64ffda;              /* default link color (aqua) */
+      text-decoration: none;       /* remove underline */
+      transition: color 0.3s ease; /* smooth color change */
+    }
+
+    a:hover {
+      color: #00bcd4;              /* hover (cyan) */
+      text-decoration: underline;  /* underline on hover */
+    }
+
+    a:visited {
+      color: #a78bfa;              /* visited (lavender) */
+    }
+
+    a:active {
+      color: #ff9800;              /* active (orange) */
+    }
   </style>
 </head>
 <body>
