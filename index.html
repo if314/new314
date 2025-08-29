@@ -154,67 +154,148 @@
 <body>
   <header>
     <h1>Iva Keranova</h1>
-    <p>Senior UX Designer at ADP            |            <a href="mailto:keranovai@gmail.com">keranovai@gmail.com</a>    </p>
+    <p>
+      Senior UX Designer at ADP ·
+      <a href="mailto:keranovai@gmail.com">keranovai@gmail.com</a>
+    </p>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a> ·
+      <a href="#about">About</a> ·
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
+
   <main>
-    <section>
+    <!-- About -->
+    <section id="about">
       <h2>About Me</h2>
-      <p>I have a knack for simplifying complexity and seeing what others cannot, without constraints, a project isn’t interesting. Let’s build something elegant!
-<br><br>
-Passionate, adaptable, and self-driven designer, fascinated by human behavior and unconventional beauty.</p>
+      <p>
+        I have a knack for simplifying complexity and seeing what others cannot—without constraints,
+        a project isn’t interesting. Let’s build something elegant!
+      </p>
+      <p>
+        Passionate, adaptable, and self-driven designer, fascinated by human behavior and
+        unconventional beauty.
+      </p>
+    </section>
+
+    <!-- Work (anchor target for nav) -->
+    <section id="work">
+      <h2>Aspirion — Work Queue Redesign</h2>
+      <p>
+        Redesigned Compass, Aspirion’s analyst platform, to reduce complexity and scale efficiency.
+        Removed AG Grid–style UI and introduced a card-based task view with contextual filters,
+        role-based displays, and visual progress tracking.
+      </p>
+
+      <!-- quick metrics -->
+      <div class="chips">
+        <span class="chip">700+ Analysts</span>
+        <span class="chip">+20% Throughput</span>
+        <span class="chip">↓ Time to First Task</span>
+      </div>
+
+      <div class="grid">
+        <figure>
+          <a href="/img/aspirion/homepage.png" target="_blank" rel="noopener">
+            <img
+              src="/img/aspirion/homepage.png"
+              alt="Aspirion redesigned card-based task homepage"
+              loading="lazy" decoding="async"
+              width="1200" height="760">
+          </a>
+          <figcaption>Card-based task view with contextual filters.</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/aspirion/workflow.png"
+            alt="Before and after workflow comparison in Aspirion"
+            loading="lazy" decoding="async"
+            width="1600" height="900">
+          <figcaption class="full">Before → After workflow overview.</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        <a href="/aspirion.html">Read the full case study</a>
+      </p>
     </section>
 
     <section>
-      <h2>Aspirion – Work Queue Redesign</h2>
+      <h2>Aspirion — Training System Redesign</h2>
+      <p>
+        Led a cross-functional 12-week effort to rebuild training infrastructure from mistrust
+        to empowerment. Used system mapping and co-creation to align stakeholders and introduce
+        in-app onboarding and visual tooltips.
+      </p>
+
+      <div class="chips">
+        <span class="chip">System Mapping</span>
+        <span class="chip">Co-Creation</span>
+        <span class="chip">Onboarding</span>
+      </div>
+
       <div class="grid">
-        <div>
-          <p>Redesigned Compass, Aspirion’s analyst platform, to reduce complexity and scale efficiency. Removed AG Grid-style UI and introduced a card-based task view with contextual filters, role-based displays, and visual progress tracking.</p>
-          <ul>
-            <li>700+ analysts impacted</li>
-            <li>20% increase in worked accounts/day</li>
-            <li>Time to first task significantly reduced</li>
-          </ul>
-        </div>
-        <div><img src="/img/aspirion/homepage.png" alt="Work Queue UI Redesign"></div>
-        <div class="full"><img src="/img/aspirion/workflow.png" alt="Before and After View"></div>
+        <figure class="full">
+          <img
+            src="/img/aspirion/Process Map.png"
+            alt="Training system map and stakeholder network for Aspirion"
+            loading="lazy" decoding="async"
+            width="1600" height="1000">
+          <figcaption>System map and phased onboarding concepts.</figcaption>
+        </figure>
       </div>
     </section>
 
     <section>
-      <h2>Aspirion – Training System Redesign</h2>
-      <div class="grid">
-        <div>
-          <p>Led a cross-functional 12-week effort to rebuild training infrastructure from mistrust to empowerment. Used system mapping and co-creation to align stakeholders and introduce in-app onboarding and visual tooltips.</p>
-          <ul>
-            <li>Mapped pain points and process gaps</li>
-            <li>Visual system & network diagrams</li>
-            <li>Proposed phased onboarding experiences</li>
-          </ul>
-        </div>
-        <div><img src="/img/aspirion/Process Map.png" alt="System Map Visualization"></div>
+      <h2>ADP — Payroll Workflow Optimization</h2>
+      <p>
+        Improved enterprise payroll systems in ADP NAS/Lyric space. Introduced Smart Target UX
+        patterns for scalable pay group assignment. Mapped email-based approval flows and
+        delivered feasible UX aligned with business rules.
+      </p>
 
+      <div class="chips">
+        <span class="chip">Enterprise UX</span>
+        <span class="chip">Waypoint DS</span>
+        <span class="chip">WCAG 2.2 AA</span>
       </div>
-    </section>
 
-    <section>
-      <h2>ADP – Payroll Workflow Optimization</h2>
       <div class="grid">
-        <div>
-          <p>Improved enterprise payroll systems in ADP NAS/Lyric space. Introduced Smart Target UX patterns for scalable pay group assignment. Mapped email-based approval flows and delivered feasible UX aligned with business rules.</p>
-          <ul> 
-            <li>Smart dual-list box component</li>
-            <li>Context-aware approval flow design</li>
-            <li>Error handling and state labeling</li>
-          </ul>
-        </div>
-        <div><img src="/img/adp/smarttargets.png" alt="Smart Target UX Pattern"></div>
-                 <div class="full"><img src="/img/adp/Section4.png" alt="Before and After View"></div>
+        <figure>
+          <img
+            src="/img/adp/smarttargets.png"
+            alt="Smart Target dual-list selection pattern for ADP Lyric"
+            loading="lazy" decoding="async"
+            width="1200" height="760">
+          <figcaption>Smart Target dual-list pattern for scale.</figcaption>
+        </figure>
 
+        <figure class="full">
+          <img
+            src="/img/adp/Section4.png"
+            alt="Before and after view of ADP approval flow"
+            loading="lazy" decoding="async"
+            width="1600" height="900">
+          <figcaption>Before → After improvements to approval flow.</figcaption>
+        </figure>
       </div>
+
+      <p>
+        <a href="/adp-lyric.html" target="_blank" rel="noopener">View details</a>
+      </p>
     </section>
   </main>
-  <footer>
-    <p>© 2025 Iva Keranova | <a href="mailto:iva@example.com">Contact Me</a></p>
+
+  <footer id="contact">
+    <p>
+      © 2025 Iva Keranova ·
+      <a href="mailto:keranovai@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/keranovai" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="/portfolio.html">All Projects</a>
+    </p>
   </footer>
 </body>
+
 </html>
