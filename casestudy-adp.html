@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Case Study — Iva Keranova</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #12151a;
+      --muted: #9aa4b2;
+      --text: #e8edf4;
+      --brand: #67e8f9;
+      --accent: #22d3ee;
+      --ring: rgba(103, 232, 249, 0.35);
+      --shadow: rgba(0, 0, 0, 0.45);
+    }
+    body { margin:0; font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial; color:var(--text); background: linear-gradient(180deg,#0b0d10 0%,#0e1319 60%,#0b0d10 100%);} 
+    a { color: var(--accent); text-decoration:none; }
+    .container { width:min(1000px,92%); margin:0 auto; }
+    h1,h2,h3 { margin: 0 0 12px; }
+    .pill { display:inline-block; padding:6px 12px; border-radius:999px; background:rgba(103,232,249,.08); color:var(--brand); font-size:12px; border:1px solid rgba(103,232,249,.25); }
+
+    header.hero { padding:70px 0 20px; text-align:center; }
+    header.hero h1 { font-size: clamp(28px,4vw,44px); line-height:1.2; }
+    header.hero p { max-width:60ch; margin:12px auto 0; color:var(--muted); }
+
+    section { padding:40px 0; }
+    .section-box { background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:24px; box-shadow:0 10px 28px var(--shadow); margin-bottom:28px; }
+
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    @media(max-width:800px){ .two-col{ grid-template-columns:1fr; } }
+
+    ul.clean { list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+    ul.clean li { background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06); padding:10px 12px; border-radius:12px; }
+
+    footer { padding:30px 0 50px; text-align:center; color:var(--muted); }
+    .btn { display:inline-block; margin:8px; padding:12px 18px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06); color:var(--text); font-weight:600; }
+    .btn:hover { border-color:rgba(255,255,255,.3); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div style="margin-bottom:20px;">
+        <a class="btn" href="index.html">← Back to Portfolio</a>
+      </div>
+      <span class="pill">Case Study</span>
+      <h1>ADP Manager Review & Approve Payroll</h1>
+      <p>Designing ADP’s first-ever secure payroll approval workflow for managers — replacing unsafe practices with a streamlined, compliant, and scalable solution.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <div class="section-box">
+          <h2>Context</h2>
+          <p>At ADP, managers are responsible for one of the most sensitive tasks in payroll: reviewing and approving pay runs. Before this project, managers often shared sensitive payroll and employee information through unsafe methods — like email chains and screenshots — creating security and compliance risks. There was no existing feature to support this workflow.</p>
+        </div>
+
+        <div class="section-box">
+          <h2>The Challenge</h2>
+          <p>We needed to invent a solution from the ground up. The goal was to create a secure, intuitive way for managers to review and approve payroll runs, while reducing errors, aligning with ADP’s compliance standards, and providing clear visibility into pay groups. The problem space was loosely defined, and stakeholders weren’t aligned on the direction forward.</p>
+        </div>
+
+        <div class="section-box">
+          <h2>My Breakthrough</h2>
+          <p>I created a visual representation of the payroll approval process that highlighted where information gaps and risks existed. This simple but powerful visual immediately resonated with product owners, engineers, and compliance teams. It became the catalyst for alignment and solution conversations — the moment the project finally gained traction.</p>
+        </div>
+
+        <div class="section-box">
+          <h2>Design Process</h2>
+          <div class="two-col">
+            <div>
+              <ul class="clean">
+                <li>Mapped manager workflows to identify decision points and risk areas</li>
+                <li>Developed interactive Figma prototypes featuring review dashboards, status indicators, and action items</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="clean">
+                <li>Built components using ADP’s Waypoint Design System to ensure consistency, scalability, and compliance</li>
+                <li>Facilitated collaboration with compliance, product, and engineering to validate requirements and feasibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-box">
+          <h2>Impact</h2>
+          <p>This became ADP’s first-ever Manager Review & Approve Payroll feature. It gave managers a secure, streamlined, and confident way to approve payroll, reducing errors and eliminating unsafe practices like email and screenshots. The feature was such a success that ADP is now commercializing it as a premium offering.</p>
+        </div>
+      </section>
+
+      <div style="text-align:center;">
+        <a class="btn" href="index.html">← Back to Portfolio</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Iva Keranova — Portland, OR · <a href="mailto:iva@keranovai.com">iva@keranovai.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
