@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iva Keranova — UX/UI Designer</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #12151a;
+      --muted: #9aa4b2;
+      --text: #e8edf4;
+      --brand: #67e8f9;
+      --brand-2: #a78bfa;
+      --accent: #22d3ee;
+      --ring: rgba(103, 232, 249, 0.35);
+      --shadow: rgba(0, 0, 0, 0.45);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: linear-gradient(180deg, #0b0d10 0%, #0e1319 60%, #0b0d10 100%);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    .pill { display:inline-block; padding: 6px 10px; border-radius: 999px; background: rgba(103,232,249,0.08); color: var(--brand); font-size: 12px; letter-spacing: .04em; border: 1px solid rgba(103,232,249,0.25); }
+
+    /* Hero */
+    header.hero { padding: 72px 0 32px; position: relative; overflow: clip; }
+    .hero-wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+    @media (max-width: 900px){ .hero-wrap { grid-template-columns: 1fr; } }
+    h1 { font-size: clamp(28px, 4vw, 48px); line-height: 1.1; margin: 14px 0 12px; }
+    .sub { font-size: clamp(15px, 2vw, 18px); color: var(--muted); max-width: 62ch; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .btn { appearance: none; border: 1px solid rgba(255,255,255,.12); background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); color: var(--text); padding: 12px 16px; border-radius: 14px; font-weight: 600; cursor: pointer; box-shadow: 0 8px 24px var(--shadow); }
+    .btn:hover { border-color: rgba(255,255,255,.3); transform: translateY(-1px); }
+    .btn.primary { background: linear-gradient(180deg, rgba(34,211,238,.25), rgba(34,211,238,.12)); border-color: rgba(34,211,238,.45); box-shadow: 0 10px 30px var(--ring); }
+
+    /* Stats */
+    section.stats { padding: 28px 0 0; }
+    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    @media (max-width: 900px){ .stat-grid { grid-template-columns: repeat(2, 1fr);} }
+    @media (max-width: 560px){ .stat-grid { grid-template-columns: 1fr;} }
+    .stat { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 18px 18px; box-shadow: 0 10px 24px var(--shadow); }
+    .stat h3 { margin: 0; font-size: 28px; }
+    .stat p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+
+    /* Featured */
+    section.featured { padding: 48px 0 10px; }
+    .section-title { display:flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .projects { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.09); border-radius: 20px; padding: 18px; box-shadow: 0 12px 28px var(--shadow); transition: transform .2s ease; }
+    .card:hover { transform: translateY(-3px); }
+    .card h4 { margin: 6px 0 8px; font-size: 20px; }
+    .card p { margin: 0; color: var(--muted); }
+    .meta { display:flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+    .chip { font-size: 12px; padding: 6px 10px; border-radius: 999px; border:1px solid rgba(255,255,255,.12); color: var(--muted); }
+    .card a.more { display:inline-block; margin-top: 12px; font-weight: 600; }
+    @media (max-width: 900px){ .card { grid-column: span 12; } }
+
+    /* About */
+    section.about { padding: 36px 0; }
+    .about-box { background: var(--card); border: 1px solid rgba(255,255,255,.08); padding: 22px; border-radius: 18px; display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 900px){ .about-box { grid-template-columns: 1fr; } }
+    .about-box h3 { margin-top: 0; }
+    ul.clean { list-style: none; padding: 0; margin: 0; display:grid; gap:10px; }
+    ul.clean li { background: rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.06); padding:10px 12px; border-radius: 12px; }
+
+    /* Testimonial */
+    .testi { margin: 24px 0 0; padding: 18px; border-left: 3px solid var(--brand); background: linear-gradient(90deg, rgba(103,232,249,.08), transparent); border-radius: 8px; }
+
+    /* Footer */
+    footer { padding: 28px 0 60px; color: var(--muted); }
+    .footer-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: center; }
+    @media (max-width: 760px){ .footer-grid { grid-template-columns: 1fr; text-align: center; } .cta{ justify-content: center; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="pill">UX / UI • Enterprise • Fintech‑ready</span>
+        <h1>I simplify complex systems into intuitive experiences.</h1>
+        <p class="sub">I’m <strong>Iva Keranova</strong>, a Portland‑based Senior UX/Product Designer. I build scalable, accessible products for compliance‑driven industries (payroll, healthcare, fintech). Proven impact: <strong>22% faster onboarding</strong>, <strong>30% fewer workflow errors</strong>, and design systems that ship.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://www.linkedin.com/in/iva-keranova/" target="_blank" rel="noopener">View LinkedIn</a>
+          <a class="btn" href="https://keranovai.com/index3" target="_blank" rel="noopener">Full Portfolio</a>
+          <a class="btn" href="#" aria-label="Download one-page PDF portfolio">Download 1‑page PDF</a>
+        </div>
+      </div>
+      <div>
+        <div class="stat-grid">
+          <div class="stat"><h3>22%</h3><p>Faster analyst onboarding</p></div>
+          <div class="stat"><h3>30%</h3><p>Fewer workflow errors</p></div>
+          <div class="stat"><h3>40%</h3><p>Less manual assignment (projected)</p></div>
+          <div class="stat"><h3>AA</h3><p>WCAG 2.2 accessibility</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="featured">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Work</h2>
+        <span class="pill">Curated • 4 projects</span>
+      </div>
+      <div class="projects">
+        <!-- Project 1 -->
+        <article class="card">
+          <span class="pill">Automation + Dashboards</span>
+          <h4>Optimizing Workload Distribution</h4>
+          <p>Designed the Smart Target assignment pattern and workload dashboards to fairly distribute claims, increase transparency, and reduce manual steps.</p>
+          <div class="meta">
+            <span class="chip">Figma</span>
+            <span class="chip">Design System</span>
+            <span class="chip">Usability Testing</span>
+          </div>
+          <a class="more" href="#" aria-label="Open case study: Optimizing Workload Distribution">Read case study →</a>
+        </article>
+        <!-- Project 2 -->
+        <article class="card">
+          <span class="pill">Onboarding • Compliance</span>
+          <h4>Analyst Training & Onboarding Redesign</h4>
+          <p>Rebuilt training flows with modular content, inline guidance, and accessibility-first components to accelerate proficiency across teams.</p>
+          <div class="meta">
+            <span class="chip">Research</span>
+            <span class="chip">WCAG 2.2 AA</span>
+            <span class="chip">Design Tokens</span>
+          </div>
+          <a class="more" href="#" aria-label="Open case study: Training & Onboarding Redesign">Read case study →</a>
+        </article>
+        <!-- Project 3 -->
+        <article class="card">
+          <span class="pill">Task Efficiency</span>
+          <h4>Note‑Taking Feature Redesign</h4>
+          <p>Simplified creation and retrieval of notes inside complex workflows; reduced cognitive load and improved task completion.</p>
+          <div class="meta">
+            <span class="chip">Interaction</span>
+            <span class="chip">Prototyping</span>
+            <span class="chip">Handoff</span>
+          </div>
+          <a class="more" href="#" aria-label="Open case study: Note‑Taking Redesign">Read case study →</a>
+        </article>
+        <!-- Project 4 -->
+        <article class="card">
+          <span class="pill">Web UX</span>
+          <h4>Homepage Redesign</h4>
+          <p>Refreshed information architecture and visual hierarchy to clarify value prop and drive better engagement.</p>
+          <div class="meta">
+            <span class="chip">IA</span>
+            <span class="chip">Wireframes</span>
+            <span class="chip">A/B Ideas</span>
+          </div>
+          <a class="more" href="#" aria-label="Open case study: Homepage Redesign">Read case study →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about-box">
+        <div>
+          <h3>About</h3>
+          <p>I’m a Senior UX/Product Designer with 12+ years of experience delivering enterprise UX in payroll, healthcare, and SaaS. I focus on simplifying complex workflows, building design systems, and ensuring accessibility and compliance. I collaborate closely with product owners and engineers to ship usable, scalable solutions.</p>
+          <div class="testi">
+            <em>“Iva simplified our most complex workflow and cut onboarding time by 22% while aligning with strict compliance.”</em>
+            <div style="margin-top:6px; color:var(--muted);">— Product Owner</div>
+          </div>
+        </div>
+        <div>
+          <h3>Capabilities</h3>
+          <ul class="clean">
+            <li>End‑to‑end UX (discovery → delivery)</li>
+            <li>Design systems (tokens, components, docs)</li>
+            <li>Usability testing & research synthesis</li>
+            <li>Accessible interaction design (WCAG 2.2 AA)</li>
+            <li>Data‑dense UI & dashboards</li>
+            <li>Developer handoff & Agile collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        © <span id="year"></span> Iva Keranova — Portland, OR
+      </div>
+      <div class="cta">
+        <a class="btn" href="mailto:iva@keranovai.com">Contact Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/iva-keranova/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://keranovai.com/index3" target="_blank" rel="noopener">Portfolio</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
