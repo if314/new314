@@ -1,220 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Iva Keranova — Senior UX Designer. Enterprise UX, systems thinking, and measurable impact.">
-  <meta property="og:title" content="Iva Keranova — UX Portfolio">
-  <meta property="og:description" content="Enterprise UX, systems thinking, measurable outcomes.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/cover.jpg">
-  <link rel="icon" href="/favicon.ico">
-
-  <!-- Modern font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iva Keranova – UX/Product Designer</title>
+  <meta name="description" content="Iva Keranova – Senior UX/Product Designer specializing in complex enterprise systems, fintech, and compliance-driven UX. Portfolio and case studies." />
   <style>
-    :root {
-      --bg: #f5f7fa;
-      --fg: #333;
-      --muted: #555;
-      --accent: #64ffda;
-      --accent-hover: #00bcd4;
-      --accent-visited: #a78bfa;
-      --accent-active: #ff9800;
-      --card: #fff;
-      --radius: 12px;
-      --shadow: 0 2px 10px rgba(0,0,0,0.05);
+    :root{
+      --bg: #0f1216; /* deep blue-gray */
+      --panel: #141922;
+      --muted: #7b8aa0;
+      --text: #eaf0ff;
+      --accent: #7cc4ff;
+      --accent-2: #9bffb2;
+      --border: #263041;
+      --chip: #1b2431;
     }
-
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', 'Helvetica Neue', sans-serif;
-      margin: 0; padding: 0;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-    }
-
-    header, footer {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 2em;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      font-weight: 800;
-      letter-spacing: -0.015em;
-    }
-
-    header p {
-      margin-top: 0.5em;
-      font-size: 1.1em;
-      color: #ccc;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 2em auto;
-      padding: 0 2em;
-    }
-
-    section {
-      background: var(--card);
-      padding: 2em;
-      margin-bottom: 2em;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      transition: transform 0.2s ease;
-    }
-    section:hover {
-      transform: translateY(-2px);
-    }
-
-    h2 {
-      color: #2a4d69;
-      font-size: clamp(1.5rem, 2.6vw, 1.8rem);
-      margin-top: 0;
-    }
-
-    p, li {
-      font-size: 1.05em;
-      line-height: 1.6;
-      color: var(--muted);
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1em;
-      display: block;
-    }
-
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-    }
-    footer a:hover {
-      color: var(--accent);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2em;
-      margin-top: 1em;
-    }
-    .full {
-      grid-column: span 2;
-    }
-
-    /* Links */
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      transition: color 0.3s ease, border-color 0.3s ease;
-    }
-    a:hover {
-      color: var(--accent-hover);
-      text-decoration: underline;
-    }
-    a:visited {
-      color: var(--accent-visited);
-    }
-    a:active {
-      color: var(--accent-active);
-    }
-    a:focus-visible {
-      outline: 2px solid var(--accent-hover);
-      outline-offset: 2px;
-    }
-
-    /* Chips for quick metrics */
-    .chips {
-      display: flex; gap: 8px; flex-wrap: wrap; margin: .6rem 0 0;
-    }
-    .chip {
-      background: rgba(100,255,218,.12);
-      color: #0b4640;
-      border: 1px solid rgba(100,255,218,.35);
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: .9em;
-      font-weight: 600;
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin-inline:auto;padding:24px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:56px 0}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:var(--chip);border:1px solid var(--border);color:var(--muted);padding:6px 10px;border-radius:999px;font-size:12px}
+    .headline{font-size:40px;line-height:1.1;margin:16px 0 12px;font-weight:800}
+    .sub{color:var(--muted);max-width:60ch}
+    .cta{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid var(--border);background:transparent}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a0f14;border:0;font-weight:700}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:20px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .stat{background:var(--chip);border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center}
+    .stat h3{margin:0;font-size:28px}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .card{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:16px;transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+    .thumb{aspect-ratio:16/9;border-radius:12px;background:linear-gradient(135deg,rgba(124,196,255,.2),rgba(155,255,178,.2));display:grid;place-items:center;border:1px dashed var(--border);color:var(--muted);font-size:14px}
+    .chiprow{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--border);font-size:12px;color:var(--muted)}
+    h2.section{margin:36px 0 12px;font-size:22px;color:var(--accent)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    footer{margin:48px 0 24px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .links{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid var(--border);color:var(--muted)}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:#0a0f14;padding:2px 6px;border-radius:6px;border:1px solid var(--border)}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .grid.cols-3{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Iva Keranova</h1>
-    <p>Senior UX Designer at ADP            |            keranovi@gmail.com    </p>
+  <header class="container" role="banner">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+      <a href="#" aria-label="home" style="font-weight:800;letter-spacing:.5px">IK</a>
+      <div class="links">
+        <a href="#work" class="pill">Work</a>
+        <a href="#about" class="pill">About</a>
+        <a href="#contact" class="pill">Contact</a>
+        <a href="#pdf" class="pill" download>Download 1‑page PDF</a>
+      </div>
+    </nav>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I have a knack for simplifying complexity and seeing what others cannot, without constraints, a project isn’t interesting. Let’s build something elegant!
-<br>
-Passionate, adaptable, and self-driven designer, fascinated by human behavior and unconventional beauty.</p>
-    </section>
 
-    <section>
-      <h2>Aspirion – Work Queue Redesign</h2>
-      <div class="grid">
-        <div>
-          <p>Redesigned Compass, Aspirion’s analyst platform, to reduce complexity and scale efficiency. Removed AG Grid-style UI and introduced a card-based task view with contextual filters, role-based displays, and visual progress tracking.</p>
-          <ul>
-            <li>700+ analysts impacted</li>
-            <li>20% increase in worked accounts/day</li>
-            <li>Time to first task significantly reduced</li>
-          </ul>
+  <main class="container" id="content">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <span class="badge" aria-label="Role">Senior UX/Product Designer</span>
+        <h1 class="headline">I simplify complex systems into intuitive experiences.</h1>
+        <p class="sub">12+ years designing enterprise payroll & compliance‑driven products. I build scalable design systems and high‑trust UX for fintech and healthcare. Recent wins: <strong>22%</strong> faster onboarding, <strong>30%</strong> fewer errors, and projected <strong>40%</strong> drop in manual assignments.</p>
+        <div class="cta" role="group" aria-label="Primary actions">
+          <a class="btn primary" href="#work">View Selected Work</a>
+          <a class="btn" href="https://www.linkedin.com/in/iva-keranova/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a class="btn" href="https://keranovai.com/index3" target="_blank" rel="noreferrer noopener">Full Portfolio</a>
         </div>
-        <div><img src="/img/aspirion/homepage.png" alt="Work Queue UI Redesign"></div>
-        <div class="full"><img src="/img/aspirion/workflow.png" alt="Before and After View"></div>
+      </div>
+      <div class="panel" aria-label="Quick stats">
+        <div class="stats" aria-describedby="stats-desc">
+          <div class="stat"><h3>22%</h3><div class="sub">Faster onboarding</div></div>
+          <div class="stat"><h3>30%</h3><div class="sub">Fewer workflow errors</div></div>
+          <div class="stat"><h3>40%</h3><div class="sub">Less manual assignment*</div></div>
+          <div class="stat"><h3>WCAG</h3><div class="sub">2.2 AA compliant</div></div>
+        </div>
+        <p id="stats-desc" class="sub" style="margin-top:8px">*Projected based on usability testing & iteration.</p>
       </div>
     </section>
 
-    <section>
-      <h2>Aspirion – Training System Redesign</h2>
-      <div class="grid">
-        <div>
-          <p>Led a cross-functional 12-week effort to rebuild training infrastructure from mistrust to empowerment. Used system mapping and co-creation to align stakeholders and introduce in-app onboarding and visual tooltips.</p>
-          <ul>
-            <li>Mapped pain points and process gaps</li>
-            <li>Visual system & network diagrams</li>
-            <li>Proposed phased onboarding experiences</li>
-          </ul>
-        </div>
-        <div><img src="/img/aspirion/Process Map.png" alt="System Map Visualization"></div>
-
+    <!-- FEATURED WORK -->
+    <section id="work" aria-label="Featured projects">
+      <h2 class="section">Featured Work</h2>
+      <div class="grid cols-3">
+        <!-- Project 1 -->
+        <article class="card" aria-labelledby="p1-title">
+          <div class="thumb">16:9 preview / add image</div>
+          <h3 id="p1-title" style="margin:0">Optimizing Workload Distribution</h3>
+          <p class="sub">Smart Target assignment + real‑time dashboard to fairly distribute claims and boost analyst productivity.</p>
+          <div class="chiprow">
+            <span class="chip">Automation</span>
+            <span class="chip">Data Viz</span>
+            <span class="chip">Design System</span>
+          </div>
+          <a class="btn" href="#case-owd">Read Case Study</a>
+        </article>
+        <!-- Project 2 -->
+        <article class="card" aria-labelledby="p2-title">
+          <div class="thumb">16:9 preview / add image</div>
+          <h3 id="p2-title" style="margin:0">Training & Onboarding Redesign</h3>
+          <p class="sub">Modular training flow that cut time‑to‑proficiency by <strong>22%</strong> while meeting HIPAA standards.</p>
+          <div class="chiprow">
+            <span class="chip">Compliance</span>
+            <span class="chip">Accessibility</span>
+            <span class="chip">UX Writing</span>
+          </div>
+          <a class="btn" href="#case-train">Read Case Study</a>
+        </article>
+        <!-- Project 3 -->
+        <article class="card" aria-labelledby="p3-title">
+          <div class="thumb">16:9 preview / add image</div>
+          <h3 id="p3-title" style="margin:0">Note‑Taking Feature Redesign</h3>
+          <p class="sub">Streamlined information capture to reduce errors and speed up analyst workflows.</p>
+          <div class="chiprow">
+            <span class="chip">IA</span>
+            <span class="chip">Interaction</span>
+            <span class="chip">Testing</span>
+          </div>
+          <a class="btn" href="#case-notes">Read Case Study</a>
+        </article>
       </div>
     </section>
 
-    <section>
-      <h2>ADP – Payroll Workflow Optimization</h2>
-      <div class="grid">
-        <div>
-          <p>Redesigned the payroll termination process in ADP NAS/Lyric to automate final payments, making them faster and more accurate. Created a new payroll review and approval feature that streamlines manager workflows with targeted notifications and role-based visibility. Delivered consistent, scalable solutions by building Figma prototypes aligned with 
-            the Waypoint Design System and collaborating with product owners and developers to ensure feasibility and compliance.</p>
-          <ul> 
-            <li>Smart dual-list box component</li>
-            <li>Context-aware approval flow design</li>
-            <li>Error handling and state labeling</li>
-          </ul>
+    <!-- ABOUT -->
+    <section id="about" aria-label="About Iva">
+      <h2 class="section">About</h2>
+      <div class="about">
+        <div class="panel">
+          <p>I’m a Portland‑based Senior UX/Product Designer with experience across fintech, healthcare, and SaaS. I specialize in simplifying complex enterprise workflows, building design systems, and delivering accessible, high‑trust experiences in regulated spaces.</p>
+          <p>Tools & methods: Figma (components, variables, prototypes), research & testing, information architecture, UX writing, design tokens, accessibility reviews, and dev‑collaboration (design‑to‑code specs).</p>
         </div>
-        <div><img src="/img/adp/smarttargets.png" alt="Smart Target UX Pattern"></div>
-                <div class="full"><img src="/img/adp/Section4.png" alt="Before and After View"></div>
+        <div class="panel">
+          <h3 style="margin-top:0">Selected Skills</h3>
+          <div class="chiprow" aria-label="Skills">
+            <span class="chip">Design Systems</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Usability Testing</span>
+            <span class="chip">WCAG 2.2 AA</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Stakeholder Workshops</span>
+            <span class="chip">Object‑Oriented UX</span>
+            <span class="chip">Prototyping</span>
+          </div>
+          <div style="margin-top:12px" class="chiprow">
+            <span class="chip">HTML/CSS Familiarity</span>
+            <span class="chip">Design Tokens</span>
+            <span class="chip">Metrics‑driven UX</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <h2 class="section">Let’s Connect</h2>
+      <div class="panel">
+        <p>Open to remote roles and collaborative projects. For BHG Financial: I can share tailored ideas for onboarding trust patterns, error‑proofing forms, and secure document flows.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:ivakeranova@gmail.com?subject=Inquiry%20from%20Portfolio">Email Me</a>
+          <a class="btn" href="https://www.linkedin.com/in/iva-keranova/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          <a class="btn" href="https://keranovai.com/index3" target="_blank" rel="noreferrer noopener">See More Work</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <p>© 2025 Iva Keranova | <a href="mailto:iva@example.com">Contact Me</a></p>
+
+  <footer class="container" role="contentinfo">
+    <div>© <span id="year"></span> Iva Keranova</div>
+    <div class="links">
+      <a class="pill" href="#privacy">Privacy</a>
+      <a class="pill" href="#accessibility">Accessibility</a>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
