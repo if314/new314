@@ -6,33 +6,19 @@
 /* ==========================================================================
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
-/*:root {
+:root {
     --body-bg: #0E0E0E;
     --body-color: #8C8C8C;
     --primary: #252424;
     --primary-600: #A6A6A6;
     --heading: #FFFFFF;
     --muted: #8C8C8C;
-    --title: #F2F2F2;
+    --title: #8C8C8C;
     --surface: #1A1A1A;
     --grey-100: #2A2A2A;
     --green-100: #3A3A3A;
     --shadow: rgba(0, 0, 0, 0.7);
-*/
 
-:root {
-  --body-bg: #121212;        /* very dark nearly black */
-  --body-color: #E0E0E0;     /* light gray text */
-  --primary: #BEBEBE;         /* soft neutral accent */
-  --primary-600: #9C9C9C;     /* darker neutral for hover/active */
-  --heading: #FFFFFF;         /* pure white for headings */
-  --muted: #757575;           /* medium gray for secondary text */
-  --title: #BEBEBE;            /* a light tone for titles */
-  --surface: #1E1E1E;          /* surface/card background slightly lighter than bg */
-  --grey-100: #2C2C2C;         /* subtle layer/differentiation grey */
-  --green-100: #3A3A3A;        /* repurposed as a neutral mid tone */
-  --shadow: rgba(0, 0, 0, 0.8); /* deeper, more opaque shadow */
-}
 
 
 /* ==========================================================================
