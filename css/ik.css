@@ -28,7 +28,10 @@ html, body {
   background-color: var(--body-bg);
   color: var(--body-color);
 }
-
+.asplogo{
+  background: #fff;
+    padding: 0.5em;
+}
 body {
   /* Bootstrap handles typography; keep base clean */
 }
