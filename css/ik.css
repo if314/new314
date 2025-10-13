@@ -7,10 +7,10 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
-  --body-bg: #FCFCFC;
-  --body-color: #060606;
+  --body-bg: #060606;
+  --body-color: #FCFCFC;
 
-  --primary: #007bff;
+  --primary: #badf9b;
   --primary-600: #0056b3; /* hover/darker */
   --heading: #4da3ff;
 
