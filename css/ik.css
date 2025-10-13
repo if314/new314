@@ -1,267 +1,304 @@
+/* ==========================================================================
+   IK Portfolio — Bootstrap Additions & Overrides
+   Place this file AFTER Bootstrap to ensure overrides take effect.
+   ========================================================================== */
+
+/* ==========================================================================
+   1) THEME TOKENS (edit these to rebrand quickly)
+   ========================================================================== */
+:root {
+  --body-bg: #FCFCFC;
+  --body-color: #060606;
+
+  --primary: #007bff;
+  --primary-600: #0056b3; /* hover/darker */
+  --heading: #4da3ff;
+
+  --muted: #999999;
+  --title: #40372C;
+
+  --surface: #f0f3f7;     /* light section bg */
+  --grey-100: #e7e8e9;    /* light grey background/border */
+  --green-100: #badf9b;   /* accent bg (soft green) */
+  --shadow: #999999;      /* generic shadow tint */
+}
+
+/* ==========================================================================
+   2) BASE ELEMENTS
+   ========================================================================== */
+html, body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
 
 body {
-  color: #060606;
-  background-color: #FCFCFC	;
-}
-.fit{
-width:100%;
-}
-
-.bg-primary {
-  background-color: #007bff!important;
-}
-
-.text-primary {
-  color: #060606!important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #4da3ff	 ;
+  /* Bootstrap handles typography; keep base clean */
 }
 
 a {
-  color: #007bff;
-  transition: all 0.4s ease-in-out;
+  color: var(--primary);
+  transition: color 0.4s ease-in-out;
+  text-decoration: none;
 }
-a:hover, a:focus, a:active {
-  color: #0056b3;
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--primary-600);
+  text-decoration: underline;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+}
+
+/* Improve focus visibility without harsh outlines */
 #sideNav .navbar-toggler:focus {
-outline-style: none;
-outline-color: invert;
-}
-.social-icons a {
-  background-color: #007bff;
-  transition: all 0.9 ease-in-out;
-
+  outline: 2px dotted var(--primary);
+  outline-offset: 2px;
 }
 
+/* ==========================================================================
+   3) BOOTSTRAP OVERRIDES
+   ========================================================================== */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--body-color) !important; /* matches your original intention */
+}
+
+/* Optional: keep buttons aligned with your primary palette */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-600);
+  border-color: var(--primary-600);
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 1);
+  border-color: var(--primary);
+}
+
+/* Subtle hover easing on side nav links */
+.navbar-dark .navbar-nav .nav-link:hover {
+  transition: background-color 0.2s ease-out;
+}
+
+/* ==========================================================================
+   4) TYPOGRAPHY & TEXT UTILITIES
+   ========================================================================== */
+p.lead {
+  color: var(--title);
+}
+
+.title {
+  color: var(--title);
+}
 
 .back {
   font-weight: 900;
   letter-spacing: 0.1rem;
   color: #000;
 }
-.social-icons a:hover {
-  background-color: #0056b3;
-}
-p.lead {
-  color: #40372C
-}
 
-
-.title{
-color:#40372C;
-}
-.ml30{
-  margin-left: 30px;
-}
-.prototypeweb {
-display: block;
-margin-left: auto;
-margin-right: auto;
-/* border: 8px solid #000; */
-border-radius: 3px;
-box-shadow: 2px 2px 15px #999;
-}
-#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-}
-
-ul.oneoff li:first-child {
-  list-style-type: none;
-}
-.fit-25{
-width: 25%;
-}
-
-.fit-45{
-  width: 40%;
-  
-}
-.fit-65{
-width: 65%;
-}
-.center{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
-}
 .value {
   text-rendering: optimizeLegibility;
   font-style: italic;
   letter-spacing: 0.5rem;
   color: orange;
 }
-.valueaofl{
-text-rendering: optimizeLegibility;
+
+.valueaofl {
+  text-rendering: optimizeLegibility;
   font-style: italic;
   text-transform: capitalize;
-  color:#40372C;
+  color: var(--title);
 }
 
-section.value-section {
-  min-height: 10vh;
-  padding-top: 3rem!important;
-  padding-bottom: 3rem!important;
-}
-ul.ennav {
-  list-style-type: none;
-}
-.problem{
-font-style: italic;
-font-size: 20px;
-color: #007bff;
+.problem {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--primary);
 }
 
-blockquote{
+blockquote {
   font-style: italic;
   font-size: 12px;
-  color: #999;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--grey-100);
 }
 
-.flows{
-background-color: rgb(231, 232, 233);
+.note {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 90%;
+  opacity: 0.5;
+}
+
+.readmore {
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   5) LAYOUT & SPACING UTILITIES
+   ========================================================================== */
+.fit { width: 100%; }
+.fit-25 { width: 25%; }
+.fit-45 { width: 45%; } /* corrected to match class name */
+.fit-65 { width: 65%; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.ml30 { margin-left: 30px; }
+.mr-3 { margin: 0 3rem 0 0; }
+.mb-10 { margin-bottom: 6rem !important; }
+
+.space { margin-top: 1rem; margin-bottom: 1rem; }
+
+.radius { border-radius: 15px; }
+
+ul.nodot,
+ul.oneoff { list-style-type: none; padding-left: 0; }
+ul.oneoff li:first-child { list-style-type: none; }
+ul.ennav { list-style-type: none; padding-left: 0; }
+
+/* ==========================================================================
+   6) COMPONENTS
+   ========================================================================== */
+/* Side Nav Items */
+#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+/* Social Icons */
+.social-icons a {
+  background-color: var(--primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.9s ease-in-out;
+}
+.social-icons a:hover {
+  background-color: var(--primary-600);
+  color: #fff;
+}
+
+/* Prototype Web (image/frame look) */
+.prototypeweb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  box-shadow: 2px 2px 15px var(--shadow);
+}
+
+/* Role tag */
+.role { color: var(--primary); }
+
+/* Credits */
+.credits { color: #C2C2C2; }
+
+/* Section backgrounds */
+.overview { background-color: var(--surface); }
+
+/* Flows blocks */
+.flows {
+  background-color: var(--grey-100);
   padding: 1rem;
   margin: 1rem;
 }
-.flows p{
-margin: auto;
-width: 80%;
-/* border: 3px solid green; */
-/* padding: 10px; */
-text-align: center;
-}
-.green{
-/* background-color: #7cc242;*/
-background-color: #badf9b;
-opacity: 0.9;
-padding: 5px;
-margin: 0rem 0rem 0.4rem 0rem;
+.flows p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
 }
 
-.grey{
-  background-color: rgb(231, 232, 233);
-  border:2px solid rgb(231, 232, 233);
+.green {
+  background-color: var(--green-100);
+  opacity: 0.9;
+  padding: 5px;
+  margin: 0 0 0.4rem 0;
+}
+
+.grey {
+  background-color: var(--grey-100);
+  border: 2px solid var(--grey-100);
   padding: 10px;
 }
-.outline{
-border: 1px solid rgb(231, 232, 233);
-padding: 8px;
 
+.outline {
+  border: 1px solid var(--grey-100);
+  padding: 8px;
 }
 
 .outline-video {
-border:1px solid #ed5f2d;
-background-color: #ed5f2d;
-padding: 8px;
-}
-.space{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  border: 1px solid #ed5f2d;
+  background-color: #ed5f2d;
+  color: #fff;
+  padding: 8px;
 }
 
-ol {
-  font-weight:bolder;
-
+/* Value section spacing */
+section.value-section {
+  min-height: 10vh;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
-ol li p {
-  font-weight: normal;
-
+/* Buttons in custom video/card area */
+button {
+  border: 0;
+  background: var(--primary);
+  display: inline;
+  color: #fff;
+  padding: 0.5rem;
+  transition: all 0.25s ease-out;
+  width: 100%;
 }
-.radius{
-  border-radius: 15px;
-}
-.role{
-  color: #007bff;
-}
-
-.credits{
-color:#C2C2C2		;
-}
-
-.txtw{
-color:#fff;
-}
-ul.nodot {
-list-style-type:none;
+button:hover {
+  cursor: pointer;
+  opacity: 0.85;
 }
 
-.mb-10 {
-margin-bottom: 6rem!important;
+/* Labels in custom video/card area */
+label { text-align: center; }
+
+/* ==========================================================================
+   7) MEDIA QUERIES
+   ========================================================================== */
+.nomobile { display: none; }
+
+.navbar-toggler-icon { float: right; }
+
+@media (min-width: 992px) {
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0 solid rgba(255, 255, 255, 0.2);
+  }
 }
 
-.note{
-font-style: italic;
-color:#999;
-font-size: 90%;
-opacity: .5;
-}
-
-
-.navbar-dark .navbar-nav .nav-link:hover { 
--webkit-transition: background-color 2s ease-out;
--moz-transition: background-color 2s ease-out;
--o-transition: background-color 2s ease-out;
-transition: background-color 2s ease-out;
-
-}
-.overview{
-background-color: #f0f3f7;
-}
-.navbar-dark .navbar-toggler {
-color: rgba(255,255,255,1);
-border-color:#007bff;
-}
-
-/* tranzitions menu 
-
-.navbar-dark .navbar-nav .nav-link:hover { 
-background-color: rgba(0, 86, 179, .5);
-margin: 0 3rem;
-border-radius: 20px;
-}
-
-.navbar-dark .navbar-nav .nav-link.active{
-background-color: rgba(0, 86, 179, .5);
-margin: 0 3rem;
-padding: 0.5rem;
-border-radius: 20px;
-}
-
-
-mobile
-
-navbar-dark .navbar-nav .nav-link.active {
-  background-color: rgba(0, 86, 179, .5);
-  margin: 0px 14rem 0px 0px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  border-radius: 20px;}
-*/
-.mr-3{
-margin: 0rem 3rem 0rem 0rem;
-}
-.nomobile{
-display: none;
-}
-
-.navbar-toggler-icon {
-
-float: right;
-}
-@media (min-width: 992px){
-#sideNav .navbar-brand .img-profile {
-  max-width: 10rem;
-  max-height: 10rem;
-  border: 0rem solid rgba(255,255,255,.2);
-}
-}
-
-/* video */
+/* ==========================================================================
+   8) VIDEO & FIGURE PRESENTATION
+   ========================================================================== */
 figure {
   box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -274,17 +311,11 @@ figure {
   height: auto;
 }
 
-
-
-#video {
-  display: block;
-  width: 100%;
-}
+#video,
 #video2 {
   display: block;
   width: 100%;
 }
-
 
 figcaption {
   align-items: center;
@@ -292,73 +323,47 @@ figcaption {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 50px auto min(115px);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-button {
-  border: 0;
-  background: #007bff;
-  display: inline;
-  color: white;
-  order: 1;
-  padding: .5rem;
-  transition: all .25s ease-out;
-  width: 100%;
-}
-button:hover {
-  cursor: pointer;
-  opacity: .8;
-  page-break-after: 5px;
-}
-
-label {
-  order: 2;
-  text-align: center;
-}
-
-/* Fallback stuff */
+/* Progress element styling (fallbacks + vendor) */
 progress[value] {
   appearance: none;
   border: none;
   border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .25) inset;
   color: dodgerblue;
   display: inline;
   height: 15px;
-  order: 1;
   position: relative;
   width: 100%;
 }
 
-/* WebKit styles */
 progress[value]::-webkit-progress-bar {
-  background-color: whiteSmoke;
+  background-color: whitesmoke;
   border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .25) inset;
 }
 
 progress[value]::-webkit-progress-value {
-  background-image: linear-gradient(
-    to right,
-    #f1f1f1, #666666
-  );
+  background-image: linear-gradient(to right, #f1f1f1, #666666);
   border-radius: 3px;
-  position: relative;
   transition: width 1s linear;
 }
 
-/* Firefox styles */
 progress[value]::-moz-progress-bar {
-  background-image: -moz-linear-gradient(
-    to right,
-    #f1f1f1, #666666
-  );
+  background-image: linear-gradient(to right, #f1f1f1, #666666);
   border-radius: 3px;
-  position: relative;
   transition: width 1s linear;
 }
-.readmore{
-  color:#999;
+
+/* ==========================================================================
+   9) ACCESSIBILITY & MOTION PREFERENCES
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
-
-
