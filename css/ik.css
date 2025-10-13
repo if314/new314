@@ -7,9 +7,9 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
-  --body-bg: #0E0E0E;          /* Pure dark background */
-  --body-color: #E6E6E6;       /* Soft light gray text */
-  --primary: #BFBFBF;          /* Neutral accent gray */
+  --body-bg: #0E0E0E;
+    --body-color: #8C8C8C;
+    --primary: #1b1a1a;
   --primary-600: #A6A6A6;      /* Slightly darker accent */
   --heading: #FFFFFF;          /* White headings */
   --muted: #8C8C8C;            /* Muted gray for secondary text */
