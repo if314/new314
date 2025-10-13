@@ -7,20 +7,17 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
-  --body-bg: #060606;
-  --body-color: #FCFCFC;
-
-  --primary: #badf9b;
-  --primary-600: #6b8158; /* hover/darker */
-  --heading: #c5f99a;
-
-  --muted: #999999;
-  --title: #40372C;
-
-  --surface: #f0f3f7;     /* light section bg */
-  --grey-100: #e7e8e9;    /* light grey background/border */
-  --green-100: #badf9b;   /* accent bg (soft green) */
-  --shadow: #999999;      /* generic shadow tint */
+ --body-bg: #0f1115;
+    --body-color: #e6e6e6;
+    --primary: #4da3ff;
+    --primary-600: #1e6bd6;
+    --heading: #eaeaea;
+    --muted: #9aa3ad;
+    --title: #efe9e3;
+    --surface: #141821;
+    --grey-100: #1f2430;
+    --green-100: #244b33;
+    --shadow: rgba(0,0,0,.6);
 }
 
 /* ==========================================================================
