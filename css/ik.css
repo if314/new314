@@ -7,18 +7,19 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
- --body-bg: #0f1115;
-    --body-color: #e6e6e6;
-    --primary: #4da3ff;
-    --primary-600: #1e6bd6;
-    --heading: #eaeaea;
-    --muted: #9aa3ad;
-    --title: #efe9e3;
-    --surface: #141821;
-    --grey-100: #1f2430;
-    --green-100: #244b33;
-    --shadow: rgba(0,0,0,.6);
+  --body-bg: #F8F9FA;        /* Light neutral gray background */
+  --body-color: #1C1C1C;     /* Deep charcoal text */
+  --primary: #007BFF;        /* Cool blue accent */
+  --primary-600: #0056b3;    /* Darker blue for hover or active states */
+  --heading: #1C1C1C;        /* Matching dark heading tone */
+  --muted: #6C757D;          /* Medium gray for secondary text */
+  --title: #212529;          /* Slightly darker for titles */
+  --surface: #FFFFFF;        /* White for cards and surfaces */
+  --grey-100: #E9ECEF;       /* Light gray background element */
+  --green-100: #CED4DA;      /* Muted gray-green substitute */
+  --shadow: rgba(0, 0, 0, 0.1); /* Soft subtle shadow */
 }
+
 
 /* ==========================================================================
    2) BASE ELEMENTS
