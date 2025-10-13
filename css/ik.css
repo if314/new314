@@ -7,18 +7,19 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
-  --body-bg: #0F1115;         /* Deep slate black */
-  --body-color: #E6E6E6;      /* Light gray text */
-  --primary: #4DA3FF;         /* Cool blue accent */
-  --primary-600: #1E6BD6;     /* Richer blue for hover/active */
-  --heading: #FFFFFF;         /* White headings for clarity */
-  --muted: #9AA3AD;           /* Subtle muted gray */
-  --title: #EAEAEA;           /* Softer white for titles */
-  --surface: #141821;         /* Card/section background */
-  --grey-100: #1F2430;        /* Slightly lighter dark tone for layering */
-  --green-100: #244B33;       /* Deep natural accent if needed */
-  --shadow: rgba(0, 0, 0, 0.6); /* Soft shadow depth */
+  --body-bg: #0E0E0E;          /* Pure dark background */
+  --body-color: #E6E6E6;       /* Soft light gray text */
+  --primary: #BFBFBF;          /* Neutral accent gray */
+  --primary-600: #A6A6A6;      /* Slightly darker accent */
+  --heading: #FFFFFF;          /* White headings */
+  --muted: #8C8C8C;            /* Muted gray for secondary text */
+  --title: #F2F2F2;            /* Light neutral for titles */
+  --surface: #1A1A1A;          /* Elevated surface or card background */
+  --grey-100: #2A2A2A;         /* Subtle section contrast */
+  --green-100: #3A3A3A;        /* Repurposed neutral mid-gray tone */
+  --shadow: rgba(0, 0, 0, 0.7); /* Deep soft shadow */
 }
+
 
 /* ==========================================================================
    2) BASE ELEMENTS
