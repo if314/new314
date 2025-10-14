@@ -8,20 +8,17 @@
    ========================================================================== */
 :root {
   --body-bg: #0E0E0E;
-  --body-color: #8C8C8C;
-  --primary: #f1c217;
-  --side: #003840;
-  --primary-600: #ba9611;
+  --body-color: #A6A6A6;
+  --primary: #FFFFFF;       /* main accent: white */
+  --side: #1A1A1A;
+  --primary-600: #CCCCCC;   /* lighter accent */
   --heading: #E6E6E6;
   --muted: #8C8C8C;
-  --title: #8C8C8C;
+  --title: #B3B3B3;
   --surface: #1A1A1A;
   --grey-100: #2A2A2A;
   --green-100: #3A3A3A;
   --shadow: rgba(0, 0, 0, 0.7);
-
-
-
 
   /* Fonts */
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
