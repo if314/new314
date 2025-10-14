@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==========================================================================
    3) BOOTSTRAP OVERRIDES
-   ========================================================================== */
+
 .bg-primary { background-color: var(--side) !important; }
 .text-primary { color: var(--body-color) !important; }
 
@@ -91,7 +91,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-dark .navbar-nav .nav-link:hover {
   transition: background-color 0.2s ease-out;
 }
+   ========================================================================== */
 
+
+   
 /* ==========================================================================
    4) TYPOGRAPHY & TEXT UTILITIES
    ========================================================================== */
@@ -121,7 +124,8 @@ p.lead { color: var(--title); }
   text-rendering: optimizeLegibility;
   font-style: italic;
   letter-spacing: 0.5rem;
-  color: orange;
+font-family: var(--font-mono);
+font-size: small;
 }
 
 .valueaofl {
