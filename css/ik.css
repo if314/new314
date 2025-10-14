@@ -127,12 +127,6 @@ font-family: var(--font-mono);
 font-size: small;
 }
 
-.valueaofl {
-  text-rendering: optimizeLegibility;
-  font-style: italic;
-  text-transform: capitalize;
-  color: var(--title);
-}
 
 .problem {
   font-style: italic;
