@@ -9,7 +9,7 @@
 :root {
     --body-bg: #0E0E0E;
     --body-color: #8C8C8C;
-    --primary: #aa880c;
+    --primary: #585856;
     --side: #352a04;
     --primary-600: #A6A6A6;
     --heading: #FFFFFF;
@@ -32,9 +32,6 @@ html, body {
 .asplogo{
   background: #8C8C8C;
     padding: 0.5em;
-}
-body {
-  /* Bootstrap handles typography; keep base clean */
 }
 
 a {
