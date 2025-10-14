@@ -10,15 +10,16 @@
   --body-bg: #0E0E0E;
   --body-color: #E6E6E6;
   --primary: #f1c217;
-  --side: #0F1115;
+  --side: #003840;
   --primary-600: #ba9611;
   --heading: #E6E6E6;
   --muted: #8C8C8C;
-  --title: #E6E6E6;
+  --title: #8C8C8C;
   --surface: #1A1A1A;
   --grey-100: #2A2A2A;
   --green-100: #3A3A3A;
   --shadow: rgba(0, 0, 0, 0.7);
+
 
 
 
@@ -113,6 +114,8 @@ blockquote,
   font-family: var(--font-mono);
 }
 
+p.lead { color: var(--title); }
+.title { color: var(--title); }
 
 .back {
   font-weight: 900;
