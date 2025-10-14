@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==========================================================================
    4) TYPOGRAPHY & TEXT UTILITIES
+   ========================================================================== */
 p.lead,
 .title,
 .value,
@@ -121,8 +122,6 @@ p.lead { color: var(--title); }
 
 .value {
   text-rendering: optimizeLegibility;
-  font-style: italic;
-  letter-spacing: 0.5rem;
 font-family: var(--font-mono);
 font-size: small;
 }
@@ -151,7 +150,6 @@ blockquote {
 
 .note { font-style: italic; color: var(--muted); font-size: 90%; opacity: 0.5; }
 .readmore { color: var(--muted); }
-   ========================================================================== */
 
 /* ==========================================================================
    5) LAYOUT & SPACING UTILITIES
