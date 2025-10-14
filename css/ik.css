@@ -7,20 +7,23 @@
    1) THEME TOKENS (edit these to rebrand quickly)
    ========================================================================== */
 :root {
-    --body-bg: #0E0E0E;
-    --body-color: #8C8C8C;
-    --primary: #f1c217;
-    --side: #352a04;
-    --primary-600: #A6A6A6;
-    --heading: #FFFFFF;
-    --muted: #8C8C8C;
-    --title: #8C8C8C;
-    --surface: #1A1A1A;
-    --grey-100: #2A2A2A;
-    --green-100: #3A3A3A;
-    --shadow: rgba(0, 0, 0, 0.7);
-}
+  --body-bg: #0E0E0E;
+  --body-color: #8C8C8C;
+  --primary: #f1c217;
+  --side: #352a04;
+  --primary-600: #A6A6A6;
+  --heading: #FFFFFF;
+  --muted: #8C8C8C;
+  --title: #8C8C8C;
+  --surface: #1A1A1A;
+  --grey-100: #2A2A2A;
+  --green-100: #3A3A3A;
+  --shadow: rgba(0, 0, 0, 0.7);
 
+  /* Fonts */
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
+               Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
 /* ==========================================================================
    2) BASE ELEMENTS
@@ -28,19 +31,20 @@
 html, body {
   background-color: var(--body-bg);
   color: var(--body-color);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .asplogo{
   background:  var(--body-color);
-    padding: 0.5em;
+  padding: 0.5em;
 }
-
 
 a {
   color: var(--primary);
   transition: color 0.4s ease-in-out;
   text-decoration: none;
 }
-
 a:hover,
 a:focus,
 a:active {
@@ -50,6 +54,9 @@ a:active {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 /* Improve focus visibility without harsh outlines */
@@ -61,19 +68,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    3) BOOTSTRAP OVERRIDES
    ========================================================================== */
-.bg-primary {
-  background-color: var(--side) !important;
-}
+.bg-primary { background-color: var(--side) !important; }
+.text-primary { color: var(--body-color) !important; }
 
-.text-primary {
-  color: var(--body-color) !important; /* matches your original intention */
-}
-
-/* Optional: keep buttons aligned with your primary palette */
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
   color: var(--title);
+  font-family: var(--font-mono);
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -86,8 +88,6 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 1);
   border-color: var(--primary);
 }
-
-/* Subtle hover easing on side nav links */
 .navbar-dark .navbar-nav .nav-link:hover {
   transition: background-color 0.2s ease-out;
 }
@@ -95,13 +95,21 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    4) TYPOGRAPHY & TEXT UTILITIES
    ========================================================================== */
-p.lead {
-  color: var(--title);
+p.lead,
+.title,
+.value,
+.valueaofl,
+.problem,
+blockquote,
+.note,
+.readmore,
+.role,
+.credits {
+  font-family: var(--font-mono);
 }
 
-.title {
-  color: var(--title);
-}
+p.lead { color: var(--title); }
+.title { color: var(--title); }
 
 .back {
   font-weight: 900;
@@ -138,23 +146,15 @@ blockquote {
   border-left: 3px solid var(--grey-100);
 }
 
-.note {
-  font-style: italic;
-  color: var(--muted);
-  font-size: 90%;
-  opacity: 0.5;
-}
-
-.readmore {
-  color: var(--muted);
-}
+.note { font-style: italic; color: var(--muted); font-size: 90%; opacity: 0.5; }
+.readmore { color: var(--muted); }
 
 /* ==========================================================================
    5) LAYOUT & SPACING UTILITIES
    ========================================================================== */
 .fit { width: 100%; }
 .fit-25 { width: 25%; }
-.fit-45 { width: 45%; } /* corrected to match class name */
+.fit-45 { width: 45%; }
 .fit-65 { width: 65%; }
 
 .center {
@@ -169,25 +169,21 @@ blockquote {
 .mb-10 { margin-bottom: 6rem !important; }
 
 .space { margin-top: 1rem; margin-bottom: 1rem; }
-
 .radius { border-radius: 15px; }
 
-ul.nodot,
-ul.oneoff { list-style-type: none; padding-left: 0; }
+ul.nodot, ul.oneoff, ul.ennav { list-style-type: none; padding-left: 0; }
 ul.oneoff li:first-child { list-style-type: none; }
-ul.ennav { list-style-type: none; padding-left: 0; }
 
 /* ==========================================================================
    6) COMPONENTS
    ========================================================================== */
-/* Side Nav Items */
 #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
   display: block;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  font-family: var(--font-mono);
 }
 
-/* Social Icons */
 .social-icons a {
   background-color: var(--primary);
   color: #fff;
@@ -201,7 +197,6 @@ ul.ennav { list-style-type: none; padding-left: 0; }
   color: #fff;
 }
 
-/* Prototype Web (image/frame look) */
 .prototypeweb {
   display: block;
   margin-left: auto;
@@ -210,16 +205,10 @@ ul.ennav { list-style-type: none; padding-left: 0; }
   box-shadow: 2px 2px 15px var(--shadow);
 }
 
-/* Role tag */
 .role { color: var(--primary); }
-
-/* Credits */
 .credits { color: #C2C2C2; }
-
-/* Section backgrounds */
 .overview { background-color: var(--surface); }
 
-/* Flows blocks */
 .flows {
   background-color: var(--grey-100);
   padding: 1rem;
@@ -237,18 +226,12 @@ ul.ennav { list-style-type: none; padding-left: 0; }
   padding: 5px;
   margin: 0 0 0.4rem 0;
 }
-
 .grey {
   background-color: var(--grey-100);
   border: 2px solid var(--grey-100);
   padding: 10px;
 }
-
-.outline {
-  border: 1px solid var(--grey-100);
-  padding: 8px;
-}
-
+.outline { border: 1px solid var(--grey-100); padding: 8px; }
 .outline-video {
   border: 1px solid #ed5f2d;
   background-color: #ed5f2d;
@@ -256,14 +239,12 @@ ul.ennav { list-style-type: none; padding-left: 0; }
   padding: 8px;
 }
 
-/* Value section spacing */
 section.value-section {
   min-height: 10vh;
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
 
-/* Buttons in custom video/card area */
 button {
   border: 0;
   background: var(--primary);
@@ -272,20 +253,16 @@ button {
   padding: 0.5rem;
   transition: all 0.25s ease-out;
   width: 100%;
+  font-family: var(--font-mono);
 }
-button:hover {
-  cursor: pointer;
-  opacity: 0.85;
-}
+button:hover { cursor: pointer; opacity: 0.85; }
 
-/* Labels in custom video/card area */
 label { text-align: center; }
 
 /* ==========================================================================
    7) MEDIA QUERIES
    ========================================================================== */
 .nomobile { display: none; }
-
 .navbar-toggler-icon { float: right; }
 
 @media (min-width: 992px) {
@@ -311,11 +288,7 @@ figure {
   height: auto;
 }
 
-#video,
-#video2 {
-  display: block;
-  width: 100%;
-}
+#video, #video2 { display: block; width: 100%; }
 
 figcaption {
   align-items: center;
@@ -326,7 +299,7 @@ figcaption {
   padding: 0.5rem;
 }
 
-/* Progress element styling (fallbacks + vendor) */
+/* Progress element styling */
 progress[value] {
   appearance: none;
   border: none;
@@ -338,19 +311,12 @@ progress[value] {
   position: relative;
   width: 100%;
 }
-
 progress[value]::-webkit-progress-bar {
   background-color: whitesmoke;
   border-radius: 3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .25) inset;
 }
-
-progress[value]::-webkit-progress-value {
-  background-image: linear-gradient(to right, #f1f1f1, #666666);
-  border-radius: 3px;
-  transition: width 1s linear;
-}
-
+progress[value]::-webkit-progress-value,
 progress[value]::-moz-progress-bar {
   background-image: linear-gradient(to right, #f1f1f1, #666666);
   border-radius: 3px;
