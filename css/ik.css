@@ -128,12 +128,6 @@ font-size: small;
 }
 
 
-.problem {
-  font-style: italic;
-  font-size: 20px;
-  color: var(--primary);
-}
-
 blockquote {
   font-style: italic;
   font-size: 12px;
@@ -142,9 +136,6 @@ blockquote {
   padding-left: 0.75rem;
   border-left: 3px solid var(--grey-100);
 }
-
-.note { font-style: italic; color: var(--muted); font-size: 90%; opacity: 0.5; }
-.readmore { color: var(--muted); }
 
 /* ==========================================================================
    5) LAYOUT & SPACING UTILITIES
