@@ -8,7 +8,7 @@
    ========================================================================== */
 :root {
   --body-bg: #0E0E0E;
-  --body-color: #8C8C8C;
+  --body-color: #E6E6E6;
   --primary: #f1c217;
   --side: #0F1115;
   --primary-600: #ba9611;
@@ -114,7 +114,6 @@ blockquote,
 }
 
 
-
 .back {
   font-weight: 900;
   letter-spacing: 0.1rem;
@@ -127,6 +126,18 @@ font-family: var(--font-mono);
 font-size: small;
 }
 
+.valueaofl {
+  text-rendering: optimizeLegibility;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--title);
+}
+
+.problem {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--primary);
+}
 
 blockquote {
   font-style: italic;
@@ -136,6 +147,9 @@ blockquote {
   padding-left: 0.75rem;
   border-left: 3px solid var(--grey-100);
 }
+
+.note { font-style: italic; color: var(--muted); font-size: 90%; opacity: 0.5; }
+.readmore { color: var(--muted); }
 
 /* ==========================================================================
    5) LAYOUT & SPACING UTILITIES
