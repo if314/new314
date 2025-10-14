@@ -66,7 +66,7 @@
 
     footer{ border-top:1px solid var(--rule); margin-top:48px; padding-top:14px; color:var(--muted); font-size:14px; }
 .one-line-bullets {
-  color: #f1c217;
+    color: var(--text) !important;
   font-size: 0.95rem;
   font-style: italic;
 }
