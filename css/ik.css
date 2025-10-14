@@ -9,7 +9,7 @@
 :root {
     --body-bg: #0E0E0E;
     --body-color: #8C8C8C;
-    --primary: #585856;
+    --primary: #f1c217;
     --side: #352a04;
     --primary-600: #A6A6A6;
     --heading: #FFFFFF;
@@ -30,9 +30,10 @@ html, body {
   color: var(--body-color);
 }
 .asplogo{
-  background: #8C8C8C;
+  background:  var(--body-color);
     padding: 0.5em;
 }
+
 
 a {
   color: var(--primary);
