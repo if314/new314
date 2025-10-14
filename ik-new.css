@@ -68,6 +68,7 @@
 .one-line-bullets {
   color: #f1c217;
   font-size: 0.95rem;
+  font-style: italic;
 }
 
 .one-line-bullets span {
