@@ -34,16 +34,16 @@ html,
 body {
   height: 100%
 }
-
+ /*
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font: 400 16px/1.7 var(--font-mono); 
-  font-family: var(--font-mono);
+ /* font-family: var(--font-mono);*/
 }
 
-/*
+
 body {
   margin: 0;
   background: var(--bg);
@@ -52,7 +52,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-  */
+  
   
 
 a {
