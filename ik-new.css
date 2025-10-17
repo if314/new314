@@ -65,10 +65,7 @@ a:hover {
   color: var(--link-hover);
 }
 
-.wrap {
-  width: min(720px, 92vw);
-  /*margin: 48px auto 120px;*/
-}
+
 
 h1 {
   font-weight: 800;
@@ -241,6 +238,11 @@ footer {
   padding: 0 0.6rem;
   font-weight: 500;
   text-shadow: 0 0 6px rgba(241, 194, 23, 0.6);
+}
+
+.wrap {
+  width: min(720px, 92vw);
+  /*margin: 48px auto 120px;*/
 }
 
 @media (max-width:520px) {
