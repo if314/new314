@@ -67,7 +67,7 @@ a:hover {
 
 .wrap {
   width: min(720px, 92vw);
-  margin: 48px auto 120px;
+  /*margin: 48px auto 120px;*/
 }
 
 h1 {
