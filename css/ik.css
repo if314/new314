@@ -325,6 +325,12 @@ progress[value]::-moz-progress-bar {
   transition: width 1s linear;
 }
 
+/* iva */
+.wrap {
+  width: min(720px, 92vw);
+  margin: 48px auto 120px;
+}
+
 /* ==========================================================================
    9) ACCESSIBILITY & MOTION PREFERENCES
    ========================================================================== */
