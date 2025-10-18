@@ -117,7 +117,7 @@
 
             </ol>
           </div>
-         
+
         </div>
 
       </section>
@@ -143,13 +143,39 @@
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                   <div class="row h-100 ">
                     <div class="col-md">
-                      <div class="col-sm">
-                      <img class="fit" src="img/aspirion/Network map 1.png"></div>
-                      <div class="col-sm"><img class="fit p-3" src="img/aspirion/Problem map.png"></div>
-                    </div>
-                    <div class="col-md">
-                      <div class="col-sm">
-                      <img class="fit" src="img/aspirion/Process Map.png"></div>
+                      <div class="col-sm p-3">
+                       <!-- Network Map -->
+<img
+  src="img/aspirion/Network%20map%201.png"
+  data-full="img/aspirion/Network%20map%201.png"
+  alt="Network map"
+  class="img-fluid fit-45 img-thumbnail"
+  loading="lazy"
+  data-toggle="modal" data-target="#imagePreviewModal"
+/>
+
+<!-- Problem Map -->
+<img
+  src="img/aspirion/Problemmap.png"
+  data-full="img/aspirion/Problemmap.png"
+  alt="Problem map"
+  class="img-fluid fit-45 img-thumbnail"
+  loading="lazy"
+  data-toggle="modal" data-target="#imagePreviewModal"
+/>
+</div>
+<div class="col-sm">
+<!-- Process Map -->
+<img
+  src="img/aspirion/Process%20Map.png"
+  data-full="img/aspirion/Process%20Map.png"
+  alt="Process map"
+  class="img-fluid fit-45 img-thumbnail"
+  loading="lazy"
+  data-toggle="modal" data-target="#imagePreviewModal"
+/>
+
+
                     </div>
                   </div>
                 </div>
@@ -203,48 +229,38 @@
           <h2 class="mb-5 title">The Redesign</h2>
           <h3 class="mb-5">Prioritization matrix</h3>
           <div class="mb-5">
-            <p>We initiated the meeting with stakeholders by reviewing the maps and summarizing our collective
-              learnings. Through co-creation and co-design discussions, we generated ideas to leverage redesigning the
-              system. We identified that we could achieve this by updating the structure, processes, infrastructure,
-              talent, or through incentives.</p>
+            <p>We met with stakeholders to review the maps and share insights. Through co-design discussions, we
+              identified opportunities to improve the system by updating structure, processes, infrastructure, talent,
+              and incentives.</p>
             <div class="col-sm">
               <img class="fit mb-5" src="img/aspirion/Prioritization matrix.png" alt="prioritizing matrix">
 
             </div>
 
-            <h3 class="mb-5">Focusing our efforts</h3>
-            <p class="mb-5">The user is already familiar with in-app onboarding and training techniques from other
-              applications. I can leverage some of those techniques to enhance the training experience.
+            <h3 class="mb-5">Next steps</h3>
+
+            <p class="mb-5">Given users’ familiarity with in-app onboarding from other platforms, we proposed enhancing
+              our
+              application with similar techniques. This concept was categorized as medium effort with high potential
+              impact.
+              <br>
+              The team then evaluated two paths forward: integrating a third-party onboarding tool or developing a
+              custom in-house solution.
             </p>
-            <p class="mb-5">Given the user's expertise in in-app onboarding and training, we propose updating our app
-              with techniques from related industries. This initiative represents a medium effort with a potentially
-              high impact. Current discussions within the team involve choosing between integrating an external app for
-              onboarding or developing in-house tooltips and similar features manually.
-
-
-            </p>
-
-
             <h3 class="mb-5">Identify a Potential Prototype</h3>
             <p>
-              We pinpointed a potential prototype: incorporating in-app guides and onboarding using metrics as our
-              basis. Given users' familiarity with in-app onboarding from other apps, I can utilize similar techniques
-              to enrich the experience.
+              We tested several onboarding tools, including Chameleon and Pendo. Chameleon supported our early needs,
+              but
+              after the acquisition and a larger budget, we moved to Pendo for its stronger analytics.
             </p>
 
             <div class="col-sm">
               <img class="fit" src="img/aspirion/Chameleon.png" alt="chamelion prototype">
-
             </div>
           </div>
-
-
-
         </div>
       </section>
-
       <hr class="m-0">
-
       <section style="max-width: 75rem;" class=" p-3 p-lg-5 d-flex align-items-center" id="navnav">
         <div class="w-100">
           <h2 class="mb-5 title">Prototype Testing</h2>
@@ -252,33 +268,78 @@
           <div class="mb-5">
             <p>When prototyping, the goal is not only to validate the idea but also to confirm how it fits within the
               system and to plan the next steps strategically.</p>
-
-
             <h3 class="mb-5">Reflection</h3>
             <p class="mb-5"> The findings indicate that implementing in-app onboarding and guides improves outcomes and
               enhances user confidence in their job. Additionally, discrepancies in vocabulary across teams highlight
               the importance of standardizing terminology for clearer communication.
             </p>
-
           </div>
-
-
-
         </div>
       </section>
       <hr class="m-0">
 
     </div>
   </main>
+
+ <!-- Image Preview Modal (Bootstrap 4) -->
+<div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="imagePreviewLabel">Preview</h5>
+        <!-- BS4 close button -->
+        <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img id="imagePreviewSrc" src="" alt="Preview" class="img-fluid" style="max-height:85vh;width:auto;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<script>
+  (function () {
+    var modalEl = document.getElementById('imagePreviewModal');
+    var imgEl   = document.getElementById('imagePreviewSrc');
+    var titleEl = document.getElementById('imagePreviewLabel');
+
+    // When the modal is about to show, read the triggering element
+    $('#imagePreviewModal').on('show.bs.modal', function (ev) {
+      var trigger = ev.relatedTarget; // the element that had data-toggle="modal"
+      if (!trigger) return;
+
+      var full = trigger.getAttribute('data-full') || trigger.getAttribute('src');
+      var alt  = trigger.getAttribute('alt') || 'Preview';
+
+      imgEl.src = full;
+      imgEl.alt = alt;
+      titleEl.textContent = alt;
+    });
+  })();
+</script>
+
+
+
+
+
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+ 
 
 
 </body>
