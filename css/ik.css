@@ -334,6 +334,9 @@ progress[value]::-moz-progress-bar {
 .close{
   color:var(--heading)
 }
+.close:hover {
+  color:var(--primary)
+}
 /* ==========================================================================
    9) ACCESSIBILITY & MOTION PREFERENCES
    ========================================================================== */
