@@ -337,6 +337,11 @@ progress[value]::-moz-progress-bar {
 .close:hover {
   color:var(--primary)
 }
+
+.img-thumbnail {
+    padding: 0;
+    border: 0px;
+}
 /* ==========================================================================
    9) ACCESSIBILITY & MOTION PREFERENCES
    ========================================================================== */
