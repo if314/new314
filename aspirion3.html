@@ -1,290 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- (Note) Universal Analytics (UA) is deprecated; consider GA4 when you can. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156261535-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-156261535-2');
   </script>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aspirion Compass training & onboarding redesign case study">
   <meta name="author" content="">
 
-  <title>Asparion</title>
+  <title>Aspirion — Training & Onboarding</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
 
-
+  <style>
+    .fit { width: 100%; height: auto; }
+    .fit-45 { max-width: 45%; height: auto; }
+    .img-profile { border-radius: 0 !important; }
+  </style>
 </head>
 
 <body id="page-top">
   <main class="wrap">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class=" mb-3 nav-link js-scroll-trigger" href="index.html#projects"> <i class="fas fa-arrow-left"></i>BACK</a>
-          </li>
-
-        </ul>
-
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/aspirionw.png" alt="aspirion logo">
-        </span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
+      <!-- Brand -->
+      <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+        <img class="img-fluid img-profile mx-auto mb-2" src="img/aspirionw.png" alt="Aspirion logo">
       </a>
+
+      <!-- Back link (separate, avoids nested anchors) -->
+      <ul class="navbar-nav mr-auto d-none d-lg-flex">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="index.html#projects">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Back to Projects</span> BACK
+          </a>
+        </li>
+      </ul>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        <span class="d-block d-lg-none">Aspirion</span>
-
+        <span class="d-block d-lg-none ml-2">Aspirion</span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#user">Visualize the System</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#discovery">Humanize the System</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#navnav"> The Redesign</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#testing">Prototype & Test</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#con">Conclusion</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#future">Reflect on the future</a>
-          </li>-->
-
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visualize">Visualize the System</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#humanize">Humanize the System</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#redesign">The Redesign</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prototype">Prototype &amp; Test</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid p-0">
-      <section class="resume-section p-lg-5 p-lg-6 d-flex align-items-center" id="overview">
+      <!-- Overview -->
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
-                                  <h2>Training and onboarding</h2>
+          <h2>Training and Onboarding</h2>
 
-           <div class="col-sm">
-          <h3 class="mb-3">
-            <span class="text-primary">Context</span>
-          </h3>
-          <p class="mb-5">
-            Aspirion is a healthcare revenue cycle company that helps healthcare providers recover complex and denied
-            claims. Associates rely on Aspiron's Compass platform to do this work, but the training and onboarding
-            system created confusion and slowed proficiency. I led a redesign that turned training into an empowering
-            experience through stakeholder co-creation and systems
-          </p>
-          <div class="mb-5">
-            <div class="subheading mb-3">Process</div>
-            <ol>
-              <li>
-                <p><b>Visualize the current traninig system</b>
-                  Mapped the existing training system to uncover root causes.</p>
-              </li>
-              <li>
-                <p><b>Humanaize the System</b>
-                  Engaged stakeholders through interviews and co-design sessions to identify leverage points and align
-                  goals.
-                </p>
-              </li>
-              <li>
-                <p><b>Redesign the system</b>
-                  Prototyped and tested redesigned solutions</p>
-              </li>
+          <div class="col-sm px-0">
+            <h3 class="mb-3"><span class="text-primary">Context</span></h3>
+            <p class="mb-5">
+              Aspirion is a healthcare revenue cycle company that helps providers recover complex and denied claims.
+              Associates rely on <strong>Compass</strong> to do this work, but the training and onboarding system
+              created confusion and slowed proficiency. I led a redesign that turned training into an empowering
+              experience through stakeholder co-creation and systems thinking.
+            </p>
 
-            </ol>
+            <div class="mb-5">
+              <div class="subheading mb-3">Process</div>
+              <ol>
+                <li>
+                  <p><strong>Visualize the current training system:</strong> Mapped the existing training ecosystem to uncover root causes.</p>
+                </li>
+                <li>
+                  <p><strong>Humanize the system:</strong> Engaged stakeholders through interviews and co-design sessions to identify leverage points and align goals.</p>
+                </li>
+                <li>
+                  <p><strong>Redesign the system:</strong> Prototyped and tested redesigned solutions.</p>
+                </li>
+              </ol>
+            </div>
           </div>
-</div>
         </div>
-
       </section>
 
       <hr class="m-0">
 
-      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="user">
+      <!-- Visualize -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="visualize">
         <div class="w-100">
           <h2 class="mb-5 title">Visualize the System</h2>
-
           <div class="mb-5">
-
-
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="row h-100 ">
-
+              <div class="row h-100 w-100">
                 <div class="col-sm">
-                  <p class="mb-3">We visualize the system by creating network, process, and problem maps. Allowing
-                    us to understand complex connections and stakeholder relationships, analyze processes from various
-                    perspectives, and address root causes rather than symptoms..</p>
-
+                  <p class="mb-3">
+                    We visualized the system with network, process, and problem maps to understand complex
+                    relationships, analyze workflows from multiple perspectives, and address root causes rather than symptoms.
+                  </p>
                 </div>
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="row h-100 ">
-                    <div class="col-md">
-                      <div class="col-sm p-3">
-                        <!-- Network Map -->
-                        <img src="img/aspirion/networkmap1.png" data-full="img/aspirion/networkmap2.png"
-                          alt="Network map" class="img-fluid fit-45 img-thumbnail" loading="lazy" data-toggle="modal"
-                          data-target="#imagePreviewModal" />
-
-                        <!-- Problem Map -->
-                        <img src="img/aspirion/Problemmap.png" data-full="img/aspirion/Problemmap.png" alt="Problem map"
-                          class="img-fluid fit-45 img-thumbnail" loading="lazy" data-toggle="modal"
-                          data-target="#imagePreviewModal" />
-                      </div>
-                      <div class="col-sm">
-                        <!-- Process Map -->
-                        <img src="img/aspirion/Processmap.png" data-full="img/aspirion/Processmap.png"
-                          alt="Process map" class="img-fluid fit-45 img-thumbnail" loading="lazy" data-toggle="modal"
-                          data-target="#imagePreviewModal" />
-
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-      </section>
-      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="discovery">
-        <div class="w-100">
-          <h2 class="mb-5 title">Humanize the System</h2>
-
-          <div class="mb-5">
-
-            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="row h-100 ">
 
                 <div class="col-md">
-                  <p class=" mb-3">
-                    User interviews revealed deep mistrust in the training system. New hires viewed it as outdated,
-                    unreliable, and inconsistent. Most relied on personal networks over official resources. By mapping
-                    these behaviors, we reframed the challenge.
-
-                    <br>
-
-
-                  <div class="col-sm">
-                    <img src="img/aspirion/networkmap2.png" data-full="img/aspirion/networkmap2.png"
-                      alt="Network map" class="img-fluid fit img-thumbnail" loading="lazy" data-toggle="modal"
-                      data-target="#imagePreviewModal" />
-                    <blockquote>Updated Network Map after furder conversations</blockquote>
+                  <div class="p-3">
+                    <!-- Network Map -->
+                    <img src="img/aspirion/networkmap1.png" data-full="img/aspirion/networkmap2.png"
+                         alt="Network map" class="img-fluid fit-45 img-thumbnail mr-2 mb-2" loading="lazy"
+                         data-toggle="modal" data-target="#imagePreviewModal">
+                    <!-- Problem Map -->
+                    <img src="img/aspirion/Problemmap.png" data-full="img/aspirion/Problemmap.png"
+                         alt="Problem map" class="img-fluid fit-45 img-thumbnail mb-2" loading="lazy"
+                         data-toggle="modal" data-target="#imagePreviewModal">
                   </div>
-
-
+                  <div class="p-3 pt-0">
+                    <!-- Process Map -->
+                    <img src="img/aspirion/Processmap.png" data-full="img/aspirion/Processmap.png"
+                         alt="Process map" class="img-fluid fit-45 img-thumbnail" loading="lazy"
+                         data-toggle="modal" data-target="#imagePreviewModal">
+                  </div>
                 </div>
-
-
-
-
 
               </div>
             </div>
           </div>
         </div>
-
       </section>
+
+      <!-- Humanize -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="humanize">
+        <div class="w-100">
+          <h2 class="mb-5 title">Humanize the System</h2>
+          <div class="mb-5">
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="row h-100 w-100">
+                <div class="col-md">
+                  <p class="mb-3">
+
+User interviews revealed deep mistrust in the training system. New hires viewed it as outdated, unreliable, and inconsistent. Most relied on personal networks over official resources. By mapping these behaviors, we reframed the challenge.
+
+
+
+                  </p>
+
+                  <div class="col-sm px-0">
+                    <img src="img/aspirion/networkmap2.png" data-full="img/aspirion/networkmap2.png"
+                         alt="Updated Network Map" class="img-fluid fit img-thumbnail" loading="lazy"
+                         data-toggle="modal" data-target="#imagePreviewModal">
+                    <blockquote class="mt-2">Updated Network Map after further conversations</blockquote>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <hr class="m-0">
 
-      <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="navnav">
+      <!-- Redesign -->
+      <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="redesign">
         <div class="w-100">
           <h2 class="mb-5 title">The Redesign</h2>
-          <h3 class="mb-5">Prioritization matrix</h3>
-          <div class="mb-5">
-            <p>We met with stakeholders to review the maps and share insights. Through co-design discussions, we
-              identified opportunities to improve the system by updating structure, processes, infrastructure, talent,
-              and incentives.</p>
-         
-                  <div class="col-sm">
-                    <img src="img/aspirion/Prioritizationmatrix.png" data-full="img/aspirion/Prioritizationmatrix.png"
-                      alt="Network map" class="img-fluid fit img-thumbnail" loading="lazy" data-toggle="modal"
-                      data-target="#imagePreviewModal" />
-                    <blockquote>Prioritazion Matrix</blockquote>
-                  </div>
-            <h3 class="mb-5">Next steps</h3>
 
-            <p class="mb-5">Given users’ familiarity with in-app onboarding from other platforms, we proposed enhancing
-              our
-              application with similar techniques. This concept was categorized as medium effort with high potential
-              impact.
-              <br>
-              The team then evaluated two paths forward: integrating a third-party onboarding tool or developing a
-              custom in-house solution.
-            </p>
-            <h3 class="mb-5">Identify a Potential Prototype</h3>
-            <p>
-              We tested several onboarding tools, including Chameleon and Pendo. Chameleon supported our early needs,
-              but
-              after the acquisition and a larger budget, we moved to Pendo for its stronger analytics.
-            </p>
+          <h3 class="mb-4">Prioritization Matrix</h3>
+          <p>
+            We met with stakeholders to review the maps and share insights. Through co-design sessions, we identified opportunities across structure, processes, infrastructure, talent, and incentives.
+          </p>
 
-            <div class="col-sm">
-              <img class="fit" src="img/aspirion/Chameleon.png" alt="chamelion prototype">
-            </div>
+          <div class="col-sm px-0 mb-5">
+            <img src="img/aspirion/Prioritizationmatrix.png" data-full="img/aspirion/Prioritizationmatrix.png"
+                 alt="Prioritization Matrix" class="img-fluid fit img-thumbnail" loading="lazy"
+                 data-toggle="modal" data-target="#imagePreviewModal">
+            <blockquote class="mt-2">Prioritization Matrix</blockquote>
+          </div>
 
- 
+          <h3 class="mb-4">Next Steps</h3>
+          <p class="mb-5">
+            Given users’ familiarity with in-app onboarding elsewhere, we proposed enhancing the application with similar
+            techniques—rated medium effort with high potential impact. We evaluated integrating a third-party tool versus
+            building a custom in-house solution.
+          </p>
 
+          <h3 class="mb-4">Identify a Potential Prototype</h3>
+          <p>
+            We tested several onboarding tools, including Chameleon and Pendo. Chameleon supported early needs. After
+            acquisition and a larger budget, we moved to Pendo for stronger analytics.
+          </p>
 
+          <div class="col-sm px-0">
+            <img class="fit img-thumbnail" src="img/aspirion/Chameleon.png" alt="Chameleon prototype">
           </div>
         </div>
       </section>
+
       <hr class="m-0">
-      <section style="max-width: 75rem;" class=" p-3 p-lg-5 d-flex align-items-center" id="navnav">
+
+      <!-- Prototype & Test -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex align-items-center" id="prototype">
         <div class="w-100">
-          <h2 class="mb-5 title">Prototype Testing</h2>
-          <h3 class="mb-5">Objectives</h3>
-          <div class="mb-5">
-            <p>When prototyping, the goal is not only to validate the idea but also to confirm how it fits within the
-              system and to plan the next steps strategically.</p>
-            <h3 class="mb-5">Reflection</h3>
-            <p class="mb-5"> The findings indicate that implementing in-app onboarding and guides improves outcomes and
-              enhances user confidence in their job. Additionally, discrepancies in vocabulary across teams highlight
-              the importance of standardizing terminology for clearer communication.
-            </p>
-          </div>
+          <h2 class="mb-5 title">Prototype &amp; Testing</h2>
+
+          <h3 class="mb-4">Objectives</h3>
+          <p>
+            When prototyping, the goal is not only to validate the idea but also to confirm how it fits within the system
+            and plan next steps strategically.
+          </p>
+
+          <h3 class="mb-4">Reflection</h3>
+          <p class="mb-0">
+            Findings indicate that in-app onboarding and guides improve outcomes and user confidence. We also observed
+            vocabulary discrepancies across teams, highlighting the need to standardize terminology for clearer
+            communication.
+          </p>
         </div>
       </section>
+
       <hr class="m-0">
 
+      <!-- Conclusion anchor (optional content later) -->
+      <section id="conclusion" class="d-none" aria-hidden="true"></section>
     </div>
   </main>
 
   <!-- Image Preview Modal (Bootstrap 4) -->
-  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content bg-dark text-white">
         <div class="modal-header border-0">
           <h5 class="modal-title" id="imagePreviewLabel">Preview</h5>
-          <!-- BS4 close button -->
           <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -296,49 +261,35 @@
     </div>
   </div>
 
-
-
-  <!-- Bootstrap core JavaScript -->
+  <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/resume.min.js"></script>
 
-
-
-
+  <!-- Modal image + focus management -->
   <script>
     (function () {
-      var modalEl = document.getElementById('imagePreviewModal');
-      var imgEl = document.getElementById('imagePreviewSrc');
-      var titleEl = document.getElementById('imagePreviewLabel');
+      var lastTrigger = null;
 
-      // When the modal is about to show, read the triggering element
-      $('#imagePreviewModal').on('show.bs.modal', function (ev) {
-        var trigger = ev.relatedTarget; // the element that had data-toggle="modal"
-        if (!trigger) return;
+      // Update modal image/label when any trigger opens it
+      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function () {
+        lastTrigger = this;
+        var full = this.getAttribute('data-full') || this.getAttribute('src') || '';
+        var alt  = this.getAttribute('alt') || 'Preview';
+        $('#imagePreviewSrc').attr({ src: full, alt: alt });
+        $('#imagePreviewLabel').text(alt);
+      });
 
-        var full = trigger.getAttribute('data-full') || trigger.getAttribute('src');
-        var alt = trigger.getAttribute('alt') || 'Preview';
+      // Focus modal when shown
+      $('#imagePreviewModal').on('shown.bs.modal', function () { $(this).trigger('focus'); });
 
-        imgEl.src = full;
-        imgEl.alt = alt;
-        titleEl.textContent = alt;
+      // Clear image and return focus to trigger on hide (prevents aria-hidden focus issues)
+      $('#imagePreviewModal').on('hidden.bs.modal', function () {
+        $('#imagePreviewSrc').attr('src', '');
+        if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
       });
     })();
   </script>
-
-
-
-
-
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
-
-
 </body>
-
 </html>
