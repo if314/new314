@@ -41,41 +41,40 @@
 <body id="page-top">
   <main class="wrap">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
-      <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+  <!-- Brand -->
+   
+  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
 
-      <!-- Back link (separate from brand; no nested anchors) -->
+     <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
+  <div class="back-link d-lg-block mb-2">
+    <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      <span class="sr-only">Back to Projects</span> BACK
+    </a>
+  </div>
 
-    <ul class="navbar-nav mr-auto d-none d-lg-flex">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#projects">
-            <i class="fas fa-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Back to Projects</span> BACK
-          </a>
-        </li>
-      </ul>
-      <!-- Brand/logo -->
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 fit-45"
-             src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg"
-             alt="ADP logo">
-      </a>
+    <img class="img-fluid img-profile mx-auto mb-2 fit-45" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg" alt="Aspirion logo">
+  </a>
 
-  
+ 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="d-block d-lg-none ml-2">ADP</span>
-      </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    <span class="d-block d-lg-none ml-2">Aspirion</span>
+  </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#user">The Challenge</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#discovery">Breakthrough</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visualize">The Challenge</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#humanize">Breakthrough</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prototype">Impact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
     <div class="container-fluid p-0">
       <!-- Overview -->

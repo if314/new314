@@ -327,6 +327,11 @@ progress[value]::-moz-progress-bar {
 }
 
 /* iva */
+
+
+.text-white {
+    color: var(--muted) !important;
+}
 .wrap {
   width: min(720px, 92vw);
   /*margin: 48px auto 120px;*/
