@@ -170,14 +170,14 @@ I led the redesign of Aspirion’s Compass note feature to make workflows faster
 
             <!-- Network Map -->
                     <img src="img/aspirion/mapnote.png" data-full="img/aspirion/mapnote.png"
-                         alt="Network map" class="img-fluid fit-45 img-thumbnail mr-2 mb-2" loading="lazy"
+                         alt="Network map" class="img-fluid fit img-thumbnail mr-2 mb-2" loading="lazy"
                          data-toggle="modal" data-target="#imagePreviewModal">
 
             </div>
         <div class="col-sm">
 
 <img src="img/aspirion/persona.png" data-full="img/aspirion/persona.png"
-                         alt="Network map" class="img-fluid fit-45 img-thumbnail mr-2 mb-2" loading="lazy"
+                         alt="Network map" class="img-fluid fit img-thumbnail mr-2 mb-2" loading="lazy"
                          data-toggle="modal" data-target="#imagePreviewModal">
 
          </div>
@@ -439,10 +439,30 @@ We measured the impact of the redesigned note feature using key performance indi
   <script src="js/resume.min.js"></script>
 
 
-  <script type="text/javascript" src="js/Untitled-1.js"></script>
-  <script type="text/javascript" src="js/video.js"></script>
 
+  <script>
+    (function () {
+      var lastTrigger = null;
 
+      // Update modal image/label when any trigger opens it
+      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function () {
+        lastTrigger = this;
+        var full = this.getAttribute('data-full') || this.getAttribute('src') || '';
+        var alt  = this.getAttribute('alt') || 'Preview';
+        $('#imagePreviewSrc').attr({ src: full, alt: alt });
+        $('#imagePreviewLabel').text(alt);
+      });
+
+      // Focus modal when shown
+      $('#imagePreviewModal').on('shown.bs.modal', function () { $(this).trigger('focus'); });
+
+      // Clear image and return focus to trigger on hide (prevents aria-hidden focus issues)
+      $('#imagePreviewModal').on('hidden.bs.modal', function () {
+        $('#imagePreviewSrc').attr('src', '');
+        if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
+      });
+    })();
+  </script>
 </body>
 
 </html>
