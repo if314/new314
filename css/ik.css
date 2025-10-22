@@ -327,7 +327,28 @@ progress[value]::-moz-progress-bar {
 }
 
 /* iva */
+.custom-list {
+    list-style: none;
+    padding-left: 1.5rem;
+  }
 
+  .custom-list li {
+    position: relative;
+    margin-bottom: 1.25rem; /* adds space between items */
+    line-height: 1.6;
+  }
+
+ .custom-list li::before {
+  content: "•";
+  position: absolute;
+  left: -1.2rem;
+  color: var(--blue); /* change this color to match your theme */
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.custom-list b {
+    color: var(--blue);
+  }
 
 .text-white {
     color: var(--muted) !important;
