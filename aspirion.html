@@ -36,64 +36,55 @@
 
 <body id="page-top">
 
+<main class="wrap">
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
+  <!-- Brand -->
+   
+  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#projects">  <i class="fas fa-arrow-left"></i>BACK</a>
-        </li>
-
-      </ul>
-    
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/aspirionw.png" alt="aspirion">
-      </span>
+     <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
+  <div class="back-link d-lg-block mb-2">
+    <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
+      <i class="fas fa-arrow-left" aria-hidden="true"></i>
+      <span class="sr-only">Back to Projects</span> BACK
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      <span class="d-block d-lg-none">Aspirion</span>
+  </div>
 
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-     
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#user">Research</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#discovery">KPIs</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#navnav"> The Redesign</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#testing"> Usability Testing</a>
-          </li>
-         <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#style">Design Decisions</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#abtesting">Prototype</a>
-        </li>-->
-      </ul>
-    </div>
-  </nav>
+    <img class="img-fluid img-profile mx-auto mb-2" src="img/aspirionw.png" alt="Aspirion logo">
+  </a>
 
-  <div class="container-fluid p-0">
-<div class="overview">
-    <section class="resume-section p-4 p-lg-6 d-flex align-items-center" id="overview">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    <span class="d-block d-lg-none ml-2">Aspirion</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#discovery">Discovery</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#redo">The Redesign</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#test">Testing</a></li>
+
+
+    </ul>
+  </div>
+</nav>
+
+ 
+    <div class="container-fluid p-0">
+      <!-- OVERVIEW -->
+      <section class="resume-section p-4 p-lg-5 d-flex align-items-center" id="overview">
       <div class="w-100">
         <h3 class="mb-3">
           <span class="text-primary ">Aspirion</span>
         </h3>
-        <p class="lead mb-5">
-          
-In my role as the lead designer for Aspirion's Compass internal application, I spearheaded a thorough redesign of the note feature to streamline user workflows and improve efficiency. Compass, a RCM
-system with record-keeping capabilities, posed a challenge due to its inefficient note-taking functionality, leading to considerable time consumption and decreased productivity.
+        <p class="mb-5">
+    In my role as the lead designer for Aspirion's Compass internal application, I spearheaded a thorough redesign of the note feature to streamline user workflows and improve efficiency. Compass, a RCM
+      system with record-keeping capabilities, posed a challenge due to its inefficient note-taking functionality, leading to considerable time consumption and decreased productivity.
         </p>
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
@@ -106,12 +97,6 @@ system with record-keeping capabilities, posed a challenge due to its inefficien
               </p>
               
             </div>
-            <!--<div class="resume-date ml30">
-              <span class="text-primary"> <div class="subheading mb-3">Goal</div><p>
-
-                To be the go-to source that tradeshow goers of every experience level, budget and show rely on to complete their printed fabric display</p></span>
-            </div>-->
-           
           </div>
 
           <div class="mb-5">
@@ -132,28 +117,14 @@ system with record-keeping capabilities, posed a challenge due to its inefficien
   
               
             </ol>
+</div>         
 </div>
-<div class="mb-5">
-  <div class="subheading mb-3">My Role</div>
-  <p>
-    User Research <br>
-User Interviews <br>
-Journey Mapping <br>
-Sketching <br>
-Wireframing <br>
-Screen Flows <br>
-Visual Design <br>
-Interaction Design
-  </p> <p> Timeline: 16 Weeks</p>
-</div>
-         
-
       </div>
-    </section></div>
+    </section>
 
     <hr class="m-0">
 
-    <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="user">
+    <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="research">
       <div class="w-100">
         <h2 class="mb-5 title">Research</h2>
 
@@ -301,7 +272,7 @@ Interaction Design
     </section>
     <hr class="m-0">
    
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="navnav">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="redo">
       <div class="w-100">
         <h2 class="mb-5 title">The Redesign</h2>
         <p class="mb-5">The user will be able to find the information faster and leave a note with fewer clicks. Getting away form infinite scroll and loading a number of notes at a time will spead the system and improve load times.</p>
@@ -393,7 +364,7 @@ Interaction Design
       </div>
     </section>
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="testing">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="test">
       <div class="w-100">
         <h2 class="mb-5 title">Usability Testing</h2>
         <div class="mb-5">
@@ -464,9 +435,9 @@ Interaction Design
     </section>
 
     <hr class="m-0">
-
+</div>
   </div>
-
+ </main>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
