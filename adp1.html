@@ -15,7 +15,7 @@
   <meta name="description" content="ADP — Manager Review & Approve Payroll case study">
   <meta name="author" content="">
 
-  <title>ADP — Manager Review & Approve Payroll</title>
+  <title>ADP — Termination wokrflow redesign / Final Payment</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +31,21 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
 
+ 
   <style>
-    .rounded-circle { border-radius: 0% !important; }
-    .fit-45 { max-width: 45%; height: auto; } /* ensure this exists somewhere */
-    .fit { width: 100%; height: auto; }
+    .fit {
+      width: 100%;
+      height: auto;
+    }
+
+    .fit-45 {
+      max-width: 45%;
+      height: auto;
+    }
+
+    .img-profile {
+      border-radius: 0 !important;
+    }
   </style>
 </head>
 
@@ -82,7 +93,7 @@
       <!-- Overview -->
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
-          <h2>Manager Review and Approval Workflow</h2>
+         <h2>Manager Review and Approval Workflow</h2>
 
           <p class="mb-5">
             Designed ADP’s secure payroll approval workflow for managers, replacing unsafe manual practices
@@ -101,6 +112,7 @@
                   a critical client requirement—securing their commitment.</p>
               </li>
             </ol>
+          </div>
           </div>
         </div>
       </section>
@@ -140,8 +152,7 @@
                     unlocking momentum toward a viable solution.
                   </p>
 
-                  <div class="row h-100">
-                    <div class="col-sm">
+                  <div class="col-sm px-0">
                       <img
                         src="img/adp/Section4.png"
                         data-full="img/adp/Section4.png"
@@ -149,11 +160,10 @@
                         class="img-fluid fit img-thumbnail"
                         loading="lazy"
                         data-toggle="modal"
-                        data-target="#imagePreviewModal"
-                      >
+                        data-target="#imagePreviewModal">
                       <blockquote class="mt-2">Prioritization Matrix</blockquote>
                     </div>
-                  </div>
+                 
 
                 </div> <!-- /.col-md -->
               </div> <!-- /.row -->
@@ -168,7 +178,7 @@
       <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="impact">
         <div class="w-100">
           <h2 class="mb-5 title">Impact</h2>
-          <div class="mb-5">
+         <div class="col-sm px-0 mb-5">
             <p>
               Launched as ADP’s Manager Review &amp; Approve Payroll feature. The solution proved successful enough
               for ADP to commercialize it as a premium offering.
@@ -178,12 +188,12 @@
       </section>
 
       <!-- Conclusion (optional anchor target) -->
-      <section id="conclusion" class="d-none" aria-hidden="true"></section>
     </div>
   </main>
 
   <!-- Image Preview Modal (Bootstrap 4) -->
-  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" aria-hidden="true">
+  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" 
+  aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content bg-dark text-white">
         <div class="modal-header border-0">
