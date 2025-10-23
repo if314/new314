@@ -31,10 +31,21 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
 
+ 
   <style>
-    .rounded-circle { border-radius: 0% !important; }
-    .fit-45 { max-width: 45%; height: auto; } /* ensure this exists somewhere */
-    .fit { width: 100%; height: auto; }
+    .fit {
+      width: 100%;
+      height: auto;
+    }
+
+    .fit-45 {
+      max-width: 45%;
+      height: auto;
+    }
+
+    .img-profile {
+      border-radius: 0 !important;
+    }
   </style>
 </head>
 
@@ -83,9 +94,10 @@
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
           <h2>Termination wokrflow redesign / Final Payment</h2>
-
+         
+          <div class="col-sm px-0">
           <p class="mb-5">
-Users struggled with the termination process, especially around final payments. The interface caused confusion, next steps were unclear, and visibility into payment triggers was limited.
+            Users struggled with the termination process, especially around final payments. The interface caused confusion, next steps were unclear, and visibility into payment triggers was limited.
           </p>
 
           <div class="mb-5">
@@ -99,6 +111,7 @@ Users struggled with the termination process, especially around final payments. 
                   a critical client requirement—securing their commitment.</p>
               </li>
             </ol>
+          </div>
           </div>
         </div>
       </section>
@@ -138,8 +151,7 @@ Users struggled with the termination process, especially around final payments. 
                     unlocking momentum toward a viable solution.
                   </p>
 
-                  <div class="row h-100">
-                    <div class="col-sm">
+                  <div class="col-sm px-0">
                       <img
                         src="img/adp/Section4.png"
                         data-full="img/adp/Section4.png"
@@ -147,11 +159,10 @@ Users struggled with the termination process, especially around final payments. 
                         class="img-fluid fit img-thumbnail"
                         loading="lazy"
                         data-toggle="modal"
-                        data-target="#imagePreviewModal"
-                      >
+                        data-target="#imagePreviewModal">
                       <blockquote class="mt-2">Prioritization Matrix</blockquote>
                     </div>
-                  </div>
+                 
 
                 </div> <!-- /.col-md -->
               </div> <!-- /.row -->
@@ -166,7 +177,7 @@ Users struggled with the termination process, especially around final payments. 
       <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="impact">
         <div class="w-100">
           <h2 class="mb-5 title">Impact</h2>
-          <div class="mb-5">
+         <div class="col-sm px-0 mb-5">
             <p>
               Launched as ADP’s Manager Review &amp; Approve Payroll feature. The solution proved successful enough
               for ADP to commercialize it as a premium offering.
@@ -176,12 +187,12 @@ Users struggled with the termination process, especially around final payments. 
       </section>
 
       <!-- Conclusion (optional anchor target) -->
-      <section id="conclusion" class="d-none" aria-hidden="true"></section>
     </div>
   </main>
 
   <!-- Image Preview Modal (Bootstrap 4) -->
-  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" aria-hidden="true">
+  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" 
+  aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content bg-dark text-white">
         <div class="modal-header border-0">
