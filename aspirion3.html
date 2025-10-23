@@ -40,40 +40,63 @@
 
 <body id="page-top">
   <main class="wrap">
-   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
-  <!-- Brand -->
-   
-  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+  <!-- NAV - Aspirion Style (Fixed and Valid) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
 
-     <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
-  <div class="back-link d-lg-block mb-2">
+  <!-- Back link (kept outside brand to avoid nested anchors) -->
+  <div class="back-link d-none d-lg-block mb-2">
     <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
       <i class="fas fa-arrow-left" aria-hidden="true"></i>
       <span class="sr-only">Back to Projects</span> BACK
     </a>
   </div>
 
-    <img class="img-fluid img-profile mx-auto mb-2" src="img/aspirionw.png" alt="Aspirion logo">
+  <!-- Brand/logo -->
+  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+    <span class="d-none d-lg-block">
+      <img
+        class="img-fluid img-profile mx-auto mb-2"
+        src="img/aspirionw.png"
+        alt="Aspirion logo">
+    </span>
+    <span class="d-block d-lg-none">Aspirion</span>
   </a>
 
- 
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Toggler with mobile label -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     <span class="d-block d-lg-none ml-2">Aspirion</span>
   </button>
 
+  <!-- Navigation links -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visualize">Visualize the System</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#humanize">Humanize the System</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#redesign">The Redesign</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prototype">Prototype &amp; Test</a></li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#visualize">Visualize the System</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#humanize">Humanize the System</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#redesign">The Redesign</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="#prototype">Prototype &amp; Test</a>
+      </li>
     </ul>
   </div>
 </nav>
+
 
 
 

@@ -38,41 +38,46 @@
 
 <main class="wrap">
    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
-  <!-- Brand -->
-   
-  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+  <!-- NAV 1 — Aspirion Case Study -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
 
-     <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
-  <div class="back-link d-lg-block mb-2">
+  <!-- Back link (no nested anchors) -->
+  <div class="back-link d-none d-lg-block mb-2">
     <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
       <i class="fas fa-arrow-left" aria-hidden="true"></i>
       <span class="sr-only">Back to Projects</span> BACK
     </a>
   </div>
 
-    <img class="img-fluid img-profile mx-auto mb-2" src="img/aspirionw.png" alt="Aspirion logo">
+  <!-- Brand -->
+  <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile mx-auto mb-2" src="img/aspirionw.png" alt="Aspirion logo">
+    </span>
+    <span class="d-block d-lg-none">Aspirion</span>
   </a>
 
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Toggler with mobile label -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aspirionNav"
+          aria-controls="aspirionNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     <span class="d-block d-lg-none ml-2">Aspirion</span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Navigation links -->
+  <div class="collapse navbar-collapse" id="aspirionNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#discovery">Discovery</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#redo">The Redesign</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#problem">Problem</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#redo">Redesign</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#test">Testing</a></li>
-
-
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
     </ul>
   </div>
 </nav>
+
 
  
     <div class="container-fluid p-0">
@@ -131,9 +136,9 @@ I led the redesign of Aspirion’s Compass note feature to make workflows faster
           <div class="row h-100 ">
 
        <div class="col-sm">
-            <p class="lead mb-3">The original design of the note was a pop-up module that the user would evoke at the beginning of them working the account and continuously move about interacting with the information. While conducting interviews, I noticed that the module sometimes covered needed information. 
-                The user was also using Microsoft sticky notes to copy and paste their own templates, creating a note in the module.   </p>
-               <p>Here is what some interviewers had to say:</p>
+            <p class="mb-3">
+
+Research showed that the pop-up note module blocked key information, leading users to rely on Microsoft Sticky Notes to paste their own repeated note structures for specific scenarios.<p>Here is what some interviewers had to say:</p>
               <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="row h-100 ">
 
@@ -166,7 +171,7 @@ I led the redesign of Aspirion’s Compass note feature to make workflows faster
     </div>
     <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="row h-100 ">
-        <div class="col-sm">
+        <div class="col-sm p-3">
 
             <!-- Network Map -->
                     <img src="img/aspirion/mapnote.png" data-full="img/aspirion/mapnote.png"
@@ -174,7 +179,7 @@ I led the redesign of Aspirion’s Compass note feature to make workflows faster
                          data-toggle="modal" data-target="#imagePreviewModal">
 
             </div>
-        <div class="col-sm">
+        <div class="col-sm p-3">
 
 <img src="img/aspirion/persona.png" data-full="img/aspirion/persona.png"
                          alt="Network map" class="img-fluid fit img-thumbnail mr-2 mb-2" loading="lazy"
@@ -202,8 +207,8 @@ I led the redesign of Aspirion’s Compass note feature to make workflows faster
           <div class="row h-100 ">
 
        <div class="col-md">
-            <p class="lead mb-3">
-We measured the impact of the redesigned note feature using key performance indicators focused on time, ease, and accuracy. These KPIs helped evaluate user adoption, identify improvement areas, and guide ongoing optimization based on feedback and data.</p>
+            <p class="mb-3">
+We measured the impact of the redesigned note feature using key performance indicators focused on time, ease, and accuracy. </p>
 
             <br>
               <div class="resume-item d-flex flex-column flex-md-row mb-5 radius grey" >
@@ -267,162 +272,148 @@ We measured the impact of the redesigned note feature using key performance indi
     </section>
     <hr class="m-0">
    
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="redo">
-      <div class="w-100">
-        <h2 class="mb-5 title">The Redesign</h2>
-        <p class="mb-5">The user will be able to find the information faster and leave a note with fewer clicks. Getting away form infinite scroll and loading a number of notes at a time will spead the system and improve load times.</p>
+   <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="redo">
+  <div class="w-100">
+    <h2 class="mb-5 title">The Redesign</h2>
+    <p class="mb-5">
+      The redesigned note feature allows users to find information faster and add notes with fewer clicks. 
+      Moving away from infinite scrolling and loading a limited number of notes at a time significantly 
+      improves performance and reduces load times.
+    </p>
 
-        
-        <h3 class="mb-5">Note Reading & Writing</h3>
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          
-          <div class="row h-100 ">
-           
-
-            <div class="mb-5">
-               
-            
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="row h-100 mb-5 ">
-        
-              <div class="col-sm">
-        
-                        <b>- Date at top</b>
-                    <p>Making the date more visible and moving it to the top of the note will save the analyst time in searching for the right note.</p>
-
-                    <b>- External note color</b>
-                    <p>Currently, the external note color is green. Green has the highest contrast with the background from other used colors. Iit makes sense to be reserve for buttons. </p>
-
-                    <b>- Characters/line</b>
-                    <p>Tapping the characters per line to 45 will improve legibility and readability. Easy for vertical reading.  Always showing the full lenght of the note.</p>
-
-                    <b>- Load 7 external notes</b>
-                    <p>Currantly the user will only scroll down and look at an average of four external notes. Loading only seven external note at a time with the ability to load more will speed up Compass account load time. </p>
-                    </div>
-                    
-                
-                    <div class="col-sm">
-                        <b>- Note is static</b>
-                    <p>Throu research we found out that the user moves the note a lot in order to get accesss to different content and often leaves it off screen.</p>
-
-                    <b>- Note is vertical</b>
-                    <p>To fit better different templates the note windol was redesign verticaly. </p>
-
-                    <b>- Templates</b>
-                    <p>The note window was redesign vertically to fit better different templates, </p>
-
-                  
-                    </div>
-           
-             </div>
-             </div>
-            </div>
-       
-      </div>
-</div>
-
-<h3 class="mb-5">Templates</h3>
-<div class="mb-5">
-
-
-  <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-    <div class="row h-100 mb-5 ">
-        <p>Moving from status to status, the user must complete specific known steps. So it only made sense to note templates to be attached to the bill statuses. Clicking on the bill(s) carrot opens up the note feature. Click away on the below prototype. </p>
-      
-        
+    <h3 class="mb-5">Note Reading & Writing</h3>
+    <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="row h-100 mb-5">
         <div class="col-sm">
-            <!--<iframe width="1072" height="603" src="https://xd.adobe.com/embed/4969a918-cd5e-4911-9ceb-11119177384e-1c3a/" frameborder="0" allowfullscreen></iframe>-->
-           
+          <b>Date placement</b>
+          <p>Displaying the date at the top of each note helps analysts quickly identify and locate the right note without extra searching.</p>
 
-            <div class="col-sm">
-              <video controls="controls" width="800" 
-         name="Video Name" class="fit"  src="img/aspirion/note aspirion.mov"></video>
-            
-      </div>
-            <!--<video  class="fit" src="img/aspirion/templates.mov" ></video>-->
+          <b>External note color</b>
+          <p>The external note color was originally green, which provided strong contrast but conflicted with action buttons. Adjusting the color improves hierarchy and clarity.</p>
 
+          <b>Characters per line</b>
+          <p>Limiting each line to about 45 characters enhances readability and ensures that the full note remains visible without horizontal scrolling.</p>
+
+          <b>Load seven external notes</b>
+          <p>Users typically view about four external notes at a time. Loading seven notes per batch, with an option to load more, speeds up Compass account performance and improves efficiency.</p>
         </div>
-        <div class="m">
+
+        <div class="col-sm">
+          <b>Static note position</b>
+          <p>Research showed that users frequently moved the note window to access different content and often left it off-screen. Making the note static ensures it remains visible and accessible.</p>
+
+          <b>Vertical layout</b>
+          <p>The note window was redesigned vertically to better fit various content structures and align with users’ natural reading flow.</p>
+
+          <b>Consistency across use cases</b>
+          <p>The new layout ensures consistency across different scenarios, making note writing and reviewing more predictable and efficient.</p>
         </div>
-
- </div>
- </div>
-  </div>
-
       </div>
-    </section>
-    <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="test">
-      <div class="w-100">
-        <h2 class="mb-5 title">Usability Testing</h2>
-        <div class="mb-5">
-          <h3 class="mb-0">Objectives</h3>
-          <p class="mb-5">As the designer leading the usability testing for the redesigned note feature in the Compass internal application, our objectives were clear: assess how the redesign enhanced readability, usability, 
-            and intuitiveness to improve overall user experience. We engaged 32 diverse participants, including newly hired employees and seasoned veterans, in various tasks like reviewing, creating, and applying note templates. 
-            Through moderated usability testing, we observed interactions with the redesigned feature in real time, gathering both quantitative and qualitative data. </p>
-      
+    </div>
+
+    <h3 class="mb-5">Note Templates</h3>
+    <div class="mb-5">
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="row h-100 mb-5">
+          <p>
+            As analysts move accounts from one status to another, they follow a defined sequence of steps. 
+            To streamline this process, note formats are now connected to bill statuses. 
+            Selecting a bill expands the note panel for quick access to relevant content. 
+            Explore the prototype below.
+          </p>
+
           <div class="col-sm">
-              <!-- test -->
-                    <img src="img/aspirion/testtest.png" data-full="img/aspirion/testtest.png"
-                         alt="Network map" class="img-fluid fit-45 img-thumbnail mr-2 mb-2" loading="lazy"
-                         data-toggle="modal" data-target="#imagePreviewModal">
-          
-           </div>
-  
-            </div>
-            <div class="mb-5">
-              <h3 class="mb-0">Feedback</h3>
-              <p class="mb-5">We gathered both quantitative and qualitative data during the usability testing process. This included tracking metrics such as task completion rates and time on task, as well as capturing user comments, observations, and concerns. Additionally, we conducted a post-test survey to gain further insight into user satisfaction and preferences. </p>
-            </div>
-            
-            <div class="mb-5">
-              <h3 class="mb-0">Results</h3>
-              <p class="mb-5">We conducted a comprehensive analysis by comparing success rates, heat maps, and task completion times. Additionally, affinity mapping was utilized to discern patterns and trends, providing valuable insights into the effectiveness of the redesign. </p>
-            </div>
-            
-            <div class="mb-5">
-              <h3 class="mb-0">Key Findings</h3>
-              <p class="mb-5">We conducted usability testing with diverse participants, considering their experience with Compass and 
-                varying roles within the organization. A total of 32 individuals participated in the testing sessions. This group 
-                included newly hired employees with less than six months of experience and seasoned veterans with over four years of 
-                experience using Compass. </p>
-            
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                  <div class="row h-100 ">
-                      <div class="col-sm">
-                        <p><b>1. </b>Note reading and comprehension times improved by 37%</p>
-                        <p><b>2. </b>Note completion speed time by 22%</p>
-                        <p><b>3. </b>Users appreciate the enhanced intuitiveness and functionality of the redesign. Additionally, there's recognition that certain design elements align with conventions observed in Epic's system, further validating the effectiveness of familiar interface patterns.</p>
-                        <p><b>4. </b>Frustrations with terminology discrepancies across teams underscore the importance of clarity in communication. Testing revealed confusion around specific terms, emphasizing the need for consistent language for improved user experiences.</p>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            
-            <div class="mb-5">
-              <h3 class="mb-0">Impact on Design</h3>
-              <p class="mb-5">We engaged a UX writer to address vocabulary discrepancies among our diverse teams, essential as we integrate individuals from various backgrounds and recently acquired companies. This fosters clear communication and usability by harmonizing terminology across the board.</p>
-            
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="row h-100 ">
-            
-                  </div>
-                </div>
-            </div>
-            
-            <div class="mb-5">
-              <h3 class="mb-0">Conclusion</h3>
-              <p class="mb-5">In conclusion, the note usability test in Compass underscored several key principles essential for effective product design. These include the importance of clear communication, a user-centric approach, continuous iteration, and collaborative efforts. By prioritizing user needs, harmonizing terminology, and involving cross-functional teams, we can create intuitive and user-friendly interfaces that meet user expectations and drive business success. Moving forward, we will continue to iterate on our designs, gather user feedback, and refine our processes to deliver exceptional user experiences.
-              </p>
-            
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="row h-100 ">
-            
-                  </div>
-                </div>
-            </div>
-</div>
-    </section>
+            <video controls width="800" name="Note Redesign Demo" class="fit" src="img/aspirion/note aspirion.mov"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <hr class="m-0">
+   <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="test">
+  <div class="w-100">
+    <h2 class="mb-5 title">Usability Testing</h2>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Objectives</h3>
+      <p class="mb-5">
+        As the lead designer for the Compass note feature redesign, the goal of usability testing was to assess 
+        improvements in readability, usability, and intuitiveness. We tested with 32 participants ranging from 
+        new hires to experienced analysts. Through moderated sessions, participants completed tasks like 
+        reviewing and creating notes while we collected both qualitative and quantitative data.
+      </p>
+
+      <div class="col-sm">
+        <img 
+          src="img/aspirion/testtest.png" 
+          alt="Usability testing results" 
+          class="img-fluid fit-45 img-thumbnail mr-2 mb-2" 
+          loading="lazy"
+          data-toggle="modal" 
+          data-target="#imagePreviewModal">
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Feedback</h3>
+      <p class="mb-5">
+        We gathered insights through task metrics, user comments, and post-test surveys. 
+        This approach helped us evaluate both performance and user satisfaction, capturing 
+        how easily participants navigated and applied the redesigned features.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Results</h3>
+      <p class="mb-5">
+        Comparing success rates, heat maps, and task completion times revealed strong gains in efficiency. 
+        Affinity mapping highlighted recurring patterns and provided a clear view of where the redesign 
+        improved usability.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Key Findings</h3>
+      <p class="mb-5">
+        Testing included 32 users with varying levels of Compass experience, from new employees to 
+        senior analysts. Results confirmed measurable improvements in speed, accuracy, and clarity.
+      </p>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="row h-100">
+          <div class="col-sm">
+            <p><b>1.</b> Reading and comprehension times improved by 37%.</p>
+            <p><b>2.</b> Note completion speed increased by 22%.</p>
+            <p><b>3.</b> Users found the redesign more intuitive and aligned with familiar industry patterns (e.g., Epic).</p>
+            <p><b>4.</b> Testing revealed confusion caused by inconsistent terminology, emphasizing the need for unified language.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Impact on Design</h3>
+      <p class="mb-5">
+        A UX writer was engaged to standardize language across teams, addressing inconsistencies that 
+        surfaced during testing. This alignment improved clarity and created a shared understanding 
+        among analysts from different departments and newly acquired companies.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-4">Conclusion</h3>
+      <p class="mb-5">
+        Usability testing reinforced key design principles: clear communication, a user-centered approach, 
+        and cross-functional collaboration. By continuing to iterate and gather feedback, we ensure that 
+        Compass evolves into a more intuitive and effective tool for every user.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
     <hr class="m-0">
 </div>
