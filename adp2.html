@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- (Note) Universal Analytics (UA) is deprecated; consider GA4. -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156261535-2"></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'UA-156261535-2');
+    gtag('config', 'G-XXXXXXX'); /* TODO: replace with your GA4 ID */
   </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ADP — Manager Review & Approve Payroll case study">
+  <meta name="description" content="ADP — Redesigning the Payroll Termination workflow and Final Pay for clarity, compliance, and scale.">
   <meta name="author" content="">
 
-  <title>ADP — Termination wokrflow redesign / Final Payment</title>
+  <title>ADP — Termination workflow redesign / Final Payment</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,35 +31,19 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
 
- 
   <style>
-    .fit {
-      width: 100%;
-      height: auto;
-    }
-
-    .fit-45 {
-      max-width: 45%;
-      height: auto;
-    }
-
-    .img-profile {
-      border-radius: 0 !important;
-    }
+    .fit { width: 100%; height: auto; }
+    .fit-45 { max-width: 45%; height: auto; }
+    .img-profile { border-radius: 0 !important; }
   </style>
 </head>
 
 <body id="page-top">
   <main class="wrap">
-    
-
-<!-- NAV -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
-
       <!-- Brand/logo -->
       <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
-
-        <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
         <div class="back-link d-lg-block mb-2">
           <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
             <i class="fas fa-arrow-left" aria-hidden="true"></i>
@@ -67,51 +51,50 @@
           </a>
         </div>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 fit-45"  src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg" alt="ADP logo">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 fit-45"
+               src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg"
+               alt="ADP logo">
         </span>
         <span class="d-block d-lg-none">ADP</span>
       </a>
+
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Nav links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#challenge">The Challenge</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Breakthrough">Breakthrough</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
-    </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#challenge">The Challenge</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Breakthrough">Approach</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#next-steps">Next Steps</a></li>
+        </ul>
       </div>
     </nav>
-
 
     <div class="container-fluid p-0">
       <!-- Overview -->
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
-          <h2>Termination wokrflow redesign / Final Payment</h2>
-         
-          <div class="col-sm px-0">
-          <p class="mb-5">
-            Users struggled with the termination process, especially around final payments. The interface caused confusion, next steps were unclear, and visibility into payment triggers was limited.
-          </p>
+          <h2>Termination workflow redesign / Final Payment</h2>
 
-          <div class="mb-5">
-            <div class="subheading mb-3">Process</div>
-            <ol>
-              <li>
-                <p><strong>Research & discovery:</strong> Conducted interviews to identify decision points and risk areas.</p>
-              </li>
-              <li>
-                <p><strong>Design & prototype:</strong> Collaborated with product, engineering, and compliance to address
-                  a critical client requirement—securing their commitment.</p>
-              </li>
-            </ol>
-          </div>
+          <div class="col-sm px-0">
+            <p class="mb-5">
+              We redesigned the payroll termination and final pay experience to streamline offboarding, reduce manual errors,
+              and improve legal compliance. The new design sets a clear standard for dashboard clarity and actionable notifications.
+            </p>
+
+            <div class="mb-5">
+              <div class="subheading mb-3">Process</div>
+              <ol>
+                <li><strong>Research and discovery:</strong> Direct feedback from payroll practitioners and recurring usability complaints shaped priorities.</li>
+                <li><strong>Design and prototyping:</strong> Iterative concepts reviewed with user groups and enterprise clients, then refined with product, engineering, and compliance.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </section>
@@ -122,55 +105,59 @@
       <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="challenge">
         <div class="w-100">
           <h2 class="mb-5 title">The Challenge</h2>
+
           <div class="mb-5">
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="row h-100 w-100">
                 <div class="col-sm">
                   <ul class="mb-4">
-  <li class="mb-3"><b>Lack of prioritization:</b> Termination notifications from CoreHR lack key associate details and are not prominent in the payroll dashboard, leading to delayed or missed actions.</li>
-  <li class="mb-3"><b>Manual effort and inefficiencies:</b> Payroll practitioners must manually create OCP entries and input data for each associate, resulting in excessive clicks and longer processing time.</li>
-  <li class="mb-3"><b>Unmet functional requirements:</b> The system does not support bulk termination, posing major challenges for large clients such as Boot Barn.</li>
-</ul>
-
+                    <li class="mb-3"><b>Compliance risk:</b> Immediate and accurate payout on termination is required in some regions. The old flow relied on memory and manual steps, which increased risk.</li>
+                    <li class="mb-3"><b>Poor prioritization:</b> Termination alerts were buried among routine tasks, with weak hierarchy and filtering. Critical items were easy to miss.</li>
+                    <li class="mb-3"><b>No bulk capability:</b> Mass terminations lacked bulk actions. High volume cases slowed teams and created frustration.</li>
+                    <li class="mb-3"><b>Low cross-team clarity:</b> Direct deposit and benefits changes came from other modules and were not visible in payroll, which raised uncertainty and support tickets.</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
-      <!-- Breakthrough -->
+      <!-- Approach -->
       <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="Breakthrough">
         <div class="w-100">
           <h2 class="mb-5 title">Approach</h2>
+
           <div class="mb-5">
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="row h-100 w-100">
                 <div class="col-md">
                   <ul class="mb-4">
-  <li class="mb-3"><b>Improved notification management:</b> Add termination alerts to the “Things to Do” list and payroll tasks for better visibility, with safeguards to prevent duplicate processing.</li>
-  <li class="mb-3"><b>Automated OCP creation:</b> Generate preliminary OCPs automatically from CoreHR terminations, prefilled with pay details and flexible payment options, including same-day ACH where required.</li>
-  <li class="mb-3"><b>Bulk termination support:</b> Enable OCP to handle multiple associates at once, improving efficiency for large clients.</li>
-</ul>
-
+                    <li class="mb-3"><b>Focused termination tile:</b> A dedicated dashboard tile, Termination Payments and Issues, surfaces only urgent and relevant offboarding tasks.</li>
+                    <li class="mb-3"><b>Clear alerting:</b> Immediate payout rules show as discrete, high-priority items. Teams see what must happen now and why.</li>
+                    <li class="mb-3"><b>Bulk and off-cycle support:</b> Group payouts, proration, and off-cycle payments save time and reduce repetitive data entry.</li>
+                    <li class="mb-3"><b>Transparent records:</b> A centralized view exposes end-dated payroll records and direct deposit status. Practitioners know what is complete and what is next.</li>
+                    <li class="mb-3"><b>Research anchored:</b> Decisions were grounded in interviews, usability findings, and client feedback from large enterprises.</li>
+                  </ul>
 
                   <div class="col-sm px-0">
-                      <img
-                        src="img/adp/Section4.png"
-                        data-full="img/adp/Section4.png"
-                        alt="Prioritization Matrix — current process visualization"
-                        class="img-fluid fit img-thumbnail"
-                        loading="lazy"
-                        data-toggle="modal"
-                        data-target="#imagePreviewModal">
-                      <blockquote class="mt-2">Prioritization Matrix</blockquote>
-                    </div>
-                 
+                    <img
+                      src="img/adp/Section4.png"
+                      data-full="img/adp/Section4.png"
+                      alt="Prioritization matrix for termination actions"
+                      class="img-fluid fit img-thumbnail"
+                      loading="lazy"
+                      data-toggle="modal"
+                      data-target="#imagePreviewModal">
+                    <blockquote class="mt-2">Prioritization matrix for termination actions</blockquote>
+                  </div>
 
-                </div> <!-- /.col-md -->
-              </div> <!-- /.row -->
-            </div> <!-- /.resume-item -->
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -180,12 +167,45 @@
       <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="impact">
         <div class="w-100">
           <h2 class="mb-5 title">Impact</h2>
-         <div class="col-sm px-0 mb-5">
-            <p>
-              Launched as ADP’s Manager Review &amp; Approve Payroll feature. The solution proved successful enough
-              for ADP to commercialize it as a premium offering.
+
+          <div class="row">
+            <div class="col-md mb-4">
+           
+              <ul class="mb-4">
+                <li class="mb-2">Smoother, legally sound offboarding that lowers compliance risk and support escalations.</li>
+                <li class="mb-2">Actionable insights at a glance with less dashboard clutter.</li>
+                <li class="mb-2">Shorter cycles for mass layoffs or high-volume terminations.</li>
+              </ul>
+            </div>
+            <div class="col-md mb-4">
+             
+              <ul class="mb-4">
+                <li class="mb-2">A pattern for scale, suitable for organizations with 10,000 plus employees.</li>
+                <li class="mb-2">Systematized action item design reusable across benefits, errors, and warnings.</li>
+                <li class="mb-2">An example of deep collaboration across product, UX, and engineering.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm px-0 mb-5">
+            <p class="mb-0">
+              The redesigned experience improves visibility, accuracy, and speed. It aligns legal requirements with a clear, guided workflow that scales without sacrificing clarity.
             </p>
           </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Next Steps -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="next-steps">
+        <div class="w-100">
+          <h2 class="mb-5 title">Next Steps</h2>
+          <ul class="mb-4">
+            <li class="mb-2">Run a retrospective to measure adoption and collect feedback by role.</li>
+            <li class="mb-2">Publish usability metrics post launch, then refine hierarchy and alerting based on data.</li>
+            <li class="mb-2">Share learnings with design and HR communities to grow shared standards.</li>
+          </ul>
         </div>
       </section>
 
@@ -194,8 +214,7 @@
   </main>
 
   <!-- Image Preview Modal (Bootstrap 4) -->
-  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" 
-  aria-hidden="true">
+  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content bg-dark text-white">
         <div class="modal-header border-0">
@@ -222,8 +241,8 @@
     (function () {
       var lastTrigger = null;
 
-      // When any element with data-target="#imagePreviewModal" is clicked, update the modal image and label.
-      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function (e) {
+      // Open modal with full image and matching label
+      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function () {
         lastTrigger = this;
         var full = this.getAttribute('data-full') || this.getAttribute('src') || '';
         var alt  = this.getAttribute('alt') || 'Preview';
@@ -231,12 +250,12 @@
         $('#imagePreviewLabel').text(alt);
       });
 
-      // Focus the modal on show for accessibility.
+      // Focus the modal on show for accessibility
       $('#imagePreviewModal').on('shown.bs.modal', function () {
         $(this).trigger('focus');
       });
 
-      // Clear src and return focus to the trigger on hide to prevent aria-hidden/focus conflicts.
+      // Clear src and return focus to the trigger on hide
       $('#imagePreviewModal').on('hidden.bs.modal', function () {
         $('#imagePreviewSrc').attr('src', '');
         if (lastTrigger && typeof lastTrigger.focus === 'function') {
