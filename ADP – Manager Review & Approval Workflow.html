@@ -12,10 +12,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ADP — Manager Review & Approve Payroll case study">
+  <meta name="description" content="ADP — Manager Review & Approval Workflow case study">
   <meta name="author" content="">
 
-  <title>ADP — Termination wokrflow redesign / Final Payment</title>
+  <title>ADP — Manager Review & Approval Workflow</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,89 +31,130 @@
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
 
- 
   <style>
-    .fit {
-      width: 100%;
-      height: auto;
-    }
+    .fit { width: 100%; height: auto; }
+    .fit-45 { max-width: 45%; height: auto; }
+    .img-profile { border-radius: 0 !important; }
 
-    .fit-45 {
-      max-width: 45%;
-      height: auto;
-    }
-
-    .img-profile {
-      border-radius: 0 !important;
-    }
+    /* Light utility styling for scannability (no dependency changes) */
+    .cs-kpi { border-left: 4px solid rgba(255,255,255,.35); padding-left: 1rem; margin: 1.25rem 0; }
+    .cs-small { font-size: .95rem; opacity: .95; }
+    .cs-table td, .cs-table th { vertical-align: top; }
   </style>
 </head>
 
 <body id="page-top">
   <main class="wrap">
-    
 
-<!-- NAV -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary">
-
-      <!-- Brand/logo -->
       <a class="navbar-brand d-lg-block" href="#page-top" aria-label="Back to top">
 
-        <!-- ✅ Fixed Back link (separate from brand, no nesting conflict) -->
+        <!-- Back link -->
         <div class="back-link d-lg-block mb-2">
           <a class="nav-link js-scroll-trigger text-white small pl-3" href="index.html#projects">
             <i class="fas fa-arrow-left" aria-hidden="true"></i>
             <span class="sr-only">Back to Projects</span> BACK
           </a>
         </div>
+
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 fit-45"  src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg" alt="ADP logo">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 fit-45"
+               src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg"
+               alt="ADP logo">
         </span>
         <span class="d-block d-lg-none">ADP</span>
       </a>
+
       <!-- Toggler -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Nav links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#challenge">The Challenge</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Breakthrough">Breakthrough</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
-    </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#context">Context</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#challenge">The Challenge</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#decisions">Insights & Decisions</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#framework">Decision Framework</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#iteration">Iteration</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#collaboration">Collaboration</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#solution">Final Solution</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Breakthrough">Breakthrough</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#impact">Impact</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#next">Next Steps</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reflection">Reflection</a></li>
+        </ul>
       </div>
     </nav>
 
-
     <div class="container-fluid p-0">
+
       <!-- Overview -->
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
-         <h2>Manager Review and Approval Workflow</h2>
+          <h2>Manager Review and Approval Workflow</h2>
 
-          <p class="mb-5">
+          <!-- Positioning statement (simple, direct) -->
+          <p class="mb-4 cs-small">
+            This case study shows how I replaced risky, manual payroll approvals with a secure, compliant system.
+          </p>
+
+          <p class="mb-4">
             Designed ADP’s secure payroll approval workflow for managers, replacing unsafe manual practices
             (emails and screenshots) with a dedicated, compliant, and scalable system that safeguards payroll
             data and streamlines approvals.
           </p>
 
-          <div class="mb-5">
-            <div class="subheading mb-3">Process</div>
-            <ol>
-              <li>
-                <p><strong>Research & discovery:</strong> Conducted interviews to identify decision points and risk areas.</p>
-              </li>
-              <li>
-                <p><strong>Design & prototype:</strong> Collaborated with product, engineering, and compliance to address
-                  a critical client requirement—securing their commitment.</p>
-              </li>
-            </ol>
+          <!-- At-a-glance (improves scan + cohesion) -->
+          <div class="cs-kpi">
+            <div class="subheading mb-2">At a glance</div>
+            <ul class="mb-0">
+              <li><strong>Timeline:</strong> August 2025 (5 weeks)</li>
+              <li><strong>Role:</strong> UX Designer (led design effort)</li>
+              <li><strong>Trigger:</strong> Enterprise client refused to sign without manager approval flow; multiple clients requested the same capability</li>
+              <li><strong>Constraint:</strong> January onboarding deadline; limited time for extended discovery and testing</li>
+            </ul>
           </div>
+
+          <!-- Old "Process" replaced with clearer narrative setup -->
+          <div class="mb-3">
+            <div class="subheading mb-2">My approach</div>
+            <p class="mb-0">
+              I used fast discovery and process mapping to align stakeholders on the real problem, then led rapid
+              co-design iterations with product, engineering, and compliance to deliver a secure, mobile-first approval
+              workflow that required zero training.
+            </p>
           </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Context -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="context">
+        <div class="w-100">
+          <h2 class="mb-5 title">Context</h2>
+
+          <p class="mb-3">
+            A major enterprise client would not onboard to ADP payroll unless we provided a manager review and approval
+            workflow. During discovery, we confirmed the request had been made by multiple clients, making this both a
+            near-term deal requirement and a scalable product opportunity.
+          </p>
+
+          <ul class="mb-0">
+            <li><strong>Hard constraint:</strong> January client onboarding deadline</li>
+            <li><strong>Decision ownership:</strong> Leadership held final approval</li>
+            <li><strong>Validation challenge:</strong> Requirements were difficult to visualize because processes varied by industry and role</li>
+          </ul>
+
+          <p class="mt-3 mb-0">
+            This meant we needed to move quickly while still designing for security, auditability, and enterprise scale.
+          </p>
         </div>
       </section>
 
@@ -123,51 +164,235 @@
       <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="challenge">
         <div class="w-100">
           <h2 class="mb-5 title">The Challenge</h2>
-          <div class="mb-5">
-            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="row h-100 w-100">
-                <div class="col-sm">
-                  <p class="mb-3">
-                    Create a secure, intuitive way for managers to review and approve payroll runs, reducing errors,
-                    aligning with ADP’s compliance standards, and providing clear visibility into pay groups.
-                    Stakeholders initially weren’t aligned on the true problem or direction.
-                  </p>
-                </div>
-              </div>
+
+          <p class="mb-3">
+            Create a secure, intuitive way for managers to review and approve payroll runs, reducing errors, aligning with
+            ADP’s compliance standards, and providing clear visibility into pay groups.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="subheading mb-2">What was broken</div>
+              <ul class="mb-0">
+                <li><strong>Security risk:</strong> SSNs, pay rates, PTO, and overtime were shared via email and screenshots</li>
+                <li><strong>Frequency:</strong> Happened every payroll run (weekly/bi-weekly)</li>
+                <li><strong>Time pressure:</strong> Managers felt rushed and rarely reviewed everything thoroughly</li>
+                <li><strong>Operational drag:</strong> Payroll practitioners chased approvals across tools</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="subheading mb-2">Cost of inaction</div>
+              <ul class="mb-0">
+                <li><strong>Business:</strong> Client refused to sign without a compliant approval workflow</li>
+                <li><strong>Compliance:</strong> Sensitive payroll data exposed outside secure systems</li>
+                <li><strong>Quality:</strong> Slow approvals increased payroll corrections and off-cycle work</li>
+              </ul>
             </div>
           </div>
+
+          <p class="mt-4 mb-0">
+            Stakeholders initially weren’t aligned on the true problem or direction, so the first priority was creating shared clarity.
+          </p>
         </div>
       </section>
+
+      <hr class="m-0">
+
+      <!-- Research -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="research">
+        <div class="w-100">
+          <h2 class="mb-5 title">Research</h2>
+
+          <div class="subheading mb-2">Research snapshot</div>
+          <ul class="mb-4">
+            <li><strong>Participants:</strong> 12 interviews across clients and industries (managers, CEOs, final approvers, payroll practitioners)</li>
+            <li><strong>Methods:</strong> interview-style sessions (PM facilitated; I contributed to the questionnaire and documented flows), 1-hour observations, support tickets and audit logs review</li>
+            <li><strong>Primary questions:</strong> map the workflow by role; identify stress/risk points; learn what “good” looks like from other tools</li>
+            <li><strong>Synthesis:</strong> workflow/process/system maps; grouped pain points; prioritized themes around security and efficiency</li>
+            <li><strong>Limitations:</strong> We did not complete usability testing with managers prior to ship due to time/availability</li>
+          </ul>
+
+          <div class="subheading mb-2">What we learned</div>
+          <p class="mb-3">
+            The existing approval process was effectively not functioning. Managers were expected to spend hours reviewing,
+            but in practice they skimmed under time pressure—and the organization had normalized it.
+          </p>
+
+          <p class="mb-0">
+            This reframed the problem: we could not “translate” the current workflow into ADP. We needed to redesign the approval
+            process into a secure, realistic, and trainable model that fit how managers actually work.
+          </p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Insights & Decisions -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="decisions">
+        <div class="w-100">
+          <h2 class="mb-5 title">Insights &amp; Decisions</h2>
+
+          <div class="table-responsive">
+            <table class="table table-bordered cs-table">
+              <thead>
+                <tr>
+                  <th style="width:50%;">Insight</th>
+                  <th style="width:50%;">Decision</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Managers had limited time to review large volumes of hourly employees.</td>
+                  <td>Prioritize what matters: highlight the fields managers check most (hours, pay rate, overtime, PTO) and surface changes first.</td>
+                </tr>
+                <tr>
+                  <td>Approvals often happened at a work location, not at a desk.</td>
+                  <td>Design mobile-first (uncommon for payroll), ensuring review and approval works well on smaller screens.</td>
+                </tr>
+                <tr>
+                  <td>Managers could review their employees but could not see peers’ pay rates or hours.</td>
+                  <td>Partner with HR to map locations and build a management tree that enforces correct permissions.</td>
+                </tr>
+                <tr>
+                  <td>Clients lacked a unified process; everyone created their own system, making training inconsistent.</td>
+                  <td>Abstracted a “base” approval workflow that most clients could adopt without new training.</td>
+                </tr>
+                <tr>
+                  <td>Email and screenshots created the primary compliance exposure.</td>
+                  <td>Replace emails with secure links and in-product feedback loops inside the payroll run.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mb-0">
+            These decisions created a secure approval model that matched real manager behavior without adding training burden.
+          </p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Decision Framework -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="framework">
+        <div class="w-100">
+          <h2 class="mb-5 title">Decision Framework</h2>
+
+          <div class="subheading mb-2">Options considered</div>
+          <ul class="mb-4">
+            <li><strong>Extend an existing communication feature:</strong> ultimately scheduled beyond the client deadline</li>
+            <li><strong>Reuse generic to-do lists and task patterns:</strong> didn’t match approval logic or permissions needs</li>
+            <li><strong>Offer a product workaround (discount on time product):</strong> reduced friction but didn’t solve security and workflow</li>
+            <li><strong>Build a payroll-native approval flow:</strong> chosen for timeline, security, and usability</li>
+          </ul>
+
+          <div class="subheading mb-2">Evaluation criteria</div>
+          <ul class="mb-4">
+            <li><strong>Speed to deliver</strong> (deadline-driven)</li>
+            <li><strong>Zero training</strong> for managers and payroll teams</li>
+            <li><strong>Security &amp; auditability</strong></li>
+            <li><strong>Minimal system switching</strong> for payroll practitioners</li>
+          </ul>
+
+          <p class="mb-0">
+            I advocated for addressing the core integration issues across payroll, HR, time, and benefits. We aligned that
+            a payroll-native solution was the most feasible path under scope and timeline—and also served broader client demand.
+          </p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Iteration -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="iteration">
+        <div class="w-100">
+          <h2 class="mb-5 title">Iteration</h2>
+
+          <p class="mb-3">
+            I led rapid co-creation sessions with product, engineering, the PO, and SMEs. For one week, we met daily and I
+            iterated in Figma in real time, using discussion and constraints to converge quickly.
+          </p>
+
+          <div class="subheading mb-2">Notable iteration</div>
+          <ul class="mb-4">
+            <li><strong>Early concept:</strong> payroll practitioner and manager flows only; configuration assumed to happen during payroll setup</li>
+            <li><strong>What changed:</strong> we added a configuration flow that can be completed by the right role at any point (onboarding or later)</li>
+            <li><strong>Why:</strong> client workflows varied; some configure once during onboarding and rarely revisit</li>
+          </ul>
+
+          <div class="subheading mb-2">Testing signals</div>
+          <ul class="mb-0">
+            <li>Client review confirmed the workflow met the onboarding requirement</li>
+            <li>Tested with payroll practitioners to validate clarity and fit within the payroll routine</li>
+            <li><strong>Limitation:</strong> we did not test directly with managers before ship due to time/availability</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Collaboration -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="collaboration">
+        <div class="w-100">
+          <h2 class="mb-5 title">Collaboration</h2>
+
+          <ul class="mb-4">
+            <li><strong>Core partners:</strong> PM (Bridget Cody), Developer (Andre)</li>
+            <li><strong>Cadence:</strong> co-design meetings twice weekly; daily sessions during peak discovery/iteration week</li>
+            <li><strong>Primary alignment artifact:</strong> process maps built from interview and shadowing notes</li>
+          </ul>
+
+          <p class="mb-0">
+            The strongest cross-functional outcome was aligning the team on the core problem: permissions and organizational
+            mapping, secure sharing of payroll data, and a feedback loop between managers and payroll practitioners.
+          </p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Final Solution -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="solution">
+        <div class="w-100">
+          <h2 class="mb-5 title">Final Solution</h2>
+
+          <ul class="mb-4">
+            <li><strong>Secure approval workflow</strong> embedded directly in the payroll run</li>
+            <li><strong>Mobile-first review</strong> experience for managers working on-site</li>
+            <li><strong>Permission model</strong> that prevents visibility into peers’ pay rates or hours</li>
+            <li><strong>Targeted review</strong> that highlights what managers actually check (hours, pay rate, overtime, PTO)</li>
+            <li><strong>Feedback loop</strong> between managers and payroll practitioners without leaving the system</li>
+          </ul>
+
+          <p class="mb-0">
+            The resulting experience reduced risk, reduced tool switching, and made approvals realistic under real manager time constraints.
+          </p>
+        </div>
+      </section>
+
+      <hr class="m-0">
 
       <!-- Breakthrough -->
       <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="Breakthrough">
         <div class="w-100">
           <h2 class="mb-5 title">Breakthrough</h2>
-          <div class="mb-5">
-            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div class="row h-100 w-100">
-                <div class="col-md">
-                  <p class="mb-3">
-                    Visual maps of the current process aligned teams and focused discussions on the real problem,
-                    unlocking momentum toward a viable solution.
-                  </p>
 
-                  <div class="col-sm px-0">
-                      <img
-                        src="img/adp/Section4.png"
-                        data-full="img/adp/Section4.png"
-                        alt="Prioritization Matrix — current process visualization"
-                        class="img-fluid fit img-thumbnail"
-                        loading="lazy"
-                        data-toggle="modal"
-                        data-target="#imagePreviewModal">
-                      <blockquote class="mt-2">Prioritization Matrix</blockquote>
-                    </div>
-                 
+          <p class="mb-3">
+            Visual maps of the current process aligned teams and focused discussions on the real problem, unlocking momentum
+            toward a viable solution.
+          </p>
 
-                </div> <!-- /.col-md -->
-              </div> <!-- /.row -->
-            </div> <!-- /.resume-item -->
+          <div class="col-sm px-0">
+            <img
+              src="img/adp/Section4.png"
+              data-full="img/adp/Section4.png"
+              alt="Prioritization Matrix — current process visualization"
+              class="img-fluid fit img-thumbnail"
+              loading="lazy"
+              data-toggle="modal"
+              data-target="#imagePreviewModal">
+            <blockquote class="mt-2">Prioritization Matrix</blockquote>
           </div>
         </div>
       </section>
@@ -178,22 +403,72 @@
       <section style="max-width: 75rem;" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="impact">
         <div class="w-100">
           <h2 class="mb-5 title">Impact</h2>
-         <div class="col-sm px-0 mb-5">
-            <p>
-              Launched as ADP’s Manager Review &amp; Approve Payroll feature. The solution proved successful enough
-              for ADP to commercialize it as a premium offering.
-            </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="subheading mb-2">Results</div>
+              <ul class="mb-0">
+                <li><strong>Eliminated insecure email approvals:</strong> sensitive screenshots stopped completely</li>
+                <li><strong>Secure links from payroll run:</strong> payroll practitioners send secure links directly—no interface switching</li>
+                <li><strong>Time saved:</strong> ~30 minutes per payroll run for payroll practitioners</li>
+                <li><strong>Reduced cognitive load:</strong> no searching screenshots to identify changes</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="subheading mb-2">Business impact</div>
+              <ul class="mb-0">
+                <li>Unblocked enterprise onboarding scheduled for <strong>January 1</strong></li>
+                <li>Launched as ADP’s <strong>Manager Review &amp; Approve Payroll</strong> feature</li>
+                <li>Commercialized by ADP as a <strong>premium offering</strong> due to ease of adoption and low training burden</li>
+              </ul>
+            </div>
           </div>
+
+          <p class="mt-4 mb-0">
+            By moving approvals into a secure, guided workflow, the design reduced compliance exposure while fitting naturally into existing payroll routines.
+          </p>
         </div>
       </section>
 
-      <!-- Conclusion (optional anchor target) -->
+      <hr class="m-0">
+
+      <!-- Next Steps -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="next">
+        <div class="w-100">
+          <h2 class="mb-5 title">Next Steps</h2>
+          <ul class="mb-0">
+            <li><strong>v2 prioritization:</strong> automatically surface only employees with changes or issues, rather than exposing the full payroll list</li>
+            <li>Expand manager usability testing and refine mobile interaction patterns</li>
+            <li>Track adoption and completion time by role to quantify long-term impact</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- Reflection -->
+      <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="reflection">
+        <div class="w-100">
+          <h2 class="mb-5 title">Reflection</h2>
+          <p class="mb-3">
+            This project reinforced two patterns I now reuse: start by mapping the process to create shared clarity, and
+            use co-creation to accelerate alignment and iteration under pressure.
+          </p>
+          <p class="mb-0">
+            My strength is quickly bringing order to complex enterprise systems—identifying the core problem, aligning teams,
+            and delivering a secure, scalable workflow that fits real operational behavior.
+          </p>
+        </div>
+      </section>
+
+      <!-- End -->
     </div>
   </main>
 
   <!-- Image Preview Modal (Bootstrap 4) -->
-  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel" 
-  aria-hidden="true">
+  <div class="modal fade" id="imagePreviewModal" tabindex="-1" role="dialog" aria-labelledby="imagePreviewLabel"
+       aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
       <div class="modal-content bg-dark text-white">
         <div class="modal-header border-0">
@@ -215,13 +490,12 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/resume.min.js"></script>
 
-  <!-- Modal image + focus management to avoid aria-hidden/focus warnings -->
+  <!-- Modal image + focus management -->
   <script>
     (function () {
       var lastTrigger = null;
 
-      // When any element with data-target="#imagePreviewModal" is clicked, update the modal image and label.
-      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function (e) {
+      $(document).on('click', '[data-toggle="modal"][data-target="#imagePreviewModal"]', function () {
         lastTrigger = this;
         var full = this.getAttribute('data-full') || this.getAttribute('src') || '';
         var alt  = this.getAttribute('alt') || 'Preview';
@@ -229,12 +503,10 @@
         $('#imagePreviewLabel').text(alt);
       });
 
-      // Focus the modal on show for accessibility.
       $('#imagePreviewModal').on('shown.bs.modal', function () {
         $(this).trigger('focus');
       });
 
-      // Clear src and return focus to the trigger on hide to prevent aria-hidden/focus conflicts.
       $('#imagePreviewModal').on('hidden.bs.modal', function () {
         $('#imagePreviewSrc').attr('src', '');
         if (lastTrigger && typeof lastTrigger.focus === 'function') {
