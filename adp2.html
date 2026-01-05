@@ -12,10 +12,13 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ADP — Redesigning the Payroll Termination workflow and Final Pay for clarity, compliance, and scale.">
+
+  <!-- UPDATED: reframed description for real-time, high-stakes interactive system -->
+  <meta name="description" content="ADP — Designing a real-time, high-stakes interactive workflow system for termination and final pay. Focused on state clarity, responsive feedback, error recovery, and compliance at scale.">
   <meta name="author" content="">
 
-  <title>ADP — Termination workflow redesign / Final Payment</title>
+  <!-- UPDATED: title for new framing -->
+  <title>ADP — Designing a Real-Time, High-Stakes Interactive System (Termination + Final Pay)</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +38,14 @@
     .fit { width: 100%; height: auto; }
     .fit-45 { max-width: 45%; height: auto; }
     .img-profile { border-radius: 0 !important; }
+
+    /* Optional helper for compact “system lens” blocks */
+    .system-lens {
+      border-left: 4px solid rgba(255,255,255,.25);
+      padding-left: 1rem;
+      margin: 1.25rem 0 2rem;
+    }
+    .kpi-list li { margin-bottom: .35rem; }
   </style>
 </head>
 
@@ -80,19 +91,45 @@
       <!-- Overview -->
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
         <div class="w-100">
-          <h2>Termination workflow redesign / Final Payment</h2>
+          <!-- UPDATED: headline framed as real-time interactive system -->
+          <h2>Designing a Real-Time, High-Stakes Interactive System</h2>
+          <h3 class="h5 text-muted mb-4">Termination workflow redesign / Final Payment</h3>
 
           <div class="col-sm px-0">
-            <p class="mb-5">
-              We redesigned the payroll termination to streamline final pay experience, reduce manual errors,
-              and improve legal compliance. The new design brings attention to termiation issues.
+            <!-- UPDATED: overview narrative with system-state framing -->
+            <p class="mb-4">
+              This project redesigned the termination and final pay experience as a <strong>real-time, high-stakes workflow system</strong>.
+              Every action carries downstream consequences and must respond predictably under time pressure, legal constraints, and complex state dependencies.
+              The solution improves <strong>state clarity</strong>, <strong>responsive feedback</strong>, <strong>error recovery</strong>, and <strong>throughput at scale</strong>.
             </p>
+
+            <!-- NEW: “System lens” block (small, high-signal, game-UX aligned) -->
+            <div class="system-lens">
+              <div class="subheading mb-2">System lens</div>
+              <ul class="mb-0">
+                <li><strong>Inputs:</strong> role-based actions, bulk operations, off-cycle decisions, pay rule constraints</li>
+                <li><strong>States:</strong> eligible vs ineligible, immediate payout required, pending data, complete, blocked, exception</li>
+                <li><strong>Feedback:</strong> priority alerts, inline constraints, confirmation states, recovery paths</li>
+                <li><strong>Success criteria:</strong> speed, correctness, confidence, and compliance under real-world constraints</li>
+              </ul>
+            </div>
 
             <div class="mb-5">
               <div class="subheading mb-3">Process</div>
               <ol>
-                <li><strong>Research and discovery:</strong> Direct feedback from payroll practitioners and recurring usability complaints shaped priorities.</li>
-                <li><strong>Design and prototyping:</strong> Iterative concepts reviewed with user groups and enterprise clients, then refined with product, engineering, and compliance.</li>
+                <!-- UPDATED: discovery phrased as state + risk + behavior -->
+                <li>
+                  <strong>Research and discovery:</strong>
+                  Mapped practitioner workflows, identified high-risk decision points, and documented failure modes (missed alerts, hidden dependencies, manual workarounds).
+                  Prioritized issues based on frequency, severity, and downstream impact.
+                </li>
+
+                <!-- UPDATED: prototyping as stateful interaction + transitions -->
+                <li>
+                  <strong>Design and prototyping:</strong>
+                  Built stateful concepts and interaction patterns that define clear transitions (entry, active, blocked, error, confirmation).
+                  Iterated with user groups and enterprise clients, then refined with Product, Engineering, and Compliance to ensure fidelity through implementation.
+                </li>
               </ol>
             </div>
           </div>
@@ -110,12 +147,31 @@
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="row h-100 w-100">
                 <div class="col-sm">
+
+                  <!-- UPDATED: challenges framed as state complexity, feedback, throughput -->
                   <ul class="mb-4">
-                    <li class="mb-3"><b>Compliance risk:</b> Immediate and accurate payout on termination is required in some regions. The old flow relied on memory and manual steps, which increased risk.</li>
-                    <li class="mb-3"><b>Poor prioritization:</b> Termination alerts were buried among routine tasks, with weak hierarchy and filtering. Critical items were easy to miss.</li>
-                    <li class="mb-3"><b>No bulk capability:</b> Mass terminations lacked bulk actions. High volume cases slowed teams and created frustration.</li>
-                    <li class="mb-3"><b>Low cross-team clarity:</b> Direct deposit and benefits changes came from other modules and were not visible in payroll, which raised uncertainty and support tickets.</li>
+                    <li class="mb-3">
+                      <b>High-stakes constraints:</b>
+                      Immediate and accurate payout is legally required in certain regions. The previous system relied on memory and manual sequencing, increasing risk and inconsistency.
+                    </li>
+                    <li class="mb-3">
+                      <b>Weak state visibility:</b>
+                      Termination-critical alerts were buried among routine tasks. Poor hierarchy and filtering made it easy to miss urgent, time-sensitive items.
+                    </li>
+                    <li class="mb-3">
+                      <b>Throughput bottlenecks:</b>
+                      No bulk actions for mass terminations. High-volume scenarios increased time-on-task, created friction, and amplified error likelihood.
+                    </li>
+                    <li class="mb-3">
+                      <b>Hidden dependencies across modules:</b>
+                      Direct deposit and benefits changes lived elsewhere and were not visible in the payroll context, creating uncertainty, rework, and support tickets.
+                    </li>
+                    <li class="mb-3">
+                      <b>Limited recovery paths:</b>
+                      The flow lacked clear guidance when users hit blocked or invalid combinations, leading to workarounds and downstream corrections.
+                    </li>
                   </ul>
+
                 </div>
               </div>
             </div>
@@ -133,47 +189,82 @@
             <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="row h-100 w-100">
                 <div class="col-md">
+
+                  <!-- UPDATED: approach bullets framed as system behaviors -->
                   <ul class="mb-4">
-                    <li class="mb-3"><b>Focused termination tile:</b> A dedicated dashboard tile, Termination Payments and Issues, surfaces only urgent and relevant final payment and termination tasks.</li>
-                    <li class="mb-3"><b>Clear alerting:</b> Immediate payout rules show as discrete, high-priority items. Teams see what must happen now and why.</li>
-                    <li class="mb-3"><b>Bulk and off-cycle support:</b> Group payouts, proration, and off-cycle payments save time and reduce repetitive data entry.</li>
-                    <li class="mb-3"><b>Transparent records:</b> A centralized view exposes end-dated payroll records and direct deposit status. Practitioners know what is complete and what is next.</li>
-                    <li class="mb-3"><b>Research anchored:</b> Decisions were grounded in interviews, usability findings, and client feedback from large enterprises.</li>
+                    <li class="mb-3">
+                      <b>Dedicated system surface for urgent states:</b>
+                      Created a focused dashboard tile (<em>Termination Payments and Issues</em>) that isolates urgent, high-impact tasks so critical states cannot be buried.
+                    </li>
+                    <li class="mb-3">
+                      <b>Predictable, responsive feedback:</b>
+                      Translated payout rules into discrete, high-priority alerts with clear “why” and “what’s next,” reducing interpretation and hesitation.
+                    </li>
+                    <li class="mb-3">
+                      <b>State-aware pathways and recovery:</b>
+                      Designed clear paths for common exception states (blocked, incomplete, missing dependencies) with guidance that prevents invalid sequences and supports recovery.
+                    </li>
+                    <li class="mb-3">
+                      <b>Throughput and scale:</b>
+                      Introduced bulk actions and support for off-cycle flows (group payouts, proration, off-cycle payments) to reduce repetitive work and improve speed under load.
+                    </li>
+                    <li class="mb-3">
+                      <b>Centralized visibility of dependencies:</b>
+                      Added a unified view of end-dated payroll records and direct deposit status so users can understand system state at a glance.
+                    </li>
+                    <li class="mb-3">
+                      <b>Research anchored:</b>
+                      Validated decisions through interviews, usability findings, and enterprise client feedback to confirm the system matched real-world behavior and expectations.
+                    </li>
+                    <li class="mb-3">
+                      <b>Implementation partnership:</b>
+                      Partnered closely with engineering to define component behavior, edge cases, and state transitions to maintain design intent through build and QA.
+                    </li>
                   </ul>
 
                   <div class="col-sm mb-5">
                     <img
                       src="img/adp/terminations1.png"
                       data-full="img/adp/terminations2.png"
-                      alt="terminations screen"
+                      alt="Terminations dashboard tile and prioritized issues"
                       class="img-fluid fit img-thumbnail"
                       loading="lazy"
                       data-toggle="modal"
                       data-target="#imagePreviewModal">
-                    <blockquote class="mt-2">Connecting terminations directly to OCP allows users to process final payments immediately, which is required by law in eight states. The remaining terminations can be included in the regular pay period.</blockquote>
+                    <blockquote class="mt-2">
+                      Connecting terminations directly to OCP enables immediate processing for final pay in regions where timing is legally constrained,
+                      while non-urgent cases can be routed into the standard pay cycle.
+                    </blockquote>
                   </div>
 
-                    <div class="col-sm mb-5">
+                  <div class="col-sm mb-5">
                     <img
                       src="img/adp/terminations.png"
                       data-full="img/adp/terminations.png"
-                      alt="terminations screen"
+                      alt="Legacy termination flow with manual sequencing"
                       class="img-fluid fit img-thumbnail"
                       loading="lazy"
                       data-toggle="modal"
                       data-target="#imagePreviewModal">
-                    <blockquote class="mt-2">Before this improvement in the termination flow, users had to perform the process manually, with some only able to issue paper checks.</blockquote>
+                    <blockquote class="mt-2">
+                      Previously, users relied on manual steps and memory for sequencing,
+                      increasing risk and inconsistencies and forcing some teams into paper checks.
+                    </blockquote>
                   </div>
-                   <div class="col-sm mb-5">
+
+                  <div class="col-sm mb-5">
                     <img
                       src="img/adp/terminations3.png"
-                      data-full="img/adp/terminations.png"
-                      alt="terminations screen"
+                      data-full="img/adp/terminations3.png"
+                      alt="State-aware pathway for off-cycle vs regular pay cycle"
                       class="img-fluid fit img-thumbnail"
                       loading="lazy"
                       data-toggle="modal"
                       data-target="#imagePreviewModal">
-                    <blockquote class="mt-2">Now, users can choose to issue payment through an off-cycle run or include it in the regular pay cycle.</blockquote>
+                    <blockquote class="mt-2">
+                      The redesigned system supports clear state transitions: users can route payment through an off-cycle run or include it in the regular pay cycle,
+                      with guidance to reduce invalid choices and rework.
+                    </blockquote>
                   </div>
 
                 </div>
@@ -191,28 +282,33 @@
         <div class="w-100">
           <h2 class="mb-5 title">Impact</h2>
 
+          <!-- UPDATED: impact framed as interactive system outcomes -->
           <div class="row">
             <div class="col-md mb-4">
-           
-              <ul class="mb-4">
-                <li class="mb-2">Smoother final payment flow, reducing compliance risks and support escalations.</li>
-                <li class="mb-2">Actionable insights at a glance with less dashboard clutter.</li>
-                <li class="mb-2">Bulk actions for mass layoffs or high-volume terminations.</li>
+              <div class="subheading mb-3">System outcomes</div>
+              <ul class="mb-4 kpi-list">
+                <li class="mb-2">Improved state visibility and prioritization for time-sensitive termination cases.</li>
+                <li class="mb-2">Reduced manual sequencing and lowered compliance risk through clearer guidance and feedback.</li>
+                <li class="mb-2">Faster processing in high-volume scenarios through bulk actions and streamlined off-cycle routing.</li>
+                <li class="mb-2">Higher practitioner confidence by making dependencies and “what’s next” explicit.</li>
               </ul>
             </div>
+
             <div class="col-md mb-4">
-             
-              <ul class="mb-4">
-                <li class="mb-2">A pattern for scale, suitable for organizations with 10,000 plus employees.</li>
-                <li class="mb-2">Systematized action item design reusable across benefits, errors, and warnings.</li>
-                <li class="mb-2">An example of deep collaboration across product, UX, and engineering.</li>
+              <div class="subheading mb-3">Scalability and craft</div>
+              <ul class="mb-4 kpi-list">
+                <li class="mb-2">A reusable interaction pattern for urgent action items across benefits, errors, and warnings.</li>
+                <li class="mb-2">A scalable approach suitable for organizations supporting 10,000+ employees.</li>
+                <li class="mb-2">Deep cross-functional alignment across UX, Product, Engineering, and Compliance to maintain quality through delivery.</li>
+                <li class="mb-2">A clearer foundation for future metrics tied to responsiveness, correctness, and error recovery.</li>
               </ul>
             </div>
           </div>
 
           <div class="col-sm px-0 mb-5">
             <p class="mb-0">
-              The redesigned experience improves visibility, accuracy, and speed. It aligns legal requirements with a clear, guided workflow that scales without sacrificing clarity.
+              The redesigned experience improves visibility, accuracy, and speed by treating termination and final pay as an interactive system with clear states,
+              predictable feedback, and recovery paths. It aligns legal requirements with a guided workflow that scales without sacrificing clarity.
             </p>
           </div>
         </div>
@@ -224,10 +320,13 @@
       <section style="max-width: 75rem;" class="p-3 p-lg-5 d-flex justify-content-center" id="next-steps">
         <div class="w-100">
           <h2 class="mb-5 title">Next Steps</h2>
+
+          <!-- UPDATED: next steps tied to measurable real-time UX metrics -->
           <ul class="mb-4">
-            <li class="mb-2">Run a retrospective to measure adoption and collect feedback by role.</li>
-            <li class="mb-2">Publish usability metrics post launch, then refine hierarchy and alerting based on data.</li>
-            <li class="mb-2">Share learnings with design and HR communities to grow shared standards.</li>
+            <li class="mb-2">Run a post-launch retrospective focused on state confusion points, recovery rates, and high-volume throughput.</li>
+            <li class="mb-2">Define and publish metrics: time-to-complete, error rate, escalation volume, and confidence signals (repeat attempts, backtracks).</li>
+            <li class="mb-2">Iterate on hierarchy and alert rules using production data to improve prioritization and reduce missed critical items.</li>
+            <li class="mb-2">Share interaction pattern guidance across teams to expand reusable standards and improve consistency across the platform.</li>
           </ul>
         </div>
       </section>
@@ -247,7 +346,8 @@
           </button>
         </div>
         <div class="modal-body p-0 text-center">
-          <img id="imagePreviewSrc" src="img/adp/terminations.png.png" alt="Preview" class="img-fluid" style="max-height:85vh;width:auto;">
+          <!-- NOTE: your original had "terminations.png.png" -->
+          <img id="imagePreviewSrc" src="" alt="Preview" class="img-fluid" style="max-height:85vh;width:auto;">
         </div>
       </div>
     </div>

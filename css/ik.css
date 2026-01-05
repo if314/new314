@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 2px;
 }
 
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.25rem;
+}
+
 /* ==========================================================================
    3) BOOTSTRAP OVERRIDES
    ========================================================================== */
@@ -403,3 +409,71 @@ progress[value]::-moz-progress-bar {
   max-width: 100%;
   height: auto;
 }
+
+ /* How I Work (visual/typographic system) */
+  #how-i-work .how-block{
+    background: transparent;
+    border-left: 4px solid rgba(0,0,0,.12);
+    padding: 0 0 0 1rem;
+  }
+
+  #how-i-work .how-kicker{
+    font-family: "Saira Extra Condensed", serif;
+    font-weight: 700;
+    letter-spacing: .04em;
+    margin-bottom: .25rem;
+  }
+
+  #how-i-work .how-h{
+    font-weight: 800;
+    letter-spacing: .01em;
+  }
+
+  #how-i-work .how-p{
+    line-height: 1.5;
+    max-width: 34rem;
+  }
+
+  #how-i-work .how-ul{
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  #how-i-work .how-ul li{
+    margin-bottom: .4rem;
+    color: rgba(132, 131, 131, 0.78);
+  }
+
+  #how-i-work .how-ul li:last-child{
+    margin-bottom: 0;
+  }
+
+  #how-i-work .how-principles{
+    margin-top: .75rem;
+    padding-top: .75rem;
+    border-top: 1px solid rgba(0,0,0,.08);
+    letter-spacing: .01em;
+  }
+
+  #how-i-work .how-dot{
+    display: inline-block;
+    width: .45rem;
+    height: .45rem;
+    border-radius: 999px;
+    background: rgba(0,0,0,.35);
+    margin-right: .35rem;
+    transform: translateY(-1px);
+  }
+
+  #how-i-work .how-sep{
+    margin: 0 .55rem;
+    color: rgba(0,0,0,.35);
+  }
+
+  /* Mobile spacing */
+  @media (max-width: 575.98px){
+    #how-i-work .how-block{
+      padding-left: .85rem;
+      border-left-width: 3px;
+    }
+  }

@@ -13,10 +13,14 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Iva Keranova</title>
+  <!-- UPDATED: meta description aligned to your positioning -->
+  <meta name="description"
+    content="Iva Keranova — Senior Product Designer designing real-time, high-stakes workflow systems with clear state, responsive feedback, and execution quality at scale.">
+  <meta name="author" content="Iva Keranova">
+
+  <!-- UPDATED: title with role signal -->
+  <title>Iva Keranova | Senior Product Designer</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,23 +33,32 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
   <link href="css/ik.css" rel="stylesheet">
+
+  <style>
+    /* Optional helpers to increase consistency without redesigning your whole template */
+    .hero-kpis { list-style: none; padding-left: 0; margin: 0; }
+    .hero-kpis li { margin-bottom: .35rem; }
+    .work-card { padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,.08); border-radius: .5rem; }
+    .work-tags { font-size: .85rem; opacity: .85; }
+    .work-tags span { display: inline-block; margin-right: .35rem; }
+    .how-i-work { border-left: 4px solid rgba(0,0,0,.12); padding-left: 1rem; margin: 1.5rem 0 0; }
+  </style>
 </head>
 
 <body id="page-top">
   <main class="wrap">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="Primary navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Back to top">
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="iva keranova">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Iva Keranova">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -54,13 +67,22 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Work</a>
           </li>
+
+          <!-- NEW: How I Work section -->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#how-i-work">How I Work</a>
           </li>
+
           <li class="nav-item">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">More about me...</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Capabilities</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#learning">Continued Learning</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">More about me</a>
           </li>
         </ul>
       </div>
@@ -68,458 +90,391 @@
 
     <div class="container-fluid p-0">
 
-      <section class=" p-3 p-lg-5 d-flex align-items-center" id="about">
+      <!-- ABOUT / HERO -->
+      <section class="p-3 p-lg-5 d-flex align-items-center" id="about">
         <div class="w-100">
           <h1 class="mb-0">Iva
             <span class="text-primary">Keranova</span>
           </h1>
-          <div class="subheading mb-5 value">
+
+          <div class="subheading mb-4 value">
             <a href="mailto:keranovai@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> |
-            <a href="https://www.linkedin.com/in/iva-keranova-90a4a822/" target="_blank"
-              rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://www.linkedin.com/in/iva-keranova-90a4a822/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
             <a href="img/iva-keranova-resu.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
 
-          <p class="mb-5">I have a knack for simplifying complexity and finding solutions where others cannot.
-            Constraints in a project are inevitable, but only a step into building something elegant!<br><br>
-            With over 12 years of design experience I am passionate, adaptable, and self-driven designer, fascinated by
-            human behavior and unconventional beauty.</p>
+          <!-- UPDATED: hero positioning -->
+          <p class="mb-4">
+            <strong>I design real-time, high-stakes systems that make complex decisions clear. Senior Designer with 8+ years of experience shipping platforms where clarity, feedback, and reliability matter.
+          </p>
+
+          <!-- NEW: proof points (quick scan for hiring managers) -->
+         <ul class="mb-2">
+            <li>Shipped compliance-critical workflows at ADP (termination, final pay, secure approvals)</li>
+            <li>Led redesigns impacting 700+ analysts at Aspirion with measurable efficiency gains</li>
+            <li>Built scalable UI patterns and component libraries to improve consistency and execution quality</li>
+          </ul>
         </div>
       </section>
 
       <hr class="m-0">
 
+      <!-- WORK -->
       <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
         <div class="w-100">
           <div class="border-top my-3"></div>
 
-          <h4 class="mb-5 title">Work <blockquote>selected projects</blockquote>
-          </h4>
+          <h4 class="mb-5 title">Work <blockquote>selected projects</blockquote></h4>
 
+          <!-- NOTE: Standardized each project to same structure: outcome line + 3 proof bullets + tags -->
+
+          <!-- ADP 1 -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">ADP</span> 
-              <h3 class="mb-0"><a href="adp2.html">Termination wokrflow redesign / Final Payment</a></h3>
+            <div class="resume-content work-card">
+              <span class="subheading value">ADP</span>
+              <h3 class="mb-2">
+                <a href="adp2.html">Termination workflow redesign / Final Payment</a>
+              </h3>
 
-              <div>
-                <p>Redesigned ADP’s termination and final pay workflow, replacing manual steps with a data-driven process that improves compliance and efficiency.</p>
-                <ul>
-                  <li>One streamlined flow, all terminations in one place</li>
-                  <li>Easy same day final payments</li>
-                  <li>Payroll dashboard notification system</li>
-                </ul>
+              <p class="mb-2">
+                Designed a real-time, high-stakes workflow system that improves prioritization, reduces manual sequencing,
+                and supports compliance-driven decisions at scale.
+              </p>
+
+              <ul class="mb-2">
+                <li>State-aware alerting and guided transitions for urgent termination cases</li>
+                <li>Bulk actions plus off-cycle routing to increase throughput in high-volume scenarios</li>
+                <li>Dependency visibility (pay records and direct deposit status) to reduce uncertainty and rework</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#Systems</span><span>#RealTimeUX</span><span>#Compliance</span><span>#InteractionDesign</span><span>#ExecutionQuality</span>
               </div>
             </div>
-
           </div>
 
+          <!-- ADP 2 -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">ADP</span>              
-<h3 class="mb-0"><a href="ADP – Manager Review & Approval Workflow.html">Manager review and approveal workflow</a></h3>
-              <div>
-                <p>Designed ADP’s secure payroll approval workflow for managers, transforming risky, manual approval
-                  methods into a compliant and scalable system aligned with payroll standards.</p>
-                <ul>
-                  <li>Visualized the process and defind the problem</li>
-                  <li>Aligned cross-functional teams</li>
-                  <li>Prototyped a scalable solution</li>
-                </ul>
+            <div class="resume-content work-card">
+              <span class="subheading value">ADP</span>
+              <h3 class="mb-2">
+                <a href="ADP – Manager Review & Approval Workflow.html">Manager review and approval workflow</a>
+              </h3>
+
+              <p class="mb-2">
+                Designed a secure, compliant payroll approval workflow that replaced risky manual approvals with a scalable,
+                auditable system aligned with payroll standards.
+              </p>
+
+              <ul class="mb-2">
+                <li>Mapped the end-to-end approval system and clarified decision points and failure modes</li>
+                <li>Aligned Product, Engineering, and Compliance on a shared approach and quality bar</li>
+                <li>Prototyped reusable patterns for safe approvals, exceptions, and confirmations</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#Security</span><span>#Governance</span><span>#WorkflowArchitecture</span><span>#CrossFunctionalLeadership</span>
               </div>
             </div>
-
-           <!-- <div class="resume-date text-md-right">
-              <span class="text-primary"><img class="fit-25" alt="logo ADP"
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Automatic_Data_Processing_%28logo%29.svg"></span>
-            </div>-->
           </div>
+
+          <!-- Aspirion 1 -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content"><span class="subheading value">Aspirion</span> 
-              <h3 class="mb-0"><a href="aspirion3.html">Training and onboarding</a></h3>
+            <div class="resume-content work-card">
+              <span class="subheading value">Aspirion</span>
+              <h3 class="mb-2"><a href="aspirion2.html">Optimizing workload distribution</a></h3>
 
-              <div>
-                <p>Led a cross-functional effort to rebuild training and onboarding process from mistrust to
-                  empowerment. Used system mapping and co-design to align stakeholders mpdernize the system and 
-                  introduce in-app onboarding and tooltips.</p>
-                <ul>
-                  <li>Mapped the process pain points and gaps</li>
-                  <li>Visual system & network diagrams</li>
-                  <li>Proposed phased onboarding experiences</li>
-                </ul>
+              <p class="mb-2">
+                Redesigned Compass, an analyst platform, to reduce complexity and scale efficiency by replacing grid-heavy UI
+                with a clearer, role-aware task experience.
+              </p>
+
+              <ul class="mb-2">
+                <li>Impacted 700+ analysts with improved clarity and navigability</li>
+                <li>Increased worked accounts per day by 20 percent through better task focus</li>
+                <li>Reduced time to first task with contextual filters and progress tracking</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#Systems</span><span>#Scale</span><span>#InformationArchitecture</span><span>#Metrics</span>
               </div>
             </div>
           </div>
 
+          <!-- Aspirion 2 -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">Aspirion</span>
-              <h3 class="mb-0"><a href="aspirion2.html">Optimizing workload distribution</a></h3>
-              <div>
-                <p>Redesigned Compass, Aspirion’s analyst platform, to reduce complexity and scale efficiency. Removed
-                  AG Grid-style UI and introduced a card-based task view with contextual filters, role-based displays,
-                  and visual progress tracking.</p>
-                <ul>
-                  <li>700+ analysts impacted</li>
-                  <li>20% increase in worked accounts/day</li>
-                  <li>Time to first task significantly reduced</li>
-                </ul>
-              </div>
+            <div class="resume-content work-card">
+              <span class="subheading value">Aspirion</span>
+              <h3 class="mb-2"><a href="aspirion3.html">Training and onboarding</a></h3>
 
+              <p class="mb-2">
+                Led a cross-functional effort to rebuild training and onboarding from mistrust to empowerment using system mapping,
+                co-design, and phased in-app guidance.
+              </p>
+
+              <ul class="mb-2">
+                <li>Mapped gaps, pain points, and handoffs across teams to reduce friction and confusion</li>
+                <li>Created system and network diagrams to align stakeholders on root causes</li>
+                <li>Proposed phased onboarding experiences (in-app guidance, tooltips, progressive enablement)</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#SystemsThinking</span><span>#CoDesign</span><span>#Enablement</span><span>#StakeholderAlignment</span>
+              </div>
             </div>
-            
           </div>
 
+          <!-- Aspirion 3 -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">Aspirion</span>
-              <h3 class="mb-0"><a href="aspirion.html">Note taking feature redesign</a></h3>
-              <div>
-                <p>Redesigned the Note feature in Aspirion’s Compass platform to improve efficiency, readability, and
-                  user satisfaction.
-                  Introduced static, vertical note layouts with built-in templates and optimized typography to support
-                  faster workflows and reduce
-                  cognitive load for 700+ analysts.</p>
-                <ul>
-                  <li>Faster comprehension </li>
-                  <li>Cut time on account completion</li>
-                  <li>Greater user confidence and satisfaction</li>
-                </ul>
+            <div class="resume-content work-card">
+              <span class="subheading value">Aspirion</span>
+              <h3 class="mb-2"><a href="aspirion.html">Note taking feature redesign</a></h3>
+
+              <p class="mb-2">
+                Redesigned the Notes experience to improve readability and speed under high cognitive load, supporting faster workflows for 700+ analysts.
+              </p>
+
+              <ul class="mb-2">
+                <li>Improved comprehension with clearer hierarchy, spacing, and typography</li>
+                <li>Reduced time on account completion by lowering cognitive load and navigation friction</li>
+                <li>Increased user confidence through templates and predictable layouts</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#InteractionDesign</span><span>#InformationHierarchy</span><span>#Efficiency</span><span>#UXDetailing</span>
               </div>
             </div>
           </div>
+
+          <!-- Georgia Expo -->
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">Georgia Expo - CEB</span> 
+            <div class="resume-content work-card">
+              <span class="subheading value">Georgia Expo - CEB</span>
+              <h3 class="mb-2"><a href="ceb.html">ExhibitBackdrops.com homepage redesign</a></h3>
 
-              <h3 class="mb-0"><a href="ceb.html">ExhibitBackdrops.com homepage redesign</a></h3>
+              <p class="mb-2">
+                Redesigned the homepage to clarify product structure, reduce bounce, and improve discovery through research-informed IA and iterative prototyping.
+              </p>
 
-              <div>
-                <p>Redesigned EB's homepage to help the user understand the product line and quickly find the printed
-                  fabric solution they need. Through research, testing, and iterative prototyping, I streamlined the
-                  site’s structure, clarified product categories, and highlighted free design services.
-                </p>
-                <ul>
-                  <li>34% Decrease bounce rate</li>
-                  <li>14% Increase in return visitors</li>
-                  <li>4% lift in sales compared</li>
-                </ul>
+              <ul class="mb-2">
+                <li>Decreased bounce rate by 34 percent by improving navigation and page hierarchy</li>
+                <li>Increased return visitors by 14 percent with clearer categorization and value props</li>
+                <li>Drove a 4 percent sales lift by improving product discovery and decision confidence</li>
+              </ul>
+
+              <div class="work-tags mb-0">
+                <span>#Ecommerce</span><span>#IA</span><span>#Conversion</span><span>#Research</span>
               </div>
             </div>
-            
           </div>
-
-         <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="resume-content">
-<span class="subheading value">Personal Project</span> 
-
-              <h3 class="mb-0"><a href="snack.html">Snack4Snack fun project</a></h3>
-
-              <div>
-                <p>Diversified the office snacking practices</p>
-                <ul>
-                  <li>Personal project</li>
-                  <li>Figma exploartion</li>
-                </ul>
-              </div>
-            </div>
-          
-          </div>-->
-
-
-          <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a href="gaexpo.html">Georgia expo - Printed fabrics category redesign</a></h3>
-            <p><b>How might we reduce bouce rates?</b></p>
-            <p><b class="role">My Role: </b> For this project, I collected usability tests and interviews, analyzed the data, ideated, sketched, and prototyped the solution. </p> <blockquote>Timeline: 2 Weeks</blockquote>
-            
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"><img class="fit" src="img/gaexpoTITLE.png"></span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5 ">
-          <div class="resume-content">
-            <h3 class="mb-0"><a href="aofl.html">Arms of love case study</a></h3>
-            <p><b>How might we design a charitable website that showcases transparency so that users want to donate?</b></p>
-            <p><b class="role">My Role:</b> I worked with a researcher to gather and analyze the data. My main contribution was ideating and visualizing the solution, the style guide, the lo-fi, and the hi-fi prototype. I collaborated with another designer in the first sketches of the logo.  </p> <blockquote>Timeline: 3 Weeks</blockquote>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"><img class="fit" src="img/arms.png" alt="arms of love case study"></span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a href="javajustice.html">Java Justice case study</a></h3>
-            <p><b>How might we curate a coffee experience that allows coffee lovers to give back to the farms that produce the product they love?</b></p>
-            <p><b class="role">My Role:</b> I collaborated with two researchers and a designer to gather and analyze the data and defined the layout. I develop the design system, 
-              wireframes, hi-fidelity prototype, develop the shop page useing bootstrap. </p><blockquote> Timeline: 3 Weeks</blockquote>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary"><img class="fit" src="img/jj.png" alt="arms of love case study mb-5"></span>
-          </div>
-        </div>-->
-
-
 
         </div>
-
       </section>
-
-      <!-- <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5 title">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Sr. Designer</h3>
-            <div class="subheading mb-3">Georgia Expo</div>
-            <p>I am responsible for all aspects of the design experience of the Custom Exhibit Backdrops (CEB) Division of Georgia Expo Manufacturing. Including but not limited to:</p>
-            <ul>
-            	<li>Responsible for website architecture, look and feel, working closely with developers through implementation and testing.</li>
-            	<li>Use a user-centric approach to design new website features/products from the concept phase to release.</li>
-            	<li>Implement design thinking principals to meet business goals.</li>
-            	<li>Design internal systems for approving proofs and tracking orders through production. </li>
-            	
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">March 2017 - July 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Design Contractor</h3>
-            <div class="subheading mb-3">Mobileblobs</div>
-            <ul>
-            	<li>Designed and implemented the user interface for a proprietary project</li>
-            	<li>Development and tactical execution of content marketing initiatives.</li>
-            	<li>Plan, design, edit and distribute content marketing and communications materials. </li>
-            	
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">March 2016 - March 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Graphic Designer</h3>
-            <div class="subheading mb-3">Georgia Expo</div>
-            <p>Planning, developing and deploying html email campaigns, client facing as well as B2B, Perform quality assurance. Designing web and print graphics, advertisements and catalogs.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Oct. 2013 - March 2016</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Graphic Designer</h3>
-            <div class="subheading mb-3">Whiter Image Dental</div>
-            <p>Designing HTML emails, working with the head of marketing on developing strategies for effective promotional campaign, ads, web banners, brochures, maintaining all four WordPress websites.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Aug. 2012 - Sep. 2013</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section> -->
 
       <hr class="m-0">
 
+      <!-- NEW: HOW I WORK -->
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="how-i-work">
+  <div class="w-100">
+    <div class="border-top my-3"></div>
+
+    <h4 class="mb-5 title">How I Work <blockquote>systems-first, execution-focused</blockquote></h4>
+
+    <!-- 3-step layout that matches your existing typography -->
+    <div class="row">
+      <!-- Step 1 -->
+      <div class="col-lg-4 mb-4">
+        <div class="how-block h-100">
+          <div class="how-kicker">01</div>
+          <h3 class="how-h mb-2">Model the system</h3>
+          <p class="how-p mb-3">
+            Make complexity explicit by mapping inputs, states, dependencies, and edge cases before committing to UI.
+          </p>
+          <ul class="how-ul mb-0">
+            <li>State and decision models</li>
+            <li>Dependency and risk mapping</li>
+            <li>Edge cases and recovery paths</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-lg-4 mb-4">
+        <div class="how-block h-100">
+          <div class="how-kicker">02</div>
+          <h3 class="how-h mb-2">Prototype the behavior</h3>
+          <p class="how-p mb-3">
+            Define hierarchy, transitions, and feedback loops with interactive prototypes so intent is unambiguous.
+          </p>
+          <ul class="how-ul mb-0">
+            <li>Interaction states and transitions</li>
+            <li>Hierarchy and clarity</li>
+            <li>Usability validation and iteration</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-lg-4 mb-4">
+        <div class="how-block h-100">
+          <div class="how-kicker">03</div>
+          <h3 class="how-h mb-2">Ship with quality</h3>
+          <p class="how-p mb-3">
+            Partner with engineering to protect fidelity through build, QA, and iteration, with performance in mind.
+          </p>
+          <ul class="how-ul mb-0">
+            <li>Build-ready specs and standards</li>
+            <li>Design QA in development</li>
+            <li>Metrics and post-launch tuning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: small “principles” line, styled like your site 
+    <p class="mb-0 how-principles">
+      <span class="how-dot" aria-hidden="true"></span><strong>Clarity</strong> over complexity
+      <span class="how-sep" aria-hidden="true">•</span>
+      <span class="how-dot" aria-hidden="true"></span><strong>Behavior</strong> before polish
+      <span class="how-sep" aria-hidden="true">•</span>
+      <span class="how-dot" aria-hidden="true"></span><strong>Quality</strong> is a deliverable
+    </p>-->
+
+  </div>
+</section>
+
+      <hr class="m-0">
+
+      <!-- CAPABILITIES + TOOLS (UPDATED) -->
       <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
         <div class="w-100">
           <div class="border-top my-3"></div>
-          <h4 class="mb-5 title">Skills</h4>
+          <h4 class="mb-5 title">Capabilities</h4>
 
-           <div class="mb-4">
-            <h4 class="subheading mb-2">AI</h4>
-            <p class="mb-0">FigmaMAKE, Otter.io, lovable.dev, ChatGPT</p>
+          <div class="mb-4">
+            <h4 class="subheading mb-2">Core capabilities</h4>
+            <p class="mb-0">
+              Real-time systems UX (inputs, states, feedback, recovery), Workflow architecture and information hierarchy,
+              Design systems and component strategy, Interaction design and UX detailing, Research to synthesis to measurable decisions,
+              Implementation partnership and design QA, Accessibility and quality standards, Cross-functional leadership and mentorship
+            </p>
           </div>
 
           <div class="mb-4">
-            <h4 class="subheading mb-2">Core Tools</h4>
-            <p class="mb-0">Figma, FigJam, Miro, Framer, Adobe CS</p>
+            <h4 class="subheading mb-2">Core tools</h4>
+            <p class="mb-0">Figma, FigJam, Miro, Adobe Creative Suite, Framer, Notion, GitHub</p>
           </div>
-
 
           <div class="mb-4">
-            <h4 class="subheading mb-2">Design Systems & Front-End</h4>
-            <p class="mb-0">Waypoint, Tailwind CSS, Bootstrap, Component Libraries, Design Tokens</p>
+            <h4 class="subheading mb-2">Systems and UI foundations</h4>
+            <p class="mb-0">Design tokens, component libraries, responsive layouts, motion for feedback, error and edge case design, documentation standards</p>
           </div>
-
-
-          <div class="mb-4">
-            <h4 class="subheading mb-2">UX Strategy & Architecture</h4>
-            <p class="mb-0">Journey Mapping, Information Architecture, Service Blueprints, System Mapping</p>
-          </div>
-
-
-          <div class="mb-4">
-            <h4 class="subheading mb-2">Research & Data</h4>
-            <p class="mb-0">User Research, Behavioral Insights, Usability Testing, Data Analysis, KPI Alignment</p>
-          </div>
-
-
-          <div class="mb-4">
-            <h4 class="subheading mb-2">Interaction Design</h4>
-            <p class="mb-0">Prototyping, Micro-interactions, Motion, Storyboarding, UX Detailing</p>
-          </div>
-
 
           <div class="mb-2">
-            <h4 class="subheading mb-2">Leadership</h4>
-            <p class="mb-0">Stakeholder Alignment, Strategic Communication, Cross-functional Collaboration, Mentorship
+            <h4 class="subheading mb-2">Acceleration tools</h4>
+            <p class="mb-0">Figma Make, Otter.io, Lovable.dev, ChatGPT</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- FIXED: unique ID (your original repeated id="skills") -->
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="learning">
+        <div class="w-100">
+          <div class="border-top my-3"></div>
+          <h4 class="mb-5 title">Continued Learning</h4>
+
+          <div class="mb-4">
+            <p class="mb-0"><strong>Prompt Engineering</strong> — Udemy (Issued Oct 2025)</p>
+          </div>
+
+          <div class="mb-4">
+            <p class="mb-0"><strong>Advanced Figma</strong> — Designlab (Issued Jan 2025) <br>
+              Credential ID: ECb063</p>
+          </div>
+
+          <div class="mb-4">
+            <p class="mb-0"><strong>Human-Centered Systems Thinking</strong> — IDEO U (Issued Apr 2024) <br>
+              Credential ID: 33321-3465336</p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <!-- MORE ABOUT ME (LIGHTLY TIGHTENED COPY ONLY) -->
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+        <div class="w-100">
+          <div class="border-top my-3"></div>
+          <h4 class="mb-5 title">More about me</h4>
+
+          <p class="mb-4">
+            I draw, especially on my helmets. It’s another way I stay close to composition, constraints, and craft.
+            <a href="https://www.instagram.com/whatif612/" target="_blank" rel="noopener noreferrer">See more drawings</a>
+          </p>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="row h-100">
+              <div class="col-sm">
+                <img class="fit" src="img/like/w1.jpg" alt="Helmet illustration 1">
+              </div>
+              <div class="col-sm">
+                <img class="fit" src="img/like/w2.jpg" alt="Helmet illustration 2">
+              </div>
+              <div class="col-sm">
+                <img class="fit" src="img/like/w3.jpg" alt="Helmet illustration 3">
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="row h-100">
+              <div class="col-sm">
+                <img class="fit" src="img/like/helmet1.jpg" alt="Custom helmet drawing">
+              </div>
+              <div class="col-sm">
+                <img class="fit" src="img/like/helmet.jpg" alt="Helmet detail">
+              </div>
+              <div class="col-sm">
+                <img class="fit" src="img/like/pad.jpg" alt="Paddle board">
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-4">
+            I designed some numbers.
+            <a target="_blank" rel="noopener noreferrer" href="http://luc.devroye.org/fonts-79233.html">See more</a>
+          </p>
+
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="row h-100">
+              <div class="col-sm">
+                <img class="fit" src="img/like/numbers.jpg" alt="Number design sample 1">
+              </div>
+              <div class="col-sm">
+                <img class="fit" src="img/like/numbers2.jpg" alt="Number design sample 2">
+              </div>
+            </div>
+          </div>
+
+          <h4 class="mb-4 title">Articles</h4>
+          <div class="mb-4">
+            <p class="mb-0">
+              <a href="https://www.linkedin.com/pulse/ecstasy-focus-iva-keranova-zoe9e/" target="_blank" rel="noopener noreferrer">
+                The Ecstasy of Focus
+              </a>
             </p>
           </div>
         </div>
       </section>
- <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-        <div class="w-100">
-          <div class="border-top my-3"></div>
-          <h4 class="mb-5 title">Continues Learning</h4>
-<div class="mb-4">
-  <p class="mb-0"><strong>Prompt Engineering</strong> — Udemy (Issued Oct 2025) <br>
-  </p>
-</div>
-          <div class="mb-4">
-  <p class="mb-0"><strong>Advanced Figma</strong> — Designlab (Issued Jan 2025) <br>
-  Credential ID: ECb063</p>
-</div>
-
-<div class="mb-4">
-  <p class="mb-0"><strong>Human-Centered Systems Thinking</strong> — IDEO U (Issued Apr 2024) <br>
-  Credential ID: 33321-3465336</p>
-</div>
-
-
-
-
-        </div>
-      </section>
-      <hr class="m-0">
 
       <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-        <div class="w-100">
-          <div class="border-top my-3"></div>
-          <h4 class="mb-5 title">More about me...</h4>
-
-
-          <p>I draw some, especially on my helmets..
-            <a href="https://www.instagram.com/whatif612/"> Some more drawings</a>
-          </p>
-
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-
-            <div class="row h-100 ">
-
-              <div class="col-sm">
-                <img class="fit" src="img/like/w1.jpg" alt="black logo2">
-
-              </div>
-              <div class="col-sm">
-                <img class="fit" src="img/like/w2.jpg" alt="black logo2">
-              </div>
-              <div class="col-sm">
-                <img class="fit" src="img/like/w3.jpg" alt="black logo2">
-              </div>
-            </div>
-
-          </div>
-
-  
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-
-            <div class="row h-100 ">
-
-              <div class="col-sm">
-                <img class="fit" src="img/like/helmet1.jpg" alt="helmet drawn">
-
-              </div>
-              <div class="col-sm">
-                <img class="fit" src="img/like/helmet.jpg" alt="helmet">
-              </div>
-
-              <div class="col-sm">
-                <img class="fit" src="img/like/pad.jpg" alt="paddle board">
-              </div>
-            </div>
-
-          </div>
-          <p>I designed some numbers <a target="_blank" href="http://luc.devroye.org/fonts-79233.html"> See More</a></p>
-
-          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-
-            <div class="row h-100 ">
-
-              <div class="col-sm">
-                <img class="fit" src="img/like/numbers.jpg" alt="black logo2">
-
-              </div>
-              <div class="col-sm">
-                <img class="fit" src="img/like/numbers2.jpg" alt="new logo">
-              </div>
-            </div>
-
-          </div>
- <h4 class="mb-5 title">Articles</h4>
-
-           <div class="mb-4">
-            <p class="mb-0"><a href="https://www.linkedin.com/pulse/ecstasy-focus-iva-keranova-zoe9e/">The Ecstasy of Focus</a></p>
-          </div>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5 title">Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-school text-warning"></i>
-            Insights of Innovation - IDEO U</li>
-          <li>
-            <i class="fa-li fa fa-school text-warning"></i>
-            Enterprice Design Thinking - IBM</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
-      </div>
-    </section> -->
 
     </div>
   </main>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -531,5 +486,4 @@
   <script src="js/resume.min.js"></script>
 
 </body>
-
 </html>
