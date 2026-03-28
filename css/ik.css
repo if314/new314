@@ -131,7 +131,9 @@ p.lead { color: var(--title); }
 font-family: var(--font-mono);
 font-size: small;
 }
-
+.value a {
+  color:#F0B831;
+}
 .valueaofl {
   text-rendering: optimizeLegibility;
   font-style: italic;
